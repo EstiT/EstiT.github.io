@@ -1,0 +1,30 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(51,127,165);
+}
+
+p,a {
+    display: block;
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+a:link {
+    color: rgb(42,161,183);
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
