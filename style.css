@@ -84,7 +84,7 @@ background: #930;
 /*STYLING FOR EACH PAGE*/
 #page1{ /*home*/
   width: 100%;
-  height: 600px;
+  height: 580px;
   background-image: url("background1.png") ;
   background-size: cover;
   background-position: center;
@@ -339,7 +339,7 @@ footer{
 
   h2 {
       font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-      font-weight: bold;
+      font-weight: bolder;
       display: block;
       font-size: 1.5em;
       -webkit-margin-before: 0.0em;
@@ -352,7 +352,10 @@ footer{
   }
 
   h3,h4{
+    font-weight: bolder;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     padding-left: 10px;
+    color: darkslategrey;
   }
 
   ul, menu, dir {
@@ -366,6 +369,11 @@ footer{
   }
   a:link {
       color: rgb(51,127,165)
+  }
+  #ACsubheader{
+    font-weight: bolder;
+    padding-left: 0px;
+    margin-left: -5px;
   }
 
   /* visited link */
