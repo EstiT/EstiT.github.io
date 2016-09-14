@@ -17,11 +17,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/*
-#me{
-  border-radius: 60px;
-}*/
 
+/*STYLING FOR TOP MENU*/
 #menu {
   background: rgb(51,127,165);
   position: fixed;
@@ -33,7 +30,6 @@ body {
   width: 100%;
   z-index: 10000;
 }
-
 #menu li {
   float: left;
   font-size: 1em;
@@ -60,17 +56,6 @@ body {
   color: #fff;
   z-index: 10000;
 }
-body#page1 a#homeSelected,
-body#page2 a#aboutSelected,
-body#page3 a#eduSelected,
-body#page4 a#expSelected
-body#page5 a#portSelected
-body#resume a#resumeSelected
-body#page7 a#contactSelected {
-color: #fff;
-background: #930;
-}
-
 #header {
     height: 50px;
     width: 600px;
@@ -88,50 +73,37 @@ background: #930;
   background-image: url("background1.png") ;
   background-size: cover;
   background-position: center;
-
-
 }
 
-
 #page2{ /*about me*/
-  /*background-color: #1abc9c darkturquoise;*/
   width: 100%;
   height: 500px;
   background-color: rgb(227,248,253);
 }
 
 #page3{ /*education*/
-  /*background-color: #3498db /*dodgerblue;*/
   background-color: rgb(218,234,242);
   width: 100%;
-  /*height: 570px;*/
   resize: both;
   overflow: auto;
   min-height: 555px;
-
-  /*550px*/
 }
 
 #page4{ /*exp.*/
-  /*background-color: aquamarine;*/
   background-color: rgb(227,248,253);
   width: 100%;
-  /*height: 400px;*/
   resize: both;
   overflow: auto;
   min-height: 400px;
 }
 
 #page5{ /*portfolio*/
-  /*background-color: mediumpurple;*/
   background-color: rgb(218,234,242);
   width: 100%;
   height: 1200px;
 }
 
 #page7{ /*contact me*/
-  /*background-color: dimgrey;
-  <img src="australia.png" width = "100%" height="600"/>*/
   background-color: rgb(218,234,242);
   width: 100%;
   height: 300px;
@@ -145,8 +117,9 @@ background: #930;
 }
 
 /*STYLING FOR PORTFOLIO TABLE*/
-.top { vertical-align: top; }
-
+.top {
+  vertical-align: top;
+}
 #portfolioCell {
   position:relative;
 }
@@ -170,7 +143,6 @@ background: #930;
     left: 7%;
     right: 8%;
 }
-
 #portfolioCell:hover .image {
   position:relative;
   opacity:0.18;
@@ -196,7 +168,6 @@ background: #930;
   float: left;
   padding: 0.5% 1% 1% 2.5%;
 }
-
 .ac-container label{
 	padding: 2px 5px;
 	position: relative;
@@ -209,11 +180,9 @@ background: #930;
 	font-size: 17px;
 	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
 }
-
 .ac-container label:hover{
 	background: rgb(51,127,165);
 }
-
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
 	background: rgb(42,161,183);
@@ -222,7 +191,6 @@ background: #930;
 		0px 0px 0px 1px rgba(155,155,155,0.3),
 		0px 2px 2px rgba(0,0,0,0.1);
 }
-
 .ac-container label:hover:after,
 .ac-container input:checked + label:hover:after{
 	content: '';
@@ -233,15 +201,12 @@ background: #930;
 	top: 7px;
 	background: transparent url(arrow_down.png) no-repeat center center;
 }
-
 .ac-container input:checked + label:hover:after{
 	background-image: url(arrow_up.png);
 }
-
 .ac-container input{
 	display: none;
 }
-
 .ac-container article{
 	background: rgba(255, 255, 255, 0.5);
 	margin-top: -1px;
@@ -259,13 +224,11 @@ background: #930;
 		box-shadow 0.1s linear;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }
-
 .ac-container article p{
 	line-height: 23px;
 	font-size: 14px;
 	padding: 8px;
 }
-
 .ac-container input:checked ~ article.ac-small{
 	height: 80px;
 }
@@ -290,8 +253,6 @@ background: #930;
 
 }
 
-
-
 footer{
   text-align: right;
   padding-right: 12px;
@@ -304,17 +265,12 @@ footer{
   line-height: 24px;
 }
 
-
-
 @media screen and (min-width: 	720px){
     .container{
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 50px;
-
     }
-
-  /* __________WAQAR NOTES________________ */
 
   p {
       display: block;
@@ -367,17 +323,20 @@ footer{
       -webkit-margin-end: 0px;
       -webkit-padding-start: 40px;
   }
+
   a:link {
-      color: rgb(51,127,165)
+      color: rgb(51,127,165);
+      text-decoration: none;
   }
+
+  a:visited {
+      color: rgb(51,127,165);
+      text-decoration: none;
+  }
+
   #ACsubheader{
     font-weight: bolder;
     padding-left: 0px;
     margin-left: -5px;
-  }
-
-  /* visited link */
-  a:visited {
-      color: rgb(51,127,165)
   }
 }
