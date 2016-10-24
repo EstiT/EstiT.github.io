@@ -18,6 +18,15 @@ body {
   background-attachment: fixed;
 }
 
+#me{
+  width: 190px;
+  height:190px;
+  border-radius: 105px;
+  border-style: solid;
+  border-width: thick;
+  border-color: slategrey;
+}
+
 /*STYLING FOR TOP MENU*/
 #menu {
   background: rgb(51,127,165);
@@ -246,6 +255,9 @@ body {
   text-decoration: none;
   text-align: center;
   color: rgb(42,161,183);
+}
+#icon:hover{
+  color: darkslategrey;
 }
 #contactText{
   color: rgb(51,127,165);
