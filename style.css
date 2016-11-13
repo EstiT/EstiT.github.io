@@ -112,6 +112,7 @@ width: 100%;
   min-height: 555px;
 }
 
+
 #page4{ /*exp.*/
   background-color: rgb(227,248,253);
   width: 100%;
@@ -119,13 +120,17 @@ width: 100%;
   overflow: auto;
   min-height: 400px;
 }
-#campSpan {
+#campSpan, #xcodeSpan {
     display: inline-block;
 }
-#camp {
+#camp, #xcode {
   width: 340px;
   float: right;
   padding-left: 15px;
+}
+#xcode{
+  width: 250px;
+  margin-left: 35px;
 }
 
 #page5{ /*portfolio*/
