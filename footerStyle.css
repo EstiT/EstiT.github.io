@@ -5,7 +5,7 @@ body {
   margin-top: 0px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgb(51,127,165);
+  background-color: rgb(218,234,242);
 }
 
 p,a {
@@ -20,11 +20,6 @@ p,a {
     padding-top: 25px;
 }
 
-a:link {
-    color: rgb(42,161,183);
-}
-
-/* visited link */
-a:visited {
-    color: white;
+a:link, a:visited {
+    color: rgb(42,161,190);
 }
