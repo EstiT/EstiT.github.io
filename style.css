@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   margin: 0px;
   padding-top: 0px;
   margin-top: 0px;
@@ -29,7 +29,7 @@ body {
 
 /*STYLING FOR TOP MENU*/
 #menu {
-  background: rgb(51,127,165);
+  background: rgba(51,127,165,0.8);
   position: fixed;
   float: left;
   list-style: none;
@@ -42,15 +42,13 @@ body {
 #menu li {
   float: left;
   font-size: 1em;
-  /*font-family: "Verdana", "Arial", Helvetica, sans-serif;*/
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   margin: 0px 0px 0px 0px;
   padding: 0;
   padding-top: 0px;
   z-index: 10000;
 }
 #menu a {
-  background: rgb(51,127,165);
+  background: rgb(51,127,165, 0.8);
   font-size: 1.1em;
   color: #fff;
   display: block;
@@ -61,7 +59,7 @@ body {
   z-index: 10000;
 }
 #menu a:hover {
-  background: rgb(42,161,183);
+  background: rgba(42,161,183,0.8);
   color: #fff;
   z-index: 10000;
 }
@@ -78,7 +76,7 @@ body {
 /*STYLING FOR EACH PAGE*/
 #page1{ /*home*/
   width: 100%;
-  height: 600px;
+  height: 100vh;
   background-image: url("background1.png") ;
   background-size: cover;
   background-position: center;
@@ -88,6 +86,9 @@ body {
   width: 100%;
   height: 500px;
   background-color: rgb(227,248,253);
+}
+#page2 p{
+  line-height: 145%;
 }
 /*video on about me page*/
 #videoSpan {
@@ -107,6 +108,7 @@ width: 100%;
 #page3{ /*education*/
   background-color: rgb(218,234,242);
   width: 100%;
+  height: 100vh;
   resize: both;
   overflow: auto;
   min-height: 555px;
@@ -143,7 +145,7 @@ width: 100%;
 #page7{ /*contact me*/
   background-color: rgb(218,234,242);
   width: 100%;
-  height: 350px;
+  height: 100vh;
 }
 
 #resume{
@@ -177,8 +179,9 @@ width: 100%;
   line-height: 1.8vw;
   font-size: 1.2vw;
   top: 10%;
-    left: 7%;
-    right: 8%;
+  left: 7%;
+  right: 8%;
+  font-family: "Avenir", Avenir;
 }
 #portfolioCell:hover .image {
   position:relative;
@@ -265,6 +268,7 @@ width: 100%;
 	line-height: 23px;
 	font-size: 14px;
 	padding: 8px;
+  font-family: "Avenir", Avenir;
 }
 .ac-container input:checked ~ article.ac-small{
 	height: 80px;
@@ -289,19 +293,17 @@ width: 100%;
 }
 #contactText{
   color: rgb(51,127,165);
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 20px;
 }
 
 #footer{
   text-align: right;
   padding-right: 12px;
-  background-color: rgb(198,203,205);
-  position:static;
-  margin: -4px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  position:fixed;
+  margin: -3px 0px 0px 0px;
+  padding: 0px 6px 0px 0px;
   bottom:0px;
-  top: 0px;
+  top: 96.5vh;
   left: 0;
   right: 0;
   height: 20px;
@@ -326,7 +328,6 @@ width: 100%;
   }
 
   h1 {
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;/*: "Century Gothic", sans-serif;/*: /*"Verdana", "Geneva", sans-serif;*/
     display: block;
     font-size: 2em;
     -webkit-margin-before: 0.0em;
@@ -337,7 +338,6 @@ width: 100%;
   }
 
   h2 {
-      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
       font-weight: bolder;
       display: block;
       font-size: 1.5em;
@@ -352,7 +352,6 @@ width: 100%;
 
   h3,h4{
     font-weight: bolder;
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     padding-left: 10px;
     color: darkslategrey;
   }
