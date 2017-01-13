@@ -17,14 +17,18 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 #me{
-  width: 190px;
-  height:190px;
-  border-radius: 105px;
+  width: 25%;
   border-style: solid;
   border-width: thick;
   border-color: slategrey;
+  margin-left: 20px;
 }
 
 /*STYLING FOR TOP MENU*/
@@ -76,39 +80,27 @@ body {
 /*STYLING FOR EACH PAGE*/
 #page1{ /*home*/
   width: 100%;
-  height: 100vh;
-  background-image: url("background1.png") ;
+  height: 300px;
   background-size: cover;
   background-position: center;
+  background-color: rgb(218,234,242);
 }
 
 #page2{ /*about me*/
   width: 100%;
-  height: 500px;
+  height: 370px;
   background-color: rgb(227,248,253);
 }
 #page2 p{
   line-height: 145%;
-}
-/*video on about me page*/
-#videoSpan {
-    display: inline-block;
-}
-iframe {
-height: 239px;
-width: 100%;
-}
-#australiaSpan {
-    display: inline-block;
-}
-#australia {
-  width: 95%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 30px;
 }
 
 #page3{ /*education*/
   background-color: rgb(218,234,242);
   width: 100%;
-  height: 100vh;
   resize: both;
   overflow: auto;
   min-height: 555px;
@@ -120,7 +112,7 @@ width: 100%;
   width: 100%;
   resize: both;
   overflow: auto;
-  min-height: 400px;
+  min-height: 300px;
 }
 #campSpan, #xcodeSpan {
     display: inline-block;
@@ -143,9 +135,9 @@ width: 100%;
 }
 
 #page7{ /*contact me*/
-  background-color: rgb(218,234,242);
+  background-color: rgb(227,248,253);
   width: 100%;
-  height: 100vh;
+  height: 250px;;
 }
 
 #resume{
@@ -205,20 +197,18 @@ width: 100%;
 .ac-container{
 	width: 575px;
 	margin: 10px auto 30px auto;
-  float: left;
+  float: inherit;
   padding: 0.5% 1% 1% 2.5%;
 }
 .ac-container label{
 	padding: 2px 5px;
 	position: relative;
-	z-index: 20;
 	display: block;
 	height: 30px;
 	cursor: pointer;
 	color: black;
 	line-height: 33px;
 	font-size: 17px;
-	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
 }
 .ac-container label:hover{
 	background: rgb(51,127,165);
@@ -298,12 +288,10 @@ width: 100%;
 
 #footer{
   text-align: right;
-  padding-right: 12px;
   position:fixed;
   margin: -3px 0px 0px 0px;
-  padding: 0px 6px 0px 0px;
-  bottom:0px;
-  top: 96.5vh;
+  padding: 0px 12px 0px 0px;
+  top: 96.3vh;
   left: 0;
   right: 0;
   height: 20px;

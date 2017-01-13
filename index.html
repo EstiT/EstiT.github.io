@@ -16,13 +16,13 @@
 <header >
 <div >
   <ul id="menu">
-    <li><a id="homeSelected" href="#home">Home</a></li>
-    <li><a id="aboutSelected" href="#aboutMe">About Me</a></li>
-    <li><a id="eduSelected" href="#education">Education</a></li>
-    <li><a id="expSelected" href="#experience">Experience</a></li>
-    <li><a id="portSelected" href="#portfolio">Portfolio</a></li>
-    <li><a id="resumeSelected" href="#resume">Resume</a></li>
-    <li><a id="contactSelected" href="#contactMe">Contact Me</a></li>
+    <li><a id="homeM" href="#home">Home</a></li>
+    <li><a id="aboutM" href="#aboutMe">About Me</a></li>
+    <li><a id="eduM" href="#education">Education</a></li>
+    <li><a id="expM" href="#experience">Experience</a></li>
+    <li><a id="portfolioM" href="#portfolio">Portfolio</a></li>
+    <li><a id="resumeM" href="EstiTwegResume.pdf" download class="typcn typcn-download-outline" >Resume</a></li>
+    <li><a id="contactM" href="#contactMe">Contact Me</a></li>
   </ul>
 </div>
 </header>
@@ -37,7 +37,7 @@
             <h1>Esti Tweg</h1>
             <h2>Computer Science Student</h2>
           </td>
-          <td width="40%">
+          <td width="30%">
             <br>
               <img id="me" src="me.jpg"  />
           </td>
@@ -49,23 +49,16 @@
         <a id="aboutMe" class = "smooth"> </a>
         <br><br>
         <h2>About Me</h2>
-        <table style="width:95%" height="100px" border=0 cellspacing="10">
-          <tr>
-            <td style= "line-height: 130%;" width="35%"><p>My name is Esti Tweg and I am 20 years old. Currently I attend Carleton University for Computer
-              Science specializing in Mobile Application Development. Two neat things about me are that I was born in
-              Sydney, Australia and I am an accomplished competitive rock climber. I have placed top three in
-              numerous competitions across Canada and have had the honour of representing Canada in both the Adult and
-              Youth World Championships in 2015.
-            </p></td>
-            <td width="30%"> <span id="australiaSpan"><img src="Australia.jpg" id="australia"/> </span></td>
-            <td width="35%">
-              <span id="videoSpan">
-                <iframe id="climbingVid" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://onedrive.live.com/embed?cid=3A5841504D17FBA9&resid=3A5841504D17FBA9%21263&authkey=ANTgLr95uc792NM&amp" frameborder="0" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen ></iframe>
-              <span>
-            </td>
 
-          </tr>
-        </table>
+        <table>
+        <p align="center">My name is Esti Tweg and I am 20 years old. Currently I attend Carleton University for Computer
+          Science specializing in Mobile Application Development. Two neat things about me are that I was born in
+         <a href="Australia.jpg" id="australia">Sydney, Australia</a> and I am an accomplished competitive <a href="climbing.jpg" id="climbing">rock climber</a>. I have placed top three in
+          numerous competitions across Canada and have had the honour of representing Canada in both the Adult and
+          <a href="youthWorlds.jpg" id="worlds">Youth World Championships</a> in 2015.
+        </p>
+      </table>
+        <div style="text-align: center;"><img src="ornament.png"  width="80px" height="60px"/></div>
       </div>
 
 
@@ -73,7 +66,6 @@
         <a id="education" class = "smooth"> </a>
         <br><br>
         <h2>Education</h2>
-        <span id="xcodeSpan"><img src="xcode.png" id = "xcode"/></span>
           <section class="ac-container ">
             <h3 id="ACsubheader">Formal</h3>
             <div>
@@ -142,7 +134,6 @@
         <a id="experience" class = "smooth"> </a>
         <br><br>
         <h2>Experience</h2>
-        <span id="campSpan"><img src="campGA.jpg" id = "camp"/></span>
 
         <section class="ac-container ">
           <div>
@@ -193,7 +184,7 @@
               <tr>
                   <th width= "25%" class="top">
                     <div id="portfolioCell">
-                      <a target="_blank	" href="https://github.com/EstiT/PieChartMaker"> <img class="image" src="Screen%20Shot%202016-06-04%20at%2011.30.41%20PM.png" width="100%"/></a>
+                      <a target="_blank	" href="https://github.com/EstiT/PieChartMaker"> <img class="image" src="PieChart.png" width="100%"/></a>
                       <a target="_blank	" href="https://github.com/EstiT/PieChartMaker">
                         <p class="text">
                           <u><b>Pie Chart Maker</b></u> <br>This program asks you a series of questions (title, number of sections, legend vs. labels etc.) to make a pie chart with the data that you enter.
@@ -224,6 +215,15 @@
                     </div>
 
                     <br><br>
+                    <div id="portfolioCell">
+                      <img class="image" src="CCC.jpg" width="100%" /></a>
+                        <p class="text">
+                          <u><b>Club Tank Tops</u></b><br>I designed and assisted in production of these tank tops for the Carleton Climbing Club.
+                        </p>
+                      </a>
+                    </div>
+
+                      <br><br>
 
                     <div id="portfolioCell">
                       <a target="_blank	" href="https://github.com/EstiT/ClimberStickFigure"><img class="image" src="clipArt.png" width="100%" /></a>
@@ -255,17 +255,19 @@
                         </p>
                       </a>
                     </div>
+
+                    <br><br>
+                    <div id="portfolioCell">
+                      <img class="image" src="poleFitness2.jpg" width="100%" /></a>
+                        <p class="text">
+                          <u><b>Club Logo</u></b><br>I designed this logo for the Carleton Pole Fitness Club.
+                        </p>
+                      </a>
+                    </div>
+
                   </th>
               </tr>
           </table>
-      </div>
-
-
-      <div id="resume">
-        <a id="resume" class = "smooth"> </a>
-        <div align="center">
-          <embed src="Resume.pdf" width="65%" height="800px" type='application/pdf'>
-        </div>
       </div>
 
 
@@ -273,7 +275,7 @@
         <br><br>
         <a id="contactMe" class = "smooth"> </a>
         <h2>Contact Me</h2>
-        <table border=0 width= "100%"">
+        <table border=0 width= "100%">
           <tr>
             <th height="100">
               <a href="mailto:estictweg@hotmail.com?Subject=" class="typcn typcn-mail" id="icon"></a>
@@ -296,7 +298,7 @@
               </a>
             </th>
             <th>
-              <a  href="EstiTwegResume.pdf" download class="typcn typcn-pen" id="icon"></a>
+              <a  href="EstiTwegResume.pdf" download class="typcn typcn-download-outline" id="icon"></a>
               <br>
               <a
                  target="_blank	"
@@ -305,11 +307,9 @@
             </th>
           </tr>
         </table>
-      </br></br>
-        <img src="australia.png" width = "100%" height="390"/>
+    </div>
 
 
-      </div>
   <div id="footer"><a href="footer.html">Esti Tweg 2016 &copy</a></div>
 </main>
 
