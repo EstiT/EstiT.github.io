@@ -7,11 +7,7 @@ window.addEventListener('load',function()
 
   $('#australia').append("<img id = 'aussie' src='Australia.jpg' height='100px' width='120px' style='position: absolute; z-index: 3; display: none'>");
 
-  $("#australia").mouseover(function(){
-    console.log("moused over");
-    $("#assie").css.display = "block";
 
-  });
   $( "#australiaLink" ).mouseover(function() {
     $( "#australia" ).fadeIn( 175 );
 });
