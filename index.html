@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     <link rel='stylesheet' href='typicons.font-2.0.7/typicons.min.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
     <style>
       th, td {
         padding: 8px;
@@ -53,9 +55,9 @@
         <table>
         <p align="center">My name is Esti Tweg and I am 20 years old. Currently I attend Carleton University for Computer
           Science specializing in Mobile Application Development. Two neat things about me are that I was born in
-         <a href="Australia.jpg" id="australia">Sydney, Australia</a> and I am an accomplished competitive <a href="climbing.jpg" id="climbing">rock climber</a>. I have placed top three in
+         <a id="australiaLink" href="Australia.jpg" >Sydney, Australia</a><span id="australia"><img href="Australia.jpg"></span> and I am an accomplished competitive <a href="climbing1.jpg" id="climbingLink"><span id="climbing1"><img href="climbing.jpg"></span>rock climber</a>. I have placed top three in
           numerous competitions across Canada and have had the honour of representing Canada in both the Adult and
-          <a href="youthWorlds.jpg" id="worlds">Youth World Championships</a> in 2015.
+          <a href="youthWorlds.jpg" id="worldsLink"><span id="worlds"><img href="youthWorlds.jpg"></span>Youth World Championships</a> in 2015.
         </p>
       </table>
         <div style="text-align: center;"><img src="ornament.png"  width="80px" height="60px"/></div>
@@ -118,13 +120,6 @@
                 <p>January 2016, I attended Googles Cracking the Code Workshop organized by Carleton's Computer Science Society. At this workshop, a presentation was given on how to be a better programmer and how to prepare for technical interviews. Coding example problems were then practiced for the duration. </p>
               </article>
             </div>
-            <div>
-              <input id="ac-8" name="accordion-1" type="checkbox" />
-              <label for="ac-8">Gokhale Method&reg;</label>
-              <article class="ac-small">
-                <p>Partook in Gokhale Method&reg; Posture Workshop in June 2016. Overview on how to sit, stand and sleep properly to take care of your back.</p>
-              </article>
-            </div>
           </section>
 
       </div>
@@ -137,15 +132,15 @@
 
         <section class="ac-container ">
           <div>
-            <input id="ac-9" name="accordion-1" type="checkbox" />
-            <label for="ac-9">Junior Mobile Developer - 2016</label>
+            <input id="ac-8" name="accordion-1" type="checkbox" />
+            <label for="ac-8">Junior Mobile Developer - 2016</label>
             <article class="ac-small">
               <p>Worked on the Think Dirty IOS mobile application at <a target="_blank	" href="http://www.thinkdirtyapp.com/">Think Dirty Inc.</a> Built features to improve usability and display and refactored code to use new common code practices.</p>
             </article>
           </div>
           <div>
-            <input id="ac-10" name="accordion-1" type="checkbox" />
-            <label for="ac-10">Rock Climbing Instructor - 2011 to Present</label>
+            <input id="ac-9" name="accordion-1" type="checkbox" />
+            <label for="ac-9">Rock Climbing Instructor - 2011 to Present</label>
             <article class="ac-large">
               <p>For the past 5 years I have been working at <a target="_blank	" href="http://www.truenorthclimbing.com/">True North Climbing</a> performing a multitude
                 of jobs including: Belayer, Instructor, Assistant Coach, Youth Program Instructor and Route
@@ -157,16 +152,16 @@
             </article>
           </div>
           <div>
-            <input id="ac-11" name="accordion-1" type="checkbox" />
-            <label for="ac-11">Junior Counselor and Head Bus Captain - 2012</label>
+            <input id="ac-10" name="accordion-1" type="checkbox" />
+            <label for="ac-10">Junior Counselor and Head Bus Captain - 2012</label>
             <article class="ac-medium">
               <p>During the summer of 2012, I worked at <a target="_blank" href="http://campgreenacres.com/">Camp Green Acres</a> where I had the pleasure of looking after 11 five year olds. As the Bus Captian, I was in charge of identifying the parents/ guardians to insure that only
               authorized individuals were claiming the campers.</p>
             </article>
           </div>
           <div>
-            <input id="ac-12" name="accordion-1" type="checkbox" />
-            <label for="ac-12">Belayer - 2009 to 2010</label>
+            <input id="ac-11" name="accordion-1" type="checkbox" />
+            <label for="ac-11">Belayer - 2009 to 2010</label>
             <article class="ac-small">
               <p>At the <a target="_blank" href="http://www.climbingacademy.com/" >Toronto Climbing Academy</a> I held the rope and supervised for birthday parties.</p>
             </article>
@@ -214,15 +209,6 @@
                       </a>
                     </div>
 
-                    <br><br>
-                    <div id="portfolioCell">
-                      <img class="image" src="CCC.jpg" width="100%" /></a>
-                        <p class="text">
-                          <u><b>Club Tank Tops</u></b><br>I designed and assisted in production of these tank tops for the Carleton Climbing Club.
-                        </p>
-                      </a>
-                    </div>
-
                       <br><br>
 
                     <div id="portfolioCell">
@@ -237,7 +223,7 @@
 
                   <th width= "25%" class="top">
                     <div id="portfolioCell">
-                      <a target="_blank	" href="https://github.com/EstiT/TicTacToe"><img class="image" src="Screen%20Shot%202016-06-04%20at%2011.32.25%20PM.png" width="100%" /></a>
+                      <a target="_blank	" href="https://github.com/EstiT/TicTacToe"><img class="image" src="tictactoe.png" width="100%" /></a>
                       <a target="_blank	" href="https://github.com/EstiT/TicTacToe">
                         <p class="text">
                           <u><b>Tic Tac Toe</u></b><br>Play Tic Tac Toe against a computer.
@@ -260,7 +246,7 @@
                     <div id="portfolioCell">
                       <img class="image" src="poleFitness2.jpg" width="100%" /></a>
                         <p class="text">
-                          <u><b>Club Logo</u></b><br>I designed this logo for the Carleton Pole Fitness Club.
+                          <u><b>Club Logo</u></b><br>The Carleton Pole Fitness Club held a logo contest asking for designs for the club. This was my submission and it was chosen as the winner.
                         </p>
                       </a>
                     </div>

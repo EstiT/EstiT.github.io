@@ -97,13 +97,16 @@ img {
   padding-right: 20%;
   padding-bottom: 30px;
 }
+#australia, #worlds, #climbing{
+  display: none;
+}
 
 #page3{ /*education*/
   background-color: rgb(218,234,242);
   width: 100%;
   resize: both;
   overflow: auto;
-  min-height: 555px;
+  min-height: 525px;
 }
 
 
@@ -113,18 +116,6 @@ img {
   resize: both;
   overflow: auto;
   min-height: 300px;
-}
-#campSpan, #xcodeSpan {
-    display: inline-block;
-}
-#camp, #xcode {
-  width: 340px;
-  float: right;
-  padding-left: 15px;
-}
-#xcode{
-  width: 250px;
-  margin-left: 35px;
 }
 
 #page5{ /*portfolio*/
