@@ -106,7 +106,6 @@ img {
 #skills{
   width: 100%;
   resize: both;
-  overflow: auto;
   min-height: 220px;
   background-color: rgb(218,234,242);
 }
