@@ -23,6 +23,19 @@ img {
     width: auto\9; /* ie8 */
 }
 
+/*Scroll to top button*/
+a.back-to-top {
+	display: none;
+	width: 15%;
+	height: 15%;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 1px;
+	bottom: 20px;
+	background: url("up-arrow.png") no-repeat center 43%;
+}
+
 #me{
   width: 25%;
   border-style: solid;

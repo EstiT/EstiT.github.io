@@ -8,7 +8,7 @@ body {
   background-color: rgb(218,234,242);
 }
 
-p,a {
+p{
     display: block;
     -webkit-margin-before: 2em;
     -webkit-margin-after: 2em;
