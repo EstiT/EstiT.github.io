@@ -57,7 +57,7 @@ $(window).scroll(function(){
  }
  else if(isInView($('#skills'))){
    history.pushState(null, null, '#skills');
-   $("#homeM").css({ "border-bottom": "none" });
+   $("#homeM").css({ "border-bottom": "4px solid transparent" });
    $("#aboutM").css({ "border-bottom": "none" });
    $("#eduM").css({ "border-bottom": "none" });
    $("#expM").css({ "border-bottom": "none" });
