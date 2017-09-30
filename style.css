@@ -23,6 +23,19 @@ img {
     width: auto\9; /* ie8 */
 }
 
+th, td {
+  padding: 8px;
+  padding-bottom: 10px;
+}
+
+.bg-1{
+        background: url("background1.png") fixed;
+        background-size: contain;
+        height: 50vw;
+        /*padding-top: 18vw;
+        padding-bottom: 20vw;*/
+    }
+
 /*Scroll to top button*/
 a.back-to-top {
 	display: none;
