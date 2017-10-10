@@ -1,10 +1,15 @@
+var pink = "#e1949f";
+var purple  = "rgba(48, 54, 103, 0.8)";
+
+
+
+
 window.addEventListener('load',function()
 {
   var me = document.getElementById('me');
   me.style.borderRadius = me.clientWidth/2+"em";
 
   $('#australia').append("<img id = 'aussie' src='Australia.jpg' height='100px' width='120px' style='position: absolute; z-index: 3; display: none'>");
-
 
   $( "#australiaLink" ).mouseover(function() {
     $( "#australia" ).fadeIn( 175 );
@@ -36,10 +41,18 @@ $(window).scroll(function(){
 		$('a.back-to-top').fadeOut('slow');
 	}
 
+  if ($('#aboutMe').offset().top <= 0) {
+      // about to scroll out of home page
+      $("#menu").css('background-color', purple);
+  }
+  else{
+      $("#menu").css('background-color', '');
+  }
+
 
   if (isInView($('#page1'))){
    history.pushState(null, null, '#home');
-   $("#homeM").css({ "border-bottom": "4px solid #ffffff" });
+   $("#homeM").css({ "border-bottom": "4px solid "+pink});
    $("#aboutM").css({ "border-bottom": "none" });
    $("#eduM").css({ "border-bottom": "none" });
    $("#expM").css({ "border-bottom": "none" });
@@ -49,7 +62,7 @@ $(window).scroll(function(){
  else if(isInView($('#page2'))){
    history.pushState(null, null, '#aboutMe');
    $("#homeM").css({ "border-bottom": "none" });
-   $("#aboutM").css({ "border-bottom": "4px solid #ffffff" });
+   $("#aboutM").css({ "border-bottom": "4px solid "+pink});
    $("#eduM").css({ "border-bottom": "none" });
    $("#expM").css({ "border-bottom": "none" });
    $("#portfolioM").css({ "border-bottom": "none" });
@@ -68,7 +81,7 @@ $(window).scroll(function(){
    history.pushState(null, null, '#education');
    $("#homeM").css({ "border-bottom": "none" });
    $("#aboutM").css({ "border-bottom": "none" });
-   $("#eduM").css({ "border-bottom": "4px solid #ffffff" });
+   $("#eduM").css({ "border-bottom": "4px solid "+pink});
    $("#expM").css({ "border-bottom": "none" });
    $("#portfolioM").css({ "border-bottom": "none" });
    $("#contactM").css({ "border-bottom": "none" });
@@ -78,7 +91,7 @@ $(window).scroll(function(){
    $("#homeM").css({ "border-bottom": "none" });
    $("#aboutM").css({ "border-bottom": "none" });
    $("#eduM").css({ "border-bottom": "none" });
-   $("#expM").css({ "border-bottom": "4px solid #ffffff" });
+   $("#expM").css({ "border-bottom": "4px solid "+pink});
    $("#portfolioM").css({ "border-bottom": "none" });
    $("#contactM").css({ "border-bottom": "none" });
  }
@@ -88,7 +101,7 @@ $(window).scroll(function(){
    $("#aboutM").css({ "border-bottom": "none" });
    $("#eduM").css({ "border-bottom": "none" });
    $("#expM").css({ "border-bottom": "none" });
-   $("#portfolioM").css({ "border-bottom": "4px solid #ffffff" });
+   $("#portfolioM").css({ "border-bottom": "4px solid "+pink});
    $("#contactM").css({ "border-bottom": "none" });
  }
  else if(isInView($('#page7'))){
@@ -98,7 +111,7 @@ $(window).scroll(function(){
    $("#eduM").css({ "border-bottom": "none" });
    $("#expM").css({ "border-bottom": "none" });
    $("#portfolioM").css({ "border-bottom": "none" });
-   $("#contactM").css({ "border-bottom": "4px solid #ffffff" });
+   $("#contactM").css({ "border-bottom": "4px solid "+pink});
  }
 })
 
@@ -108,6 +121,5 @@ function isInView(elem){
   var docViewBottom = docViewTop + $(window).height();
   var elemTop = $(elem).offset().top;
   var elemBottom = elemTop + $(elem).height();
-
   return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
