@@ -49,15 +49,7 @@ a.back-to-top {
 	z-index: 999;
 	right: 1px;
 	bottom: 20px;
-	background: url("up-arrow.png") no-repeat center 43%;
-}
-
-#me{
-  width: 25%;
-  border-style: solid;
-  border-width: thick;
-  border-color: var(--pink);
-  margin-left: 20px;
+	background: url("images/up-arrow.png") no-repeat center 43%;
 }
 
 /*STYLING FOR TOP MENU*/
@@ -273,10 +265,10 @@ a.back-to-top {
 	height: 24px;
 	right: 13px;
 	top: 7px;
-	background: transparent url(arrow_down.png) no-repeat center center;
+	background: transparent url(images/arrow_down.png) no-repeat center center;
 }
 .ac-container input:checked + label:hover:after{
-	background-image: url(arrow_up.png);
+	background-image: url(images/arrow_up.png);
 }
 .ac-container input{
 	display: none;
