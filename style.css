@@ -1,7 +1,7 @@
 :root {
-  --background1: rgba(226,224,234,1);
+  --background1: rgba(208,205,222,1);
   /*#e2e0ea;*/
-  --background2: rgba(212,209,224,1);
+  --background2: rgba(226,225,236,1);
   /*#d4d1e0;*/
   --lightPink: #fee8de;
   --purple1: #584c7d;
@@ -9,7 +9,7 @@
   --salmonPink: #e1949f;
   --darkGrey: #ada7ad;
   --grey: #d2cbd2;
-  --darkPurple: #3b3f56;
+  --darkPurple: #2d3254;
   --darkPurpleTransparent: rgba(59,65,86,0.85);
   --darkBlush: #9a6068;
 }
@@ -44,6 +44,13 @@ img {
 th, td {
   padding: 8px;
   padding-bottom: 10px;
+}
+
+hr{
+  border: 0;
+  border-top: 2px solid var(--darkGrey);
+  width: 70%;
+  display: block;
 }
 
 /*Scroll to top button*/
@@ -124,7 +131,7 @@ a.back-to-top {
 #page2{ /*about me*/
   width: 100%;
   min-height: 370px;
-  background: var(--background1);
+  background: var(--background2);
 }
 
 #page2 p{
@@ -150,7 +157,7 @@ a.back-to-top {
 }
 
 #page3{ /*education*/
-  background-color: var(--background1);
+  background-color: var(--background2);
   width: 100%;
   resize: both;
   overflow: auto;
@@ -167,7 +174,7 @@ a.back-to-top {
 }
 
 #page5{ /*portfolio*/
-  background-color: var(--background1);
+  background-color: var(--background2);
   width: 100%;
   display:block;
   overflow:auto;
@@ -180,7 +187,7 @@ a.back-to-top {
 }
 
 #resume{
-  background-color: var(--background1);
+  background-color: var(--background2);
   height: 100%;
   width: 100%;
   align-items: center;
@@ -250,12 +257,12 @@ a.back-to-top {
 	font-size: 17px;
 }
 .ac-container label:hover{
-	background: var(--salmonPink);
+	background: var(--background1);
   color: var(--darkPurple);
 }
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
-	background: var(--salmonPink);
+	background: var(--background1);
 	color: var(--darkPurple);
 	box-shadow:
 		0px 0px 0px 1px rgba(155,155,155,0.3),
@@ -310,22 +317,6 @@ a.back-to-top {
 	height: 190px;
 }
 
-/*contact me icon and text*/
-#icon {
-  font-size: 70px;
-  font-weight: lighter;
-  text-decoration: none;
-  text-align: center;
-  color: var(--purple1);
-}
-#icon:hover{
-  color: var(--darkPurple);
-}
-#contactText{
-  color: var(--purple1);
-  font-size: 20px;
-}
-
 #footer{
   text-align: right;
   position:fixed;
@@ -336,6 +327,8 @@ a.back-to-top {
   right: 0;
   height: 20px;
   line-height: 24px;
+  color: var(--darkBlush);
+  text-decoration: none;
 }
 
 .light {
@@ -346,7 +339,6 @@ a.back-to-top {
     .container{
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 50px;
     }
 
   p {
@@ -400,11 +392,34 @@ a.back-to-top {
       -webkit-padding-start: 40px;
   }
 
-  a:link, a:visited {
+  a:link, a:visited{
       color: var(--darkBlush);
       text-decoration: none;
   }
 
+  /*contact me icon and text*/
+  .icon {
+    font-size: 70px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
+    color: var(--purple1) !important;
+  }
+
+  .icon:hover{
+    color: var(--darkPurple) !important;
+  }
+
+  .contactText{
+    color: var(--purple1)!important;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .contactText:hover{
+    color: var(--darkPurple)!important;
+    font-size: 20px;
+  }
 
   #ACsubheader{
     font-weight: bolder;
