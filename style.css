@@ -1,3 +1,20 @@
+:root {
+  --background1: rgba(227,225,236,1);
+  /*#e2e0ea;*/
+  --background2: rgba(244,244,247,1);
+  /*#d4d1e0;*/
+  --lightPink: #fee8de;
+  --purple1: #584c7d;
+  --purple2: #4f58ca;
+  --salmonPink: #e1949f;
+  --darkGrey: #ada7ad;
+  --grey: #d2cbd2;
+  --darkPurple: #2d3254;
+  --darkPurpleTransparent: rgba(59,65,86,0.85);
+  --darkBlush: #9a6068;
+}
+
+
 @font-face {
   font-family: 'typicons';
   src: url("typicons.font-2.0.7/typicons.eot");
@@ -17,6 +34,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -28,13 +46,12 @@ th, td {
   padding-bottom: 10px;
 }
 
-.bg-1{
-        background: url("background1.png") fixed;
-        background-size: contain;
-        height: 50vw;
-        /*padding-top: 18vw;
-        padding-bottom: 20vw;*/
-    }
+hr{
+  border: 0;
+  border-top: 2px solid var(--darkGrey);
+  width: 60%;
+  display: block;
+}
 
 /*Scroll to top button*/
 a.back-to-top {
@@ -46,20 +63,12 @@ a.back-to-top {
 	z-index: 999;
 	right: 1px;
 	bottom: 20px;
-	background: url("up-arrow.png") no-repeat center 43%;
-}
-
-#me{
-  width: 25%;
-  border-style: solid;
-  border-width: thick;
-  border-color: slategrey;
-  margin-left: 20px;
+	background: url("images/up-arrow.png") no-repeat center 43%;
 }
 
 /*STYLING FOR TOP MENU*/
 #menu {
-  background: rgba(51,127,165,0.8);
+  transition: all .4s ease-in;
   position: fixed;
   float: left;
   list-style: none;
@@ -69,18 +78,19 @@ a.back-to-top {
   width: 100%;
   z-index: 10000;
 }
+
 #menu li {
   float: left;
-  font-size: 1em;
+  font-size: 1.08em;
   margin: 0px 0px 0px 0px;
   padding: 0;
   padding-top: 0px;
   z-index: 10000;
 }
+
 #menu a {
-  background: rgb(51,127,165, 0.8);
   font-size: 1.1em;
-  color: #fff;
+  color: var(--lightPink);
   display: block;
   float: left;
   margin: 0;
@@ -89,10 +99,10 @@ a.back-to-top {
   z-index: 10000;
 }
 #menu a:hover {
-  background: rgba(42,161,183,0.8);
-  color: #fff;
+  color: white;
   z-index: 10000;
 }
+
 #header {
     height: 50px;
     width: 600px;
@@ -106,25 +116,31 @@ a.back-to-top {
 /*STYLING FOR EACH PAGE*/
 #page1{ /*home*/
   width: 100%;
-  height: 300px;
+  height: 36.6vw;
   background-size: cover;
   background-position: center;
-  background-color: rgb(218,234,242);
+  background-attachment: fixed;
+}
+
+.bg-1{
+    background: url("images/sky.png") no-repeat top center fixed;
+    background-size: contain;
+    height: 100%;
 }
 
 #page2{ /*about me*/
   width: 100%;
-  resize: both;
-  overflow: auto;
   min-height: 370px;
-  background-color: rgb(227,248,253);
+  background: var(--background2);
 }
+
 #page2 p{
   line-height: 145%;
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 30px;
 }
+
 #australia, #worlds, #climbing{
   display: none;
 }
@@ -133,15 +149,15 @@ a.back-to-top {
   width: 100%;
   resize: both;
   min-height: 220px;
-  background-color: rgb(218,234,242);
+  background-color: var(--background2);
 }
 
 #skills span {
-  color: rgb(51,127,165);
+  color: var(--darkBlush);
 }
 
 #page3{ /*education*/
-  background-color: rgb(227,248,253);
+  background-color: var(--background2);
   width: 100%;
   resize: both;
   overflow: auto;
@@ -150,7 +166,7 @@ a.back-to-top {
 
 
 #page4{ /*exp.*/
-  background-color: rgb(218,234,242);
+  background-color: var(--background2);
   width: 100%;
   resize: both;
   overflow: auto;
@@ -158,24 +174,18 @@ a.back-to-top {
 }
 
 #page5{ /*portfolio*/
-  background-color: rgb(227,248,253);
+  background-color: var(--background2);
   width: 100%;
   display:block;
   overflow:auto;
 }
 
 #page7{ /*contact me*/
-  background-color: rgb(218,234,242);
+  background-color: var(--background2);
   width: 100%;
-  height: 250px;;
+  height: 280px;
 }
 
-#resume{
-  background-color: rgb(227,248,253);
-  height: 100%;
-  width: 100%;
-  align-items: center;
-}
 
 /*STYLING FOR PORTFOLIO TABLE*/
 .top {
@@ -241,12 +251,13 @@ a.back-to-top {
 	font-size: 17px;
 }
 .ac-container label:hover{
-	background: rgb(51,127,165);
+	background: var(--background1);
+  color: var(--darkPurple);
 }
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
-	background: rgb(42,161,183);
-	color: white;
+	background: var(--background1);
+	color: var(--darkPurple);
 	box-shadow:
 		0px 0px 0px 1px rgba(155,155,155,0.3),
 		0px 2px 2px rgba(0,0,0,0.1);
@@ -259,10 +270,10 @@ a.back-to-top {
 	height: 24px;
 	right: 13px;
 	top: 7px;
-	background: transparent url(arrow_down.png) no-repeat center center;
+	background: transparent url(images/arrow_down.png) no-repeat center;
 }
 .ac-container input:checked + label:hover:after{
-	background-image: url(arrow_up.png);
+	background-image: url(images/arrow_up.png);
 }
 .ac-container input{
 	display: none;
@@ -300,22 +311,6 @@ a.back-to-top {
 	height: 190px;
 }
 
-/*contact me icon and text*/
-#icon {
-  font-size: 70px;
-  font-weight: lighter;
-  text-decoration: none;
-  text-align: center;
-  color: rgb(42,161,183);
-}
-#icon:hover{
-  color: darkslategrey;
-}
-#contactText{
-  color: rgb(51,127,165);
-  font-size: 20px;
-}
-
 #footer{
   text-align: right;
   position:fixed;
@@ -326,13 +321,18 @@ a.back-to-top {
   right: 0;
   height: 20px;
   line-height: 24px;
+  color: var(--darkBlush);
+  text-decoration: none;
+}
+
+.light {
+  color: var(--lightPink);
 }
 
 @media screen and (min-width: 	720px){
     .container{
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 50px;
     }
 
   p {
@@ -351,9 +351,10 @@ a.back-to-top {
     -webkit-margin-before: 0.0em;
     padding-top: 15px;
     padding-left: 10px;
-    color: darkslategrey;
+    color: var(--darkPurple);
     font-weight: bolder;
   }
+
 
   h2 {
       font-weight: bolder;
@@ -364,14 +365,15 @@ a.back-to-top {
       -webkit-margin-start: 0px;
       -webkit-margin-end: 0px;
       padding-top: 15px;
-      padding-left: 15px;
-      color: darkslategrey;
+      padding-left: 35px;
+      color: var(--darkPurple);
   }
+
 
   h3,h4{
     font-weight: bolder;
     padding-left: 10px;
-    color: darkslategrey;
+    color: var(--darkPurple);
   }
 
   ul, menu, dir {
@@ -384,14 +386,33 @@ a.back-to-top {
       -webkit-padding-start: 40px;
   }
 
-  a:link {
-      color: rgb(51,127,165);
+  a:link, a:visited{
+      color: var(--darkBlush);
       text-decoration: none;
   }
 
-  a:visited {
-      color: rgb(51,127,165);
-      text-decoration: none;
+  /*contact me icon and text*/
+  .icon {
+    font-size: 70px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
+    color: var(--purple1) !important;
+  }
+
+  .icon:hover{
+    color: var(--darkPurple) !important;
+  }
+
+  .contactText{
+    color: var(--purple1)!important;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .contactText:hover{
+    color: var(--darkPurple)!important;
+    font-size: 20px;
   }
 
   #ACsubheader{
