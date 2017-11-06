@@ -1,3 +1,19 @@
+:root {
+  --background1: rgba(227,225,236,1);
+  /*#e2e0ea;*/
+  --background2: rgba(244,244,247,1);
+  /*#d4d1e0;*/
+  --lightPink: #fee8de;
+  --purple1: #584c7d;
+  --purple2: #4f58ca;
+  --salmonPink: #e1949f;
+  --darkGrey: #ada7ad;
+  --grey: #d2cbd2;
+  --darkPurple: #2d3254;
+  --darkPurpleTransparent: rgba(59,65,86,0.85);
+  --darkBlush: #9a6068;
+}
+
 body {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   margin: 0px;
@@ -5,7 +21,7 @@ body {
   margin-top: 0px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgb(218,234,242);
+  background-color: var(--background2);
 }
 
 p{
@@ -21,5 +37,5 @@ p{
 }
 
 a:link, a:visited {
-    color: rgb(42,161,190);
+    color: var(--salmonPink);
 }
