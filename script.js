@@ -27,6 +27,8 @@ window.addEventListener('load',function(){
 	       return false;
   });
 
+  $("#ac-6").prop('checked', true);
+  $("#ac-8").prop('checked', true);
 });
 
 $(window).scroll(function(){
