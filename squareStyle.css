@@ -1,5 +1,3 @@
-
-
 canvas {
   background: #eee;
   display: block;
@@ -12,7 +10,7 @@ body {
   padding-top: 0px;
 }
 
-a {
+a, p {
   margin-left: 10px;
   margin-top: 10px;
 }
