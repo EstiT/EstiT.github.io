@@ -206,6 +206,7 @@ a.back-to-top {
   top:0;
   left:0;
   opacity:0;
+  color: black;
   font-weight: lighter;
   color: black;
   line-height: 1.8vw;
@@ -386,9 +387,14 @@ a.back-to-top {
       -webkit-padding-start: 40px;
   }
 
-  a:link, a:visited{
+  a, #footer, #climbingLink, #australiaLink, #worldsLink{
       color: var(--darkBlush);
       text-decoration: none;
+  }
+
+  .square{
+    color: black;
+    text-decoration: none;
   }
 
   /*contact me icon and text*/
