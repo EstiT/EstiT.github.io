@@ -5,7 +5,6 @@ var darkPurpleTransparent  = "rgba(59,65,86,0.85)";
 
 
 window.addEventListener('load',function(){
-   $("#homeM").css({ "border-bottom": "4px solid "+salmonPink});
   $('#australia').append("<img id = 'aussie' src='images/Australia.jpg' height='100px' width='120px' style='position: absolute; z-index: 3; display: none'>");
 
   $( "#australiaLink" ).mouseover(function() {
@@ -31,15 +30,16 @@ window.addEventListener('load',function(){
   $("#ac-8").prop('checked', true);
 });
 
-$(window).scroll(function(){
 
+$(window).scroll(function(){
+  //show/hide bring to top arrow
   if ( $(window).scrollTop() > 100 ) {
 		$('a.back-to-top').fadeIn('slow');
 	}
   else {
 		$('a.back-to-top').fadeOut('slow');
 	}
-
+  //menu oppacity
   if($('#home').offset().top >= -50){
     $("#menu").css('background-color', '');
   }
@@ -47,7 +47,11 @@ $(window).scroll(function(){
     $("#menu").css('background-color', darkPurpleTransparent);
   }
 
+  setMenuUnderline();
 
+})
+
+function setMenuUnderline(){
   if (isInView($('#page1'))){
    history.pushState(null, null, '#home');
    clearUnderline();
@@ -83,7 +87,7 @@ $(window).scroll(function(){
    clearUnderline();
    $("#contactM").css({ "border-bottom": "4px solid "+salmonPink});
  }
-})
+}
 
 function clearUnderline(){
   $("#homeM").css({ "border-bottom": "none" });
