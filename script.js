@@ -50,68 +50,49 @@ $(window).scroll(function(){
 
   if (isInView($('#page1'))){
    history.pushState(null, null, '#home');
+   clearUnderline();
    $("#homeM").css({ "border-bottom": "4px solid "+salmonPink});
-   $("#aboutM").css({ "border-bottom": "none" });
-   $("#eduM").css({ "border-bottom": "none" });
-   $("#expM").css({ "border-bottom": "none" });
-   $("#portfolioM").css({ "border-bottom": "none" });
-   $("#contactM").css({ "border-bottom": "none" });
  }
  else if(isInView($('#page2'))){
    history.pushState(null, null, '#aboutMe');
-   $("#homeM").css({ "border-bottom": "none" });
+   clearUnderline();
    $("#aboutM").css({ "border-bottom": "4px solid "+salmonPink});
-   $("#eduM").css({ "border-bottom": "none" });
-   $("#expM").css({ "border-bottom": "none" });
-   $("#portfolioM").css({ "border-bottom": "none" });
-   $("#contactM").css({ "border-bottom": "none" });
  }
  else if(isInView($('#skills'))){
    history.pushState(null, null, '#skills');
+   clearUnderline();
    $("#homeM").css({ "border-bottom": "4px solid transparent" });
-   $("#aboutM").css({ "border-bottom": "none" });
-   $("#eduM").css({ "border-bottom": "none" });
-   $("#expM").css({ "border-bottom": "none" });
-   $("#portfolioM").css({ "border-bottom": "none" });
-   $("#contactM").css({ "border-bottom": "none" });
  }
  else if(isInView($('#page3'))){
    history.pushState(null, null, '#education');
-   $("#homeM").css({ "border-bottom": "none" });
-   $("#aboutM").css({ "border-bottom": "none" });
+   clearUnderline();
    $("#eduM").css({ "border-bottom": "4px solid "+salmonPink});
-   $("#expM").css({ "border-bottom": "none" });
-   $("#portfolioM").css({ "border-bottom": "none" });
-   $("#contactM").css({ "border-bottom": "none" });
  }
  else if(isInView($('#page4'))){
    history.pushState(null, null, '#experience');
-   $("#homeM").css({ "border-bottom": "none" });
-   $("#aboutM").css({ "border-bottom": "none" });
-   $("#eduM").css({ "border-bottom": "none" });
+   clearUnderline();
    $("#expM").css({ "border-bottom": "4px solid "+salmonPink});
-   $("#portfolioM").css({ "border-bottom": "none" });
-   $("#contactM").css({ "border-bottom": "none" });
  }
  else if(isInView($('#portfolioCell'))){
    history.pushState(null, null, '#portfolio');
-   $("#homeM").css({ "border-bottom": "none" });
-   $("#aboutM").css({ "border-bottom": "none" });
-   $("#eduM").css({ "border-bottom": "none" });
-   $("#expM").css({ "border-bottom": "none" });
+   clearUnderline();
    $("#portfolioM").css({ "border-bottom": "4px solid "+salmonPink});
-   $("#contactM").css({ "border-bottom": "none" });
  }
  else if(isInView($('#page7'))){
    history.pushState(null, null, '#contactMe');
-   $("#homeM").css({ "border-bottom": "none" });
-   $("#aboutM").css({ "border-bottom": "none" });
-   $("#eduM").css({ "border-bottom": "none" });
-   $("#expM").css({ "border-bottom": "none" });
-   $("#portfolioM").css({ "border-bottom": "none" });
+   clearUnderline();
    $("#contactM").css({ "border-bottom": "4px solid "+salmonPink});
  }
 })
+
+function clearUnderline(){
+  $("#homeM").css({ "border-bottom": "none" });
+  $("#aboutM").css({ "border-bottom": "none" });
+  $("#eduM").css({ "border-bottom": "none" });
+  $("#expM").css({ "border-bottom": "none" });
+  $("#portfolioM").css({ "border-bottom": "none" });
+  $("#contactM").css({ "border-bottom": "none" });
+}
 
 
 function isInView(elem){
