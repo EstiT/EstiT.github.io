@@ -31,8 +31,19 @@ window.addEventListener('load',function(){
   $("#ac-8").prop('checked', true);
 });
 
-$(window).scroll(function(){
+function smoothScroll(href){
+  var $root = $('html, body');
 
+  $root.animate({
+      scrollTop: $(href).offset().top
+  }, 500, function () {
+      window.location.hash = href;
+  });
+
+  return false;
+}
+
+$(window).scroll(function(){
   if ( $(window).scrollTop() > 100 ) {
 		$('a.back-to-top').fadeIn('slow');
 	}
