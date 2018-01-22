@@ -12,21 +12,20 @@
 <header>
 <div>
   <ul id="menu">
-    <li><a id="homeM" href="#home">Home</a></li>
-    <li><a id="aboutM" href="#aboutMe">About Me</a></li>
-    <li><a id="eduM" href="#education">Education</a></li>
-    <li><a id="expM" href="#experience">Experience</a></li>
-    <li><a id="portfolioM" href="#portfolio">Portfolio</a></li>
+    <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
+    <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
+    <li><a id="eduM" onclick="smoothScroll('education')">Education</a></li>
+    <li><a id="expM" onclick="smoothScroll('experience')">Experience</a></li>
+    <li><a id="portfolioM" onclick="smoothScroll('portfolio')">Portfolio</a></li>
     <li><a id="resumeM" href="resume.html">Resume</a></li>
-    <li><a id="contactM" href="#contactMe">Contact Me</a></li>
+    <li><a id="contactM" onclick="smoothScroll('contactMe')">Contact Me</a></li>
   </ul>
 </div>
 </header>
 
   <body>
     <main class="container bg-1">
-      <div id="page1">
-        <a id="home" > </a>
+      <div id="home">
         <table width="80%" height="100%">
           <td style="padding-left:20px">
             <h1 class="light">Esti Tweg</h1>
@@ -35,8 +34,7 @@
         </table>
       </div>
 
-      <div id="page2">
-        <a id="aboutMe" > </a>
+      <div id="aboutMe">
         <br><br>
         <h2>About Me</h2>
 
@@ -79,8 +77,7 @@
       </div>
 
 
-      <div id="page3">
-        <a id="education"> </a>
+      <div id="education">
         <h2 style= "padding-top: 55px;">Education</h2>
           <section class="ac-container ">
             <h3 id="ACsubheader">Formal</h3>
@@ -152,8 +149,7 @@
       </div>
 
 
-      <div id="page4">
-        <a id="experience" > </a>
+      <div id="experience">
         <h2 style= "padding-top: 55px;">Work Experience</h2>
         <section class="ac-container ">
           <div>
@@ -198,8 +194,7 @@
       </div>
 
 
-      <div id="page5">
-        <a id="portfolio" > </a>
+      <div id="portfolio">
         <a target="_blank" href="https://github.com/EstiT">
           <h2 style= "padding-top: 55px;">Portfolio</h2>
         </a>
@@ -302,9 +297,8 @@
       </div>
 
 
-      <div id="page7">
+      <div id="contactMe">
         <br><br>
-        <a id="contactMe" > </a>
         <h2>Contact Me</h2>
         <table border=0 width= "100%">
           <tr>

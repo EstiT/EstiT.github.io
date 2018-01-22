@@ -5,6 +5,7 @@ var darkPurpleTransparent  = "rgba(59,65,86,0.85)";
 
 
 window.addEventListener('load',function(){
+  setMenuUnderline();
   $('#australia').append("<img id = 'aussie' src='images/Australia.jpg' height='100px' width='120px' style='position: absolute; z-index: 3; display: none'>");
 
   $( "#australiaLink" ).mouseover(function() {
@@ -31,6 +32,12 @@ window.addEventListener('load',function(){
 });
 
 
+function smoothScroll(target){
+    document.getElementById(target).scrollIntoView({
+      behavior: 'smooth', block: "start", inline: "nearest"
+  });
+}
+
 $(window).scroll(function(){
   //show/hide bring to top arrow
   if ( $(window).scrollTop() > 100 ) {
@@ -40,7 +47,7 @@ $(window).scroll(function(){
 		$('a.back-to-top').fadeOut('slow');
 	}
   //menu oppacity
-  if($('#home').offset().top >= -50){
+  if($(window).scrollTop() < document.getElementById("home").offsetTop + 60){
     $("#menu").css('background-color', '');
   }
   else{
@@ -52,38 +59,31 @@ $(window).scroll(function(){
 })
 
 function setMenuUnderline(){
-  if (isInView($('#page1'))){
-   history.pushState(null, null, '#home');
+  if (isInView($('#home'))){
    clearUnderline();
    $("#homeM").css({ "border-bottom": "4px solid "+salmonPink});
  }
- else if(isInView($('#page2'))){
-   history.pushState(null, null, '#aboutMe');
+ else if(isInView($('#aboutMe'))){
    clearUnderline();
    $("#aboutM").css({ "border-bottom": "4px solid "+salmonPink});
  }
  else if(isInView($('#skills'))){
-   history.pushState(null, null, '#skills');
    clearUnderline();
    $("#homeM").css({ "border-bottom": "4px solid transparent" });
  }
- else if(isInView($('#page3'))){
-   history.pushState(null, null, '#education');
+ else if(isInView($('#education'))){
    clearUnderline();
    $("#eduM").css({ "border-bottom": "4px solid "+salmonPink});
  }
- else if(isInView($('#page4'))){
-   history.pushState(null, null, '#experience');
+ else if(isInView($('#experience'))){
    clearUnderline();
    $("#expM").css({ "border-bottom": "4px solid "+salmonPink});
  }
  else if(isInView($('#portfolioCell'))){
-   history.pushState(null, null, '#portfolio');
    clearUnderline();
    $("#portfolioM").css({ "border-bottom": "4px solid "+salmonPink});
  }
- else if(isInView($('#page7'))){
-   history.pushState(null, null, '#contactMe');
+ else if(isInView($('#contactMe'))){
    clearUnderline();
    $("#contactM").css({ "border-bottom": "4px solid "+salmonPink});
  }
