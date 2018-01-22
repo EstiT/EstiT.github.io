@@ -90,7 +90,7 @@ a.back-to-top {
 }
 
 #menu a {
-  font-size: 1.1em;
+  font-size: 20px;
   color: var(--lightPink);
   display: block;
   float: left;

@@ -55,7 +55,6 @@ $(window).scroll(function(){
   }
 
   setMenuUnderline();
-
 })
 
 function setMenuUnderline(){
