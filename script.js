@@ -36,6 +36,7 @@ function smoothScroll(target){
     document.getElementById(target).scrollIntoView({
       behavior: 'smooth', block: "start", inline: "nearest"
   });
+  history.pushState(null, null, "#"+target);
 }
 
 $(window).scroll(function(){
