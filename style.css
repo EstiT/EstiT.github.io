@@ -333,29 +333,26 @@ a.back-to-top {
 
 /* Menu icon styling */
 .menuContainer {
-  display: inline-block;
+  display: none;
   cursor: pointer;
   margin-top: 5px;
   margin-right: 10px !important;
   margin-bottom: 3px;
-  /* padding-top: 1px; */
-  padding-right: 3px;
-  padding-left: 3px;
-  /* padding-bottom: 3px; */
+  padding-right: 7px;
+  padding-left: 7px;
   background-color: var(--darkPurple);
   right: 0;
-   top: 0;
-  /* float: right;*/
+  top: 0;
   position: fixed;
   border: 1px solid var(--lightPink);
   border-radius: 4px;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 30px;
+    width: 27px;
     height: 2px;
     background-color: var(--lightPink);
-    margin: 6px 0;
+    margin: 9px 0;
     transition: 0.4s;
 }
 
@@ -369,6 +366,11 @@ a.back-to-top {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 790px) {
+  #menu     { display: none; }
+  .menuContainer { display: inline-block; }
 }
 
 @media screen and (min-width: 	720px){
