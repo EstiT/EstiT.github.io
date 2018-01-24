@@ -106,3 +106,7 @@ function isInView(elem){
   var elemBottom = elemTop + $(elem).height();
   return ((elemBottom <= docViewBottom + 10) && (elemTop >= docViewTop));
 }
+
+function animateMenuIcon(menu) {
+    menu.classList.toggle("change");
+}
