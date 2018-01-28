@@ -9,7 +9,7 @@
   --salmonPink: #e1949f;
   --darkGrey: #ada7ad;
   --grey: #d2cbd2;
-  --darkPurple: #2d3254;
+  --darkPurple: #383d61;
   --darkPurpleTransparent: rgba(59,65,86,0.85);
   --darkBlush: #9a6068;
 }
@@ -75,7 +75,7 @@ a.back-to-top {
   margin: 0px;
   padding-top: 0px;
   margin-top: 0px;
-  width: auto;
+  width: 100vw;
   z-index: 10000;
 }
 
@@ -107,8 +107,8 @@ a.back-to-top {
 #header {
   transition: all .4s ease-in;
   height:43px;
-  width: auto;
-  background-color: var(--darkPurpleTransparent);
+  width: 100vw;
+  background-color: var(--darkPurple);
   position:fixed;
   z-index:7;
   margin: 0 0 0 0;
@@ -137,7 +137,7 @@ a.back-to-top {
   text-align: right;
   right:0;
   position: fixed;
-  background-color: var(--darkPurpleTransparent);
+  background-color: var(--darkPurple);
   width: 100vw;
   position: fixed;
   z-index:8;
@@ -154,6 +154,7 @@ a.back-to-top {
 
 #mobileMenu a{
   color: var(--lightPink);
+  text-decoration: none;
 }
 
 .bar1, .bar2, .bar3 {

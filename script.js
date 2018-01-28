@@ -37,6 +37,9 @@ function smoothScroll(target){
       behavior: 'smooth', block: "start", inline: "nearest"
   });
   history.pushState(null, null, "#"+target);
+  if($("#mobileMenu").is(':visible')){
+    animateMenuIcon(document.getElementsByClassName("menuContainer")[0]);
+  }
 }
 
 $(window).scroll(function(){
