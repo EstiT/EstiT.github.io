@@ -9,17 +9,24 @@
   </head>
 
   <header style="padding-bottom: 43px;">
-  <div>
-    <ul id="menu" style="background-color: rgba(59,65,86,0.85);">
-      <li><a id="homeM" href="index.html#home">Home</a></li>
-      <li><a id="aboutM" href="index.html#aboutMe">About Me</a></li>
-      <li><a id="eduM" href="index.html#education">Education</a></li>
-      <li><a id="expM" href="index.html#experience">Experience</a></li>
-      <li><a id="portfolioM" href="index.html#portfolio">Portfolio</a></li>
-      <li><a id="resumeM" href="resume.html" style="border-bottom: 4px solid #e1949f;">Resume</a></li>
-      <li><a id="contactM" href="index.html#contactMe">Contact Me</a></li>
-    </ul>
-  </div>
+    <div id="header"></div>
+    <div>
+      <ul id="menu" style="background-color: rgba(59,65,86,0.85);">
+        <li><a id="homeM" href="index.html#home">Home</a></li>
+        <li><a id="aboutM" href="index.html#aboutMe">About Me</a></li>
+        <li><a id="eduM" href="index.html#education">Education</a></li>
+        <li><a id="expM" href="index.html#experience">Experience</a></li>
+        <li><a id="portfolioM" href="index.html#portfolio">Portfolio</a></li>
+        <li><a id="resumeM" href="resume.html" style="border-bottom: 4px solid #e1949f;">Resume</a></li>
+        <li><a id="contactM" href="index.html#contactMe">Contact Me</a></li>
+      </ul>
+    </div>
+    <div class="menuContainer" onclick="animateMenuIcon(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul id = "menu"></ul>
+    </div>
   </header>
   <body>
     <embed src="EstiTwegResume.pdf" width="100%" style = "min-height:1000px;" type='application/pdf'>
@@ -27,3 +34,9 @@
 
 
 </html>
+
+<script>
+function animateMenuIcon(menu) {
+    menu.classList.toggle("change");
+}
+</script>

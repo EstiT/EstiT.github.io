@@ -106,29 +106,29 @@ a.back-to-top {
 
 #header {
   transition: all .4s ease-in;
-  height:50px;
+  height:43px;
   width:100%;
   background-color: var(--darkPurpleTransparent);
-  z-index:0;
+  z-index:1;
   position:fixed;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   top: 0;
   left: 0;
+  display: none;
 }
 
 /* Menu icon styling */
 .menuContainer {
   display: none;
   cursor: pointer;
-  margin-top: 3px;
-  margin-right: 10px !important;
-  margin-bottom: 3px;
+  margin-right: 15px !important;
   padding-right: 7px;
   padding-left: 7px;
   right: 0;
   top: 0;
   position: fixed;
+  z-index:2;
 }
 
 
@@ -154,7 +154,7 @@ a.back-to-top {
 
 @media (max-width: 790px) {
   #menu     { display: none; }
-  .menuContainer { display: inline-block; }
+  .menuContainer, #header { display: inline-block; }
 }
 
 
