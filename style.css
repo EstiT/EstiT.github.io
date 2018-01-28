@@ -75,7 +75,7 @@ a.back-to-top {
   margin: 0px;
   padding-top: 0px;
   margin-top: 0px;
-  width: 100%;
+  width: auto;
   z-index: 10000;
 }
 
@@ -107,10 +107,10 @@ a.back-to-top {
 #header {
   transition: all .4s ease-in;
   height:43px;
-  width:100%;
+  width: auto;
   background-color: var(--darkPurpleTransparent);
-  z-index:1;
   position:fixed;
+  z-index:7;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   top: 0;
@@ -128,15 +128,32 @@ a.back-to-top {
   right: 0;
   top: 0;
   position: fixed;
-  z-index:2;
+  z-index:8;
 }
 
 #mobileMenu {
   display: none;
-  padding: 50px 15px;
+  padding: 35px 25px;
   text-align: right;
   right:0;
   position: fixed;
+  background-color: var(--darkPurpleTransparent);
+  width: 100vw;
+  position: fixed;
+  z-index:8;
+}
+
+#mobileMenu ul{
+  list-style: none;
+}
+
+#mobileMenu li{
+  margin-top:5px;
+  font-size: 18px;
+}
+
+#mobileMenu a{
+  color: var(--lightPink);
 }
 
 .bar1, .bar2, .bar3 {
@@ -167,7 +184,7 @@ a.back-to-top {
 
 /*STYLING FOR EACH PAGE*/
 #home{
-  width: 100%;
+  width: auto;
   height: 36.6vw;
   background-size: cover;
   background-position: center;
@@ -181,7 +198,7 @@ a.back-to-top {
 }
 
 #aboutMe{
-  width: 100%;
+  width: auto;
   min-height: 370px;
   background: var(--background2);
 }
@@ -198,7 +215,7 @@ a.back-to-top {
 }
 
 #skills{
-  width: 100%;
+  width: auto;
   resize: both;
   min-height: 220px;
   background-color: var(--background2);
@@ -210,7 +227,7 @@ a.back-to-top {
 
 #education{
   background-color: var(--background2);
-  width: 100%;
+  width: auto;
   resize: both;
   overflow: auto;
   min-height: 525px;
@@ -219,7 +236,7 @@ a.back-to-top {
 
 #experience{
   background-color: var(--background2);
-  width: 100%;
+  width: auto;
   resize: both;
   overflow: auto;
   min-height: 300px;
@@ -227,14 +244,14 @@ a.back-to-top {
 
 #portfolio{
   background-color: var(--background2);
-  width: 100%;
+  width: auto;
   display:block;
   overflow:auto;
 }
 
 #contactMe{ 
   background-color: var(--background2);
-  width: 100%;
+  width: auto;
   height: 280px;
 }
 
@@ -337,7 +354,6 @@ a.back-to-top {
 	overflow: hidden;
 	height: 0px;
 	position: relative;
-	/*z-index: 10;*/
 	transition:
 		height 0.3s ease-in-out,
 		box-shadow 0.6s linear;
