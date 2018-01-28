@@ -108,5 +108,14 @@ function isInView(elem){
 }
 
 function animateMenuIcon(menu) {
+    if($("#mobileMenu").is(':visible')){
+      $("#header").height(50);
+      $("#home").css({"top": 0});
+    }
+    else{
+      $("#header").height(250);
+      $("#home").css({"top": 200});
+    }
     menu.classList.toggle("change");
+    $("#mobileMenu").slideToggle();
 }
