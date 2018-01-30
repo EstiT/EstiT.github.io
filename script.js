@@ -112,11 +112,9 @@ function isInView(elem){
 
 function animateMenuIcon(menu) {
     if($("#mobileMenu").is(':visible')){
-      $("#home").css({"top": 0});
     }
     else{
       $("#mobileMenu").height(200);
-      $("#home").css({"top": 200});
     }
     menu.classList.toggle("change");
     $("#mobileMenu").slideToggle();
