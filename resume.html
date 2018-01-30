@@ -10,6 +10,18 @@
 
   <header style="padding-bottom: 43px;">
     <div id="header"></div>
+    <div id="mobileMenu">
+      <hr >
+      <ul>
+        <li><a id="homeM" href="index.html#home">Home</a></li>
+        <li><a id="aboutM" href="index.html#aboutMe">About Me</a></li>
+        <li><a id="eduM" href="index.html#education">Education</a></li>
+        <li><a id="expM" href="index.html#experience">Experience</a></li>
+        <li><a id="portfolioM" href="index.html#portfolio">Portfolio</a></li>
+        <li><a id="resumeM" href="resume.html" style="border-bottom: 4px solid #e1949f;">Resume</a></li>
+        <li><a id="contactM" href="index.html#contactMe">Contact Me</a></li>
+      </ul>
+  </div>
     <div>
       <ul id="menu" style="background-color: rgba(59,65,86,0.85);">
         <li><a id="homeM" href="index.html#home">Home</a></li>
@@ -29,7 +41,7 @@
     </div>
   </header>
   <body>
-    <embed src="EstiTwegResume.pdf" width="100%" style = "min-height:1000px;" type='application/pdf'>
+    <embed id="resume" src="EstiTwegResume.pdf" width="100%" style = "min-height:100vw;" type='application/pdf'>
   </body>
 
 
@@ -38,5 +50,13 @@
 <script>
 function animateMenuIcon(menu) {
     menu.classList.toggle("change");
+    $("#mobileMenu").slideToggle();
+    if(!$(".menuContainer").hasClass("change") ){
+      $("#resume").css({"margin-top": 0});
+    }
+    else{
+      $("#resume").css({"margin-top": 250});
+    }
+
 }
 </script>
