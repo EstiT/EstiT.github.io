@@ -29,6 +29,12 @@ window.addEventListener('load',function(){
 
   $("#ac-6").prop('checked', true);
   $("#ac-8").prop('checked', true);
+
+  //show mobile view if needed
+  if(mobileCheck()){
+    $("#mobilePortfolioTable").show();
+    $("#portfolioTable").hide();
+  }
 });
 
 
