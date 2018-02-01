@@ -44,7 +44,6 @@ function smoothScroll(target){
 
 $(document).mouseup(function(e) {
   var container = $("#mobileMenu");
-  console.log(e.target);
   if (!$("#mobileMenu").is(e.target) && $("#mobileMenu").has(e.target).length === 0 &&
       !$(".bar2").is(e.target) && $(".bar2").has(e.target).length === 0 &&
       !$(".bar3").is(e.target) && $(".bar3").has(e.target).length === 0 &&

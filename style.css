@@ -255,7 +255,7 @@ a.back-to-top {
 #contactMe{
   background-color: var(--background2);
   width: auto;
-  height: 280px;
+  height: 287px;
 }
 
 
@@ -399,6 +399,10 @@ a.back-to-top {
   color: var(--lightPink);
 }
 
+.dark{
+  color: var(--darkPurple);
+}
+
 @media screen and (min-width: 	720px){
     .container{
       margin-left: auto;
@@ -435,7 +439,6 @@ a.back-to-top {
       -webkit-margin-start: 0px;
       -webkit-margin-end: 0px;
       padding-top: 15px;
-      padding-left: 35px;
       color: var(--darkPurple);
   }
 
