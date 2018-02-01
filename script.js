@@ -42,6 +42,15 @@ function smoothScroll(target){
   }
 }
 
+$(document).mouseup(function(e) {
+  var container = $("#mobileMenu");
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    document.getElementsByClassName("menuContainer")[0].classList.remove("change");
+    $("#mobileMenu").slideUp();
+    $("#header").show();
+  }
+});
+
 $(window).scroll(function(){
   //show/hide bring to top arrow
   if ( $(window).scrollTop() > 100 ) {

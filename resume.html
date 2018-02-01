@@ -52,4 +52,12 @@ function animateMenuIcon(menu) {
     menu.classList.toggle("change");
     $("#mobileMenu").slideToggle();
 }
+$(document).mouseup(function(e) {
+  var container = $("#mobileMenu");
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    document.getElementsByClassName("menuContainer")[0].classList.remove("change");
+    $("#mobileMenu").slideUp();
+    $("#header").show();
+  }
+});
 </script>
