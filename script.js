@@ -44,10 +44,14 @@ function smoothScroll(target){
 
 $(document).mouseup(function(e) {
   var container = $("#mobileMenu");
-  if (!container.is(e.target) && container.has(e.target).length === 0) {
-    document.getElementsByClassName("menuContainer")[0].classList.remove("change");
-    $("#mobileMenu").slideUp();
-    $("#header").show();
+  console.log(e.target);
+  if (!$("#mobileMenu").is(e.target) && $("#mobileMenu").has(e.target).length === 0 &&
+      !$(".bar2").is(e.target) && $(".bar2").has(e.target).length === 0 &&
+      !$(".bar3").is(e.target) && $(".bar3").has(e.target).length === 0 &&
+      !$(".menuContainer").is(e.target) && $(".menuContainer").has(e.target).length === 0) {
+        document.getElementsByClassName("menuContainer")[0].classList.remove("change");
+        $("#mobileMenu").slideUp();
+        $("#header").show();
   }
 });
 
@@ -121,6 +125,7 @@ function isInView(elem){
 
 function animateMenuIcon(menu) {
     if($("#mobileMenu").is(':visible')){
+      $("#mobileMenu").height(0);
     }
     else{
       $("#mobileMenu").height(200);
