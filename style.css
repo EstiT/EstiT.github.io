@@ -9,7 +9,7 @@
   --salmonPink: #e1949f;
   --darkGrey: #ada7ad;
   --grey: #d2cbd2;
-  --darkPurple: #2d3254;
+  --darkPurple: #383d61;
   --darkPurpleTransparent: rgba(59,65,86,0.85);
   --darkBlush: #9a6068;
 }
@@ -75,7 +75,7 @@ a.back-to-top {
   margin: 0px;
   padding-top: 0px;
   margin-top: 0px;
-  width: 100%;
+  width: 100vw;
   z-index: 10000;
 }
 
@@ -105,18 +105,89 @@ a.back-to-top {
 }
 
 #header {
-    height: 50px;
-    width: 600px;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    z-index: 10000;
+  transition: all .4s ease-in;
+  height:43px;
+  width: 100vw;
+  background-color: var(--darkPurple);
+  position:fixed;
+  z-index:7;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* Menu icon styling */
+.menuContainer {
+  display: none;
+  cursor: pointer;
+  margin-right: 15px !important;
+  padding-right: 7px;
+  padding-left: 7px;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index:8;
+}
+
+#mobileMenu {
+  display: none;
+  padding: 35px 25px;
+  text-align: right;
+  right:0;
+  position: fixed;
+  background-color: var(--darkPurple);
+  width: 100vw;
+  position: fixed;
+  z-index:8;
+}
+
+#mobileMenu ul{
+  list-style: none;
+  margin: 0 0 0 0;
+}
+
+#mobileMenu li{
+  padding-top:4px;
+  padding-bottom:4px;
+  font-size: 18px;
+}
+
+#mobileMenu a{
+  color: var(--lightPink);
+  text-decoration: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 27px;
+    height: 3px;
+    background-color: var(--lightPink);
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 790px) {
+  #menu     { display: none; }
+  .menuContainer, #header { display: inline-block; }
 }
 
 
 /*STYLING FOR EACH PAGE*/
 #home{
-  width: 100%;
+  width: auto;
   height: 36.6vw;
   background-size: cover;
   background-position: center;
@@ -130,15 +201,15 @@ a.back-to-top {
 }
 
 #aboutMe{
-  width: 100%;
+  width: auto;
   min-height: 370px;
   background: var(--background2);
 }
 
-#aboutMe p{
+#aboutMe p, #skills p{
   line-height: 145%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-bottom: 30px;
 }
 
@@ -147,7 +218,7 @@ a.back-to-top {
 }
 
 #skills{
-  width: 100%;
+  width: auto;
   resize: both;
   min-height: 220px;
   background-color: var(--background2);
@@ -159,7 +230,7 @@ a.back-to-top {
 
 #education{
   background-color: var(--background2);
-  width: 100%;
+  width: auto;
   resize: both;
   overflow: auto;
   min-height: 525px;
@@ -168,7 +239,7 @@ a.back-to-top {
 
 #experience{
   background-color: var(--background2);
-  width: 100%;
+  width: auto;
   resize: both;
   overflow: auto;
   min-height: 300px;
@@ -176,15 +247,15 @@ a.back-to-top {
 
 #portfolio{
   background-color: var(--background2);
-  width: 100%;
+  width: auto;
   display:block;
   overflow:auto;
 }
 
-#contactMe{ 
+#contactMe{
   background-color: var(--background2);
-  width: 100%;
-  height: 290px;
+  width: auto;
+  height: 280px;
 }
 
 
@@ -204,8 +275,6 @@ a.back-to-top {
 }
 #portfolioCell .text {
   position:absolute;
-  top:0;
-  left:0;
   opacity:0;
   color: black;
   font-weight: lighter;
@@ -237,10 +306,10 @@ a.back-to-top {
 
 /*STYLING FOR EDUCATION DROP DOWN*/
 .ac-container{
-	width: 575px;
+	width: auto;
 	margin: 10px auto 30px auto;
   float: inherit;
-  padding: 0.5% 1% 1% 2.5%;
+  padding: 4% 4% 4% 4%;
 }
 .ac-container label{
 	padding: 2px 5px;
@@ -286,7 +355,6 @@ a.back-to-top {
 	overflow: hidden;
 	height: 0px;
 	position: relative;
-	/*z-index: 10;*/
 	transition:
 		height 0.3s ease-in-out,
 		box-shadow 0.6s linear;
