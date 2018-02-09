@@ -1,6 +1,7 @@
 var salmonPink = "#e1949f";
 var darkPurpleTransparent  = "rgba(59,65,86,0.85)";
-
+var purple1 = "#584c7d";
+var darkPurple = "#383d61";
 
 
 
@@ -34,7 +35,21 @@ window.addEventListener('load',function(){
   if(mobileCheck()){
     $("#mobilePortfolioTable").show();
     $("#portfolioTable").hide();
-  }
+    $( ".icon" ).css({"font-size": "50px",
+                    "font-weight": "lighter",
+                "text-decoration": "none",
+                     "text-align": "center",
+                          "color": "purple1"});
+
+
+$( ".contactText" ).css({"color": "purple1",
+                     "font-size":"20px",
+               "text-decoration": "none"});
+
+ $( "#footer a" ).css({"text-decoration": "none"});
+
+}
+
 });
 
 
