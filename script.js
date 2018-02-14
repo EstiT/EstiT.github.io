@@ -63,12 +63,14 @@ function smoothScroll(target){
   }
 }
 
+//closes mobile menu when clicked outside 
 $(document).mouseup(function(e) {
   var container = $("#mobileMenu");
   if (!$("#mobileMenu").is(e.target) && $("#mobileMenu").has(e.target).length === 0 &&
       !$(".bar2").is(e.target) && $(".bar2").has(e.target).length === 0 &&
       !$(".bar3").is(e.target) && $(".bar3").has(e.target).length === 0 &&
-      !$(".menuContainer").is(e.target) && $(".menuContainer").has(e.target).length === 0) {
+      !$(".menuContainer").is(e.target) && $(".menuContainer").has(e.target).length === 0 &&
+      mobileCheck()) {
         document.getElementsByClassName("menuContainer")[0].classList.remove("change");
         $("#mobileMenu").slideUp();
         $("#header").show();
