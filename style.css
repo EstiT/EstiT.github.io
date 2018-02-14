@@ -38,7 +38,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto;
 }
 
 th, td {
@@ -271,7 +271,7 @@ a.back-to-top {
   height: auto;
 }
 #portfolioCell.image,#portfolioCell .text {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 #portfolioCell .text {
   position:absolute;
@@ -411,10 +411,8 @@ a.back-to-top {
 
   p {
       display: block;
-      -webkit-margin-before: 1em;
-      -webkit-margin-after: 0em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
+      margin-left: 0px;
+      margin-right: : 0px;
       padding-bottom: 15px;
       padding-left: 20px;
   }
@@ -422,7 +420,7 @@ a.back-to-top {
   h1 {
     display: block;
     font-size: 2em;
-    -webkit-margin-before: 0.0em;
+    margin-left: 0.0px;
     padding-top: 15px;
     padding-left: 10px;
     color: var(--darkPurple);
@@ -434,10 +432,8 @@ a.back-to-top {
       font-weight: bolder;
       display: block;
       font-size: 1.5em;
-      -webkit-margin-before: 0.0em;
-      -webkit-margin-after: 0.83em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
+      margin-left: 0.0px;
+      margin-right: 0.0px;
       padding-top: 15px;
       color: var(--darkPurple);
   }
