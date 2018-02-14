@@ -383,12 +383,9 @@ a.back-to-top {
 
 #footer{
   text-align: right;
-  position:bottom;
-  margin: -3px 0px 0px 0px;
-  padding: 0px 12px 0px 0px;
-  top: 96.3vh;
-  left: 0;
-  right: 0;
+  background-color: var(--background2);
+  margin: -5px 0px 0px 0px;
+  padding: 0px 12px 10px 0px;
   height: 20px;
   line-height: 24px;
   color: var(--darkBlush);
@@ -412,7 +409,7 @@ a.back-to-top {
   p {
       display: block;
       margin-left: 0px;
-      margin-right: : 0px;
+      margin-right: 0px;
       padding-bottom: 15px;
       padding-left: 20px;
   }
@@ -448,11 +445,9 @@ a.back-to-top {
   ul, menu, dir {
       display: block;
       list-style-type: disc;
-      -webkit-margin-before: 0em;
-      -webkit-margin-after: 0em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
-      -webkit-padding-start: 40px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 40px;
   }
 
   a, #footer, #climbingLink, #australiaLink, #worldsLink{
