@@ -7,14 +7,17 @@ var darkPurple = "#383d61";
 
 window.addEventListener('load',function(){
   setMenuUnderline();
-  $('#australia').append("<img id = 'aussie' src='images/Australia.jpg' height='100px' width='120px' style='position: absolute; z-index: 3; display: none'>");
 
-  $( "#australiaLink" ).mouseover(function() {
-    $( "#australia" ).fadeIn( 175 );
+  $( "#ausLink" ).mouseover(function() {
+    $( "#aus" ).fadeIn( 175 );
   });
 
-  $( "#climbingLink" ).mouseover(function() {
-    $( "#climbing" ).fadeIn( 175 );
+  $( "#greeceLink" ).mouseover(function() {
+    $( "#greece" ).fadeIn( 175 );
+  });
+
+  $( "#sfLink" ).mouseover(function() {
+    $( "#sf" ).fadeIn( 175 );
   });
 
   $( "#worldsLink" ).mouseover(function() {
@@ -28,8 +31,10 @@ window.addEventListener('load',function(){
 	       return false;
   });
 
-  $("#ac-6").prop('checked', true);
-  $("#ac-8").prop('checked', true);
+// open drop downs
+  $("#ac-1").prop('checked', true);
+  $("#ac-3").prop('checked', true);
+  $("#ac-9").prop('checked', true);
 
   //show mobile view if needed
   if(mobileCheck()){
@@ -63,7 +68,7 @@ function smoothScroll(target){
   }
 }
 
-//closes mobile menu when clicked outside 
+//closes mobile menu when clicked outside
 $(document).mouseup(function(e) {
   var container = $("#mobileMenu");
   if (!$("#mobileMenu").is(e.target) && $("#mobileMenu").has(e.target).length === 0 &&
