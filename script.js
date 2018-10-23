@@ -1,5 +1,5 @@
 var salmonPink = "#e1949f";
-var darkPurpleTransparent  = "rgba(59,65,86,0.85)";
+var darkPurpleTransparent  = "rgba(59,65,86,0.95)";
 var purple1 = "#584c7d";
 var darkPurple = "#383d61";
 
@@ -10,26 +10,11 @@ window.addEventListener('load',function(){
   if(mobileCheck()){
     $("#mobilePortfolioTable").show();
     $("#portfolioTable").hide();
-    $( ".icon" ).css({"font-size": "50px",
-                    "font-weight": "lighter",
-                "text-decoration": "none",
-                     "text-align": "center",
-                          "color": "purple1"});
 
-
-$( ".contactText" ).css({"color": "purple1",
-                     "font-size":"20px",
-               "text-decoration": "none"});
-
- $( "#footer a" ).css({"text-decoration": "none"});
-
- //decrease font size for name
- $("#name").css({"font-size": "1.6em",
+    //decrease font size for name
+    $("#name").css({"font-size": "1.6em",
                "padding-top": "20px"});
- $("#subhead").css({"font-size": "1.2em"});
-
- //abreiviate about me
- $('#aboutMeText').html("Welcome to my website! My name is Esti Tweg and I am in my last year of Computer Science at Carleton University in Ottawa. I specialize in Mobile Application Development and minor in Business. When I’m not studying or coding for fun, you can find me rock climbing or travelling.");
+    $("#subhead").css({"font-size": "1.2em"});
 
 }
 
