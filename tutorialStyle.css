@@ -1,0 +1,50 @@
+:root {
+  --background1: rgba(227,225,236,1);
+  /*#e2e0ea;*/
+  --background2: rgba(244,244,247,1);
+  /*#d4d1e0;*/
+  --lightPink: #fee8de;
+  --purple1: #584c7d;
+  --purple2: #4f58ca;
+  --salmonPink: #e1949f;
+  --darkGrey: #ada7ad;
+  --grey: #d2cbd2;
+  --darkPurple: #2d3254;
+  --darkPurpleTransparent: rgba(59,65,86,0.85);
+  --darkBlush: #9a6068;
+}
+
+body {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  margin: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--background2);
+  padding-left: 30px;
+}
+
+p{
+    display: block;
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+a:link {
+    color: var(--darkPurple);
+}
+
+
+h4{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
