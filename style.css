@@ -201,8 +201,7 @@ a.back-to-top {
 
 .bg-1{
     background: url("images/sky.png") no-repeat top center fixed;
-    background-size: contain;
-    height: 100%;
+    background-size:100% 60%;
 }
 
 #aboutMe{

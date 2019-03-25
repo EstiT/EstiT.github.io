@@ -15,6 +15,7 @@ window.addEventListener('load',function(){
     $("#name").css({"font-size": "1.6em",
                "padding-top": "20px"});
     $("#subhead").css({"font-size": "1.2em"});
+    $("#home").css({"height":"40vw"})
 
 }
 
