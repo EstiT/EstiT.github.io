@@ -14,7 +14,7 @@ window.addEventListener('load',function(){
     //decrease font size for name
     $("#name").css({"font-size": "1.6em",
                "padding-top": "20px"});
-    $("#subhead").css({"font-size": "1.2em"});
+    $("#subhead").css({"font-size": "1.1em", "padding-left": "20px"});
     $("#home").css({"height":"40vw"})
 
 }

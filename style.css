@@ -107,7 +107,7 @@ a.back-to-top {
 #header {
   transition: all .4s ease-in;
   height:43px;
-  width: 100vw;
+  width: 100%;
   background-color: var(--darkPurple);
   position:fixed;
   z-index:7;
@@ -138,7 +138,7 @@ a.back-to-top {
   right:0;
   position: fixed;
   background-color: var(--darkPurple);
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index:8;
 }
@@ -193,7 +193,7 @@ a.back-to-top {
 /*STYLING FOR EACH PAGE*/
 #home{
   width: auto;
-  height: 36.6vw;
+  height: 37vw;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -400,10 +400,6 @@ a.back-to-top {
 
 
 @media screen and (min-width: 775px){
-    .container{
-      margin-left: auto;
-      margin-right: auto;
-    }
 
     #portfolioTable{
       display:block;
