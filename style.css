@@ -33,6 +33,7 @@ body {
   margin-top: 0px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position:absolute
 }
 
 img {
@@ -168,8 +169,9 @@ a.back-to-top {
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+    width: 28px;
 }
 
 .change .bar2 {opacity: 0;}
@@ -201,7 +203,7 @@ a.back-to-top {
 
 .bg-1{
     background: url("images/sky.png") no-repeat top center fixed;
-    background-size:100% 60%;
+    background-size:100% 37vw;
 }
 
 #aboutMe{

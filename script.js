@@ -16,7 +16,7 @@ window.addEventListener('load',function(){
                "padding-top": "20px"});
     $("#subhead").css({"font-size": "1.1em", "padding-left": "20px"});
     $("#home").css({"height":"40vw"})
-
+    $(".bg-1").css({"background-size":"100% 40vw"})
 }
 
   setMenuUnderline();
