@@ -187,23 +187,35 @@ a.back-to-top {
   .menuContainer, #header { display: inline-block; }
   #mobilePortfolioTable { display:block; }
   #portfolioTable{ display:none; }
-  #shortAboutMeText{display:inline-block;}
-  #aboutMeText{display:none;}
 }
 
 
 /*STYLING FOR EACH PAGE*/
 #home{
   width: auto;
-  height: 37vw;
+  height: 42vw;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .bg-1{
-    background: url("images/sky.png") no-repeat top center fixed;
-    background-size:100% 37vw;
+    /* background: var(--darkPurple); */
+    background: linear-gradient(45deg, transparent 150px, var(--darkPurple) 50px);
+    background-size:100% 42vw;
+}
+
+#meImg {
+/* 670 885 */
+  width: 45%;
+  height: auto;
+  margin: 10px;
+  margin-left:120px;
+  border:10px solid var(--lightPink);
+  text-align: center;
+  border-radius: 50px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
 }
 
 #aboutMe{
@@ -408,12 +420,6 @@ a.back-to-top {
     }
     #mobilePortfolioTable {
       display:none;
-    }
-    #shortAboutMeText {
-      display:none;
-    }
-    #aboutMeText { 
-      display:inline-block;
     }
 
   p {
