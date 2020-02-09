@@ -199,6 +199,11 @@ a.back-to-top {
   background-attachment: fixed;
 }
 
+#homeCell {
+  padding-left:120px;
+  padding-top: 25px;
+}
+
 .bg-1{
     /* background: var(--darkPurple); */
     background: linear-gradient(45deg, transparent 150px, var(--darkPurple) 50px);
@@ -324,9 +329,9 @@ a.back-to-top {
 
 /*STYLING FOR EDUCATION DROP DOWN*/
 .ac-container{
-	margin: 50px 50px 50px 50px;
+	margin: 25px 25px 50px 50px;
   float: inherit;
-  padding: 4% 4% 4% 4%;
+  padding: 2% 4% 4% 4%;
 }
 .ac-container label{
 	padding: 2px 5px;

@@ -15,9 +15,14 @@ window.addEventListener('load',function(){
     $("#name").css({"font-size": "1.6em",
                "padding-top": "20px"});
     $("#subhead").css({"font-size": "1.1em", "padding-left": "20px"});
-    $("#home").css({"height":"40vw"})
-    $(".bg-1").css({"background-size":"100% 40vw"})
-}
+    $("#home").css({"height":"50vw", "background-size":"100% 50vw"})
+    $(".bg-1").css({"background-size":"100% 50vw", "background":"var(--darkPurple)"});
+
+    //fix home
+    $("#meImg").css({"margin-left":"10px", "border":"3px solid var(--lightPink)", "width":"60%", "margin-top":"35px"});
+    $("#homeCell").css({"padding-top":"10px", "padding-left":"20px"});
+    $('table td').width("50%");
+  }
 
   setMenuUnderline();
 
