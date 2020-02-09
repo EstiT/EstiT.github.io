@@ -229,6 +229,7 @@ a.back-to-top {
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 30px;
+  line-height: 1.9;
 }
 
 #australia, #worlds, #climbing{
@@ -428,11 +429,12 @@ a.back-to-top {
       margin-right: 0px;
       padding-bottom: 15px;
       padding-left: 20px;
+      font-size: 1.2em;
   }
 
   h1 {
     display: block;
-    font-size: 2em;
+    font-size: 3em;
     margin-left: 0.0px;
     padding-top: 15px;
     padding-left: 10px;
@@ -442,9 +444,10 @@ a.back-to-top {
 
 
   h2 {
+
       font-weight: bolder;
       display: block;
-      font-size: 1.5em;
+      font-size: 2em;
       margin-left: 0.0px;
       margin-right: 0.0px;
       padding-top: 15px;

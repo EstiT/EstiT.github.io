@@ -42,7 +42,9 @@
     </div>
   </header>
   <body>
-    <embed id="resume" src="EstiTwegResume.pdf" width="100%" style = "min-height:100vw;" type='application/pdf'>
+    <object style="width: 100vw; height: 50vw;" data="EstiTwegResume.pdf" type="application/pdf">
+           <embed src="EstiTwegResume.pdf" type="application/pdf" />
+       </object>
   </body>
 
 
@@ -54,7 +56,7 @@ function animateMenuIcon(menu) {
     $("#mobileMenu").slideToggle();
 }
 
-//closes mobile menu when clicked outside 
+//closes mobile menu when clicked outside
 $(document).mouseup(function(e) {
   var container = $("#mobileMenu");
   if (!$("#mobileMenu").is(e.target) && $("#mobileMenu").has(e.target).length === 0 &&
