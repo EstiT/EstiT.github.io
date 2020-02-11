@@ -193,7 +193,7 @@ a.back-to-top {
 /*STYLING FOR EACH PAGE*/
 #home{
   width: auto;
-  height: 42vw;
+  height: 45vw;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -206,15 +206,14 @@ a.back-to-top {
 
 .bg-1{
     /* background: var(--darkPurple); */
-    background: linear-gradient(45deg, transparent 150px, var(--darkPurple) 50px);
-    background-size:100% 42vw;
+    background: linear-gradient(45deg, transparent 200px, var(--darkPurple) 50px);
+    background-size:100% 45vw;
 }
 
 #meImg {
-/* 670 885 */
   width: 45%;
   height: auto;
-  margin: 10px;
+  margin: 15px;
   margin-left:120px;
   border:10px solid var(--lightPink);
   text-align: center;
@@ -254,7 +253,7 @@ a.back-to-top {
 
 #education{
   background-color: var(--background2);
-  width: auto;
+  width: 100%;
   resize: both;
   overflow: auto;
   min-height: 525px;
@@ -341,7 +340,7 @@ a.back-to-top {
 	cursor: pointer;
 	color: black;
 	line-height: 33px;
-	font-size: 17px;
+  font-size: 1.2em;
   overflow: hidden;
 }
 .ac-container label:hover{
@@ -393,9 +392,9 @@ a.back-to-top {
 }
 .ac-container article p{
 	line-height: 23px;
-	font-size: 15px;
 	padding: 8px;
   font-family: "Avenir", Avenir;
+  font-size: 1.1em;
 }
 
 
@@ -403,7 +402,7 @@ a.back-to-top {
   text-align: right;
   background-color: var(--background2);
   margin: -5px 0px 0px 0px;
-  padding: 0px 12px 10px 0px;
+  padding: 25px 20px 15px 15px;
   height: 20px;
   line-height: 24px;
   color: var(--darkBlush);
@@ -419,7 +418,7 @@ a.back-to-top {
 }
 
 
-@media screen and (min-width: 775px){
+@media screen and (min-width: 750px){
 
     #portfolioTable{
       display:block;
@@ -434,7 +433,7 @@ a.back-to-top {
       margin-right: 0px;
       padding-bottom: 15px;
       padding-left: 20px;
-      font-size: 1.2em;
+      font-size: 1.3em;
   }
 
   h1 {
@@ -460,7 +459,8 @@ a.back-to-top {
   }
 
 
-  h3,h4{
+  h3 {
+    font-size: 1.3em;
     font-weight: bolder;
     padding-left: 10px;
     color: var(--darkPurple);
