@@ -229,10 +229,16 @@ a.back-to-top {
 }
 
 #aboutMe p, #skills p{
-  line-height: 145%;
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 30px;
+  line-height: 1.9;
+  margin-bottom: 0px;
+}
+
+#skills h3{
+  padding-left: 10%;
+  font-size: 1.4em;
   line-height: 1.9;
 }
 
@@ -244,7 +250,6 @@ a.back-to-top {
   width: auto;
   resize: both;
   min-height: 220px;
-  background-color: var(--background2);
 }
 
 #skills span {
@@ -252,7 +257,6 @@ a.back-to-top {
 }
 
 #education{
-  background-color: var(--background2);
   width: 100%;
   resize: both;
   overflow: auto;
@@ -260,14 +264,12 @@ a.back-to-top {
 }
 
 #portfolio {
-  background-color: var(--background2);
   width: auto;
   display:block;
   overflow:auto;
 }
 
 #experience{
-  background-color: var(--background2);
   width: auto;
   resize: both;
   overflow: auto;
@@ -275,7 +277,6 @@ a.back-to-top {
 }
 
 #contactMe{
-  background-color: var(--background2);
   width: auto;
   height: 287px;
 }
@@ -400,7 +401,6 @@ a.back-to-top {
 
 #footer{
   text-align: right;
-  background-color: var(--background2);
   margin: -5px 0px 0px 0px;
   padding: 25px 20px 15px 15px;
   height: 20px;
@@ -415,6 +415,10 @@ a.back-to-top {
 
 .dark{
   color: var(--darkPurple);
+}
+
+.background {
+  background-color: var(--background2);
 }
 
 
