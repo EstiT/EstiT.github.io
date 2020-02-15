@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Esti Tweg</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel='shortcut icon' href='favicon1.png' type='image/x-icon'/ >
-    <link rel='stylesheet' href='typicons.font-2.0.7/typicons.min.css' />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </head>
+
+<head>
+  <title>Esti Tweg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel='shortcut icon' href='favicon1.png' type='image/x-icon' />
+  <link rel='stylesheet' href='typicons.font-2.0.7/typicons.min.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
 
 <header>
   <div id="header">
   </div>
 
   <div id="mobileMenu">
-    <hr >
+    <hr>
     <ul>
       <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
       <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
@@ -25,16 +26,16 @@
       <li><a id="resumeM" href="resume.html">Resume</a></li>
       <li><a id="contactM" onclick="smoothScroll('contactMe')">Contact Me</a></li>
     </ul>
-</div>
-    <ul id="menu">
-      <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
-      <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
-      <li><a id="eduM" onclick="smoothScroll('education')">Education</a></li>
-      <li><a id="expM" onclick="smoothScroll('experience')">Experience</a></li>
-      <li><a id="portfolioM" onclick="smoothScroll('portfolio')">Portfolio</a></li>
-      <li><a id="resumeM" href="resume.html">Resume</a></li>
-      <li><a id="contactM" onclick="smoothScroll('contactMe')">Contact Me</a></li>
-    </ul>
+  </div>
+  <ul id="menu">
+    <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
+    <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
+    <li><a id="eduM" onclick="smoothScroll('education')">Education</a></li>
+    <li><a id="expM" onclick="smoothScroll('experience')">Experience</a></li>
+    <li><a id="portfolioM" onclick="smoothScroll('portfolio')">Portfolio</a></li>
+    <li><a id="resumeM" href="resume.html">Resume</a></li>
+    <li><a id="contactM" onclick="smoothScroll('contactMe')">Contact Me</a></li>
+  </ul>
   </div>
   <div class="menuContainer" onclick="animateMenuIcon(this)">
     <div class="bar1"></div>
@@ -42,7 +43,7 @@
     <div class="bar3"></div>
   </div>
   </div>
-</heder>
+  </heder>
 
   <body>
     <main class="container">
@@ -61,8 +62,10 @@
         <h2 class="dark" style="padding-left: 35px;">About Me 👩🏻‍💻 🧗🏻‍♀️ ✈️</h2>
         <table>
           <p align="center" id="aboutMeText">
-            Welcome to my website! My name is Esti Tweg and I am a recent Computer Science graduate from Carleton University in Ottawa.
-            I specialized in Mobile Application Development and had a minor in Business. When I’m not studying or coding for fun, you can find
+            Welcome to my website! My name is Esti Tweg and I am a recent Computer Science graduate from Carleton
+            University in Ottawa.
+            I specialized in Mobile Application Development and had a minor in Business. When I’m not studying or coding
+            for fun, you can find
             me rock climbing or travelling.
           </p>
         </table>
@@ -72,48 +75,80 @@
 
       <div id="skills">
         <h2 class="dark" style="margin-top:0px; padding-top:40px; padding-left:35px">Technical Skills 🤓</h2>
-        <table >
+        <table>
           <p align=center>
-            Swift <span>&bull;</span> Objective-C <span>&bull;</span> Java <span>&bull;</span> Python <span>&bull;</span> C++
-              <span>&bull;</span> C <span>&bull;</span> HTML <span>&bull;</span> CSS <span>&bull;</span>
-            JavaScript <span>&bull;</span> JQuery <span>&bull;</span> Android and iOS Development <span>&bull;</span> Git
+            Swift <span>&bull;</span> Objective-C <span>&bull;</span> Java <span>&bull;</span> Python
+            <span>&bull;</span> C++
+            <span>&bull;</span> C <span>&bull;</span> HTML <span>&bull;</span> CSS <span>&bull;</span>
+            JavaScript <span>&bull;</span> JQuery <span>&bull;</span> Android and iOS Development <span>&bull;</span>
+            Git
           </p>
         </table>
-      <hr style="margin-top:30px; margin-bottom:0px;">
+        <hr style="margin-top:30px; margin-bottom:0px;">
       </div>
 
 
       <div id="education">
         <h2 class="dark" style="padding-left: 35px;">Education 📚</h2>
-          <section class="ac-container ">
-            <h3 id="ACsubheader">Formal</h3>
+        <section class="ac-container ">
+          <h3 id="ACsubheader">Formal</h3>
+          <div>
+            <input id="ac-1" name="accordion-1" type="checkbox" />
+            <label for="ac-1">Technology Analyst Program - Morgan Stanley</label>
+            <article class="ac-medium">
+              <p>Summer/Fall 2019 Completed the 15 week intensive <a
+                  href="https://www.morganstanley.com/people-opportunities/students-graduates/programs/technology/full-time-analyst-north-america"
+                  target="_blank">TAP</a> program in New York. Topics included firm orientation, finance, technical
+                training (OS, Concurrency, OO, C++, Java, Scala, C#, DB2, UI) and a final project where a real business
+                problem was solved.</p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-2" name="accordion-1" type="checkbox" />
+            <label for="ac-2">Computer Science Mobile App Dev - Carleton University</label>
+            <article class="ac-medium">
+              <p>Bachelor of Computer Science Honours program. Specializing in Mobile Application Development Stream
+                with a minor in
+                Business. Graduated 2019 with high distinction.</p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-3" name="accordion-1" type="checkbox" />
+            <label for="ac-3">Exchange Semester - Flinders University Adelaide, Australia</label>
+            <article class="ac-medium">
+              <p>Second semester of third year was spent abroad in Australia where I continued my Comp Sci and Business
+                courses.</p>
+            </article>
+          </div>
+          <h3 id="ACsubheader">Informal</h3>
+
+          <div>
+            <input id="ac-4" name="accordion-1" type="checkbox" />
+            <label for="ac-4">Intro to Browser Extensions - Ladies Learning Code</label>
+            <article class="ac-medium">
+              <p>July 2018 Developed an entertaining chrome extension during this workshop where every image hovered
+                over would change into a cat pic rendered using an online generator.</p>
+            </article>
+          </div>
+          <div>
             <div>
-              <input id="ac-1" name="accordion-1" type="checkbox" />
-              <label for="ac-1">Computer Science Mobile App Dev - Carleton University</label>
-              <article class="ac-medium">
-                <p>Bachelor of Computer Science Honours program. Specializing in Mobile Application Development Stream with a minor in
-                  Business. Graduated 2019 with high distinction.</p>
+              <input id="ac-5" name="accordion-1" type="checkbox" />
+              <label for="ac-5">UX Design Workshop - Bitmaker Labs</label>
+              <article class="ac-small">
+                <p>January 2018 learned how to make user friendly interfaces and clickable prototypes with InVision.</p>
               </article>
             </div>
             <div>
-              <input id="ac-2" name="accordion-1" type="checkbox" />
-              <label for="ac-2">Exchange Semester - Flinders University Adelaide, Australia</label>
-              <article class="ac-medium">
-                <p>Second semester of third year was spent abroad in Australia where I continued my Comp Sci and Business courses.</p>
-              </article>
-            </div>
-            <h3 id="ACsubheader">Informal</h3>
-            <div>
-              <input id="ac-3" name="accordion-1" type="checkbox" />
-              <label for="ac-3">Introduction to GDB</label>
+              <input id="ac-6" name="accordion-1" type="checkbox" />
+              <label for="ac-6">Introduction to GDB</label>
               <article class="ac-medium">
                 <p>October 2016 attended interactive workshop lead by David Manouchehri where he talked about
                   how to effectively use GDB to debug code and investigate segfaults.</p>
               </article>
             </div>
             <div>
-              <input id="ac-4" name="accordion-1" type="checkbox" />
-              <label for="ac-4">FBStart Event</label>
+              <input id="ac-7" name="accordion-1" type="checkbox" />
+              <label for="ac-7">FBStart Event</label>
               <article class="ac-medium">
                 <p>July 2016 attended Facebooks FBStart presentation for start up companies. There, they spoke
                   about how to best integrate Facebook with apps, advertising with Facebook and how to use Account
@@ -121,8 +156,8 @@
               </article>
             </div>
             <div>
-              <input id="ac-5" name="accordion-1" type="checkbox" />
-              <label for="ac-5">Git for Developers</label>
+              <input id="ac-8" name="accordion-1" type="checkbox" />
+              <label for="ac-8">Git for Developers</label>
               <article class="ac-medium">
                 <p>Completed a two-day webinar in June 2016 on how to use Git for developers. Many different Git
                   commands were taught. Focused on git log, pull requests, rewriting history, handling merge
@@ -130,16 +165,17 @@
               </article>
             </div>
             <div>
-              <input id="ac-6" name="accordion-1" type="checkbox" />
-              <label for="ac-6">BitMaker HTML &amp; CSS</label>
+              <input id="ac-9" name="accordion-1" type="checkbox" />
+              <label for="ac-9">BitMaker HTML &amp; CSS</label>
               <article class="ac-small">
-                <p>Attended an introduction to HTML &amp; CSS class by <a target="_blank" href="https://bitmaker.co/">BitMaker</a>
+                <p>Attended an introduction to HTML &amp; CSS class by <a target="_blank"
+                    href="https://bitmaker.co/">BitMaker</a>
                   May 2016. Went over adding pictures, links, videos, different colours, types of fonts and more.</p>
               </article>
             </div>
             <div>
-              <input id="ac-7" name="accordion-1" type="checkbox" />
-              <label for="ac-7">Toronto Public Library Intro to HTML &amp; CSS</label>
+              <input id="ac-10" name="accordion-1" type="checkbox" />
+              <label for="ac-10">Toronto Public Library Intro to HTML &amp; CSS</label>
               <article class="ac-medium">
                 <p>May 2016 Learned the basics of what HTML &amp; CSS are, how and when to use them, and how to use
                   several different tags. Created basic web pages with embedded videos and links to other
@@ -147,8 +183,8 @@
               </article>
             </div>
             <div>
-              <input id="ac-8" name="accordion-1" type="checkbox" />
-              <label for="ac-8">Cracking the Code Google Workshop</label>
+              <input id="ac-11" name="accordion-1" type="checkbox" />
+              <label for="ac-11">Cracking the Code Google Workshop</label>
               <article class="ac-medium">
                 <p>January 2016, I attended Googles Cracking the Code Workshop organized by Carleton's
                   Computer Science Society. At this workshop, a presentation was given on how to be a better
@@ -156,49 +192,80 @@
                   practiced for the duration. </p>
               </article>
             </div>
-          </section>
-          <hr style="margin-top:30px; margin-bottom:0px;">
+        </section>
+        <hr style="margin-top:30px; margin-bottom:0px;">
       </div>
 
 
       <div id="experience">
         <h2 class="dark" style="padding-top: 55px; padding-left:35px;">Work Experience 🏢</h2>
-        <section class="ac-container ">
+        <section class="ac-container">
           <div>
-            <input id="ac-9" name="accordion-1" type="checkbox" />
-            <label for="ac-9">Student Developer - RBC</label>
+            <input id="ac-12" name="accordion-1" type="checkbox" />
+            <label for="ac-12">Associate Front End Developer - Morgan Stanley</label>
             <article class="ac-medium">
-              <p>Summer 2017, I was on the myMobility team at <a target="_blank	" href="https://www.rbcroyalbank.com/personal.htmlRBC"> RBC</a>  where I worked on the mobile applications that the employees used to make work more accessible. I enhanced existing iOS and Android apps and created a web UI to test a REST API.</p>
-            </article>
-          </div>
-          <div>
-            <input id="ac-10" name="accordion-1" type="checkbox" />
-            <label for="ac-10">Junior Mobile Developer - Think Dirty Inc.</label>
-            <article class="ac-small">
-              <p>Summer 2016, worked on the <a target="_blank	" href="http://www.thinkdirtyapp.com/">Think Dirty</a> iOS mobile application at Think Dirty Inc. Built features to improve usability and display; refactored code to use new common code practices.</p>
-            </article>
-          </div>
-          <div>
-            <input id="ac-11" name="accordion-1" type="checkbox" />
-            <label for="ac-11">Rock Climbing Instructor - True North Climbing</label>
-            <article class="ac-large">
-              <p>2011 - Present, at <a target="_blank	" href="http://www.truenorthclimbing.com/">True North Climbing</a> I have performed a multitude
-                of jobs including: Belayer, Instructor, Assistant Coach, Youth Program Instructor and Route
-                Setter. As key holding instructor I perform the closing and opening
-                tasks including counting the money. I teach youth and adults
-                how to put harnesses on, tie into the ropes and operate the belay device as well as sell items to
-                customers at the desk.  As a Route Setter, I design the paths for the climbers, and as a Belayer,
-                I entertain and supervise groups.
+              <p>
+                August 2019 - present. Started with the 15 week Technology Analyst Program (TAP) in New York where
+                various coding skills and Morgan related technologies were taught. Currently working on the Access
+                Management Self Service team developing an Angular website that simplifies entitlement management.
               </p>
             </article>
           </div>
           <div>
-            <input id="ac-12" name="accordion-1" type="checkbox" />
-            <label for="ac-12">Junior Counselor and Head Bus Captain - Camp Green Acres</label>
+            <input id="ac-13" name="accordion-1" type="checkbox" />
+            <label for="ac-13">Website Content and Social Media Coordinator - OCF</label>
             <article class="ac-medium">
-              <p>Summer 2012, I worked at <a target="_blank" href="http://campgreenacres.com/">Camp Green Acres</a> where I had the pleasure of looking
-                after 11 five year olds. As the Bus Captian, I was in charge of identifying the parents/ guardians to insure that only
-              authorized individuals were claiming the campers.</p>
+              <p>
+                June 2016 to Feb 2018. Worked with the Ontario Climbing Federation where I shared and posted climbing
+                news along with competition updates on the federation's Instagram and Facebook. I also managed the
+                Wordpress website where posts were made using HTML, CSS and Javascript.
+              </p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-14" name="accordion-1" type="checkbox" />
+            <label for="ac-14">Student Developer - RBC</label>
+            <article class="ac-medium">
+              <p>Summer 2017, I was on the myMobility team at <a target="_blank	"
+                  href="https://www.rbcroyalbank.com/personal.htmlRBC"> RBC</a> where I worked on the mobile
+                applications that the employees used to make work more accessible. I enhanced existing iOS and Android
+                apps and created a web UI to test a REST API.</p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-15" name="accordion-1" type="checkbox" />
+            <label for="ac-15">Junior Mobile Developer - Think Dirty Inc.</label>
+            <article class="ac-small">
+              <p>Summer 2016, worked on the <a target="_blank	" href="http://www.thinkdirtyapp.com/">Think Dirty</a> iOS
+                mobile application at Think Dirty Inc. Built features to improve usability and display; refactored code
+                to use new common code practices.</p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-16" name="accordion-1" type="checkbox" />
+            <label for="ac-16">Rock Climbing Instructor - True North Climbing</label>
+            <article class="ac-large">
+              <p>March 2011 to July 2019, was spent at <a target="_blank	" href="http://www.truenorthclimbing.com/">True
+                  North Climbing</a>
+                performing a multitude
+                of jobs including: Belayer, Instructor, Assistant Coach, Youth Program Instructor and Route
+                Setter. As key holding instructor I ensured the closing and opening
+                tasks were conducted. I taught youth and adults
+                how to put harnesses on, tie into the ropes and operate the belay device as well as sell items to
+                customers at the desk. As a Route Setter, I designed the paths for the climbers, and as a Belayer,
+                I entertained and supervised groups.
+              </p>
+            </article>
+          </div>
+          <div>
+            <input id="ac-17" name="accordion-1" type="checkbox" />
+            <label for="ac-17">Junior Counselor and Head Bus Captain - Camp Green Acres</label>
+            <article class="ac-medium">
+              <p>Summer 2012, I worked at <a target="_blank" href="http://campgreenacres.com/">Camp Green Acres</a>
+                where I had the pleasure of looking
+                after 11 five year olds. As the Bus Captian, I was in charge of identifying the parents/ guardians to
+                insure that only
+                authorized individuals were claiming the campers.</p>
             </article>
           </div>
         </section>
@@ -208,178 +275,212 @@
 
       <div id="portfolio">
         <a style="text-decoration:none;" target="_blank" href="https://github.com/EstiT">
-          <h2 class="dark" style= "padding-top: 55px; padding-left: 35px;">Portfolio 🎨</h2>
+          <h2 class="dark" style="padding-top: 55px; padding-left: 35px;">Portfolio 🎨</h2>
         </a>
-          <table id= "portfolioTable" style="width: 97%" align="center" cellspacing="17" >
-              <tr>
-                  <th width= "25%" class="top">
+        <table id="portfolioTable" style="width: 97%" align="center" cellspacing="17">
+          <tr>
+            <th width="25%" class="top">
 
-                    <div id="portfolioCell">
-                      <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
-                        <img class="image" src="images/mario.png" width="100%" />
-                      </a>
-                      <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
-                        <p class="text">
-                          <u><b>Image Overlay</u></b><br>You specify two images, one to be the background and the other to be placed transparently on top. In this example, there is a Mario character floating in a level.
-                        </p>
-                      </a>
-                    </div>
+              <div id="portfolioCell">
+                <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
+                  <img class="image" src="images/mario.png" width="100%" />
+                </a>
+                <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
+                  <p class="text">
+                    <u><b>Image Overlay</u></b><br>You specify two images, one to be the background and the other to be
+                    placed transparently on top. In this example, there is a Mario character floating in a level.
+                  </p>
+                </a>
+              </div>
 
+              <br><br>
+
+              <div id="portfolioCell">
+                <a target="_blank	" href="https://github.com/EstiT/squareGame"><img class="image"
+                    src="images/square.png" width="100%" /></a>
+                <a target="_blank	" href="https://github.com/EstiT/squareGame">
+                  <p class="text" class="square" style="color:black;">
+                    <u style="color:black;"><b>Square Game</u></b><br><span style="color:black;">While the red square
+                      moves, press the space bar to stop it inside the bounds.
+                    </span><br><br>
+                    <button type="button"> <a class="square" href="squareIndex.html">Play here!</a></button>
+                  </p>
+                </a>
+              </div>
+              <br><br>
+              <div id="portfolioCell">
+                <a app store link href="https://github.com/EstiT/PieChartMaker"> <img class="image"
+                    src="images/PieChart.png" width="100%" /></a>
+                <a target="_blank	" href="https://github.com/EstiT/PieChartMaker">
+                  <p class="text">
+                    <u><b>Pie Chart Maker</b></u> <br>This program asks you a series of questions (title, number of
+                    sections, legend vs. labels etc.) to make a pie chart with the data that you enter.
+                  </p>
+                </a>
+              </div>
+
+            </th>
+
+            <th width="25%" class="top">
+              <div id="portfolioCell">
+                <a target="_blank	" href="https://github.com/EstiT/Number-Base-Converter-IOS"> <img class="image"
+                    src="images/IMG_283.png" width="100%" /></a>
+                <a target="_blank	" href="https://github.com/EstiT/Number-Base-Converter-IOS">
+                  <p class="text">
+                    <u><b>Number Base Converter App</u></b><br>Enter the first letter of the initial base ("b" for
+                    binary, "o" for octal etc.), followed by a colon and then the number to be converted.
+                  </p>
+                </a>
+              </div>
+
+              <br><br>
+
+              <div id="portfolioCell">
+                <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker"><img class="image"
+                    src="images/asciiPresent.png" width="100%" id="ascii" /></a>
+                <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker">
+                  <p class="text">
+                    <u><b>Image to Ascii Art</u></b><br>You upload an image, choose what the background colour is and
+                    what to save the text file as. The program converts each pixel in the image to a symbol. Small
+                    images work best.
+                  </p>
+                </a>
+              </div>
+
+            </th>
+
+            <th width="25%" class="top">
+              <div id="portfolioCell">
+                <a target="_blank	" href="https://github.com/EstiT/TicTacToe"><img class="image"
+                    src="images/tictactoe.png" width="100%" /></a>
+                <a target="_blank	" href="https://github.com/EstiT/TicTacToe">
+                  <p class="text">
+                    <u><b>Tic Tac Toe</u></b><br>Play Tic Tac Toe against a computer.
+                  </p>
+                </a>
+              </div>
+
+              <br><br>
+
+              <div id="portfolioCell">
+                <a target="_blank" href="https://github.com/cuhacking/CUHackingApp"><img class="image"
+                    src="images/cuhacking.png" width="100%" /></a>
+                <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
+                  <p class="text">
+                    <u><b>CUhacking Android App</u></b><br>Group project for school. Created an app to make the
+                    hackathon more enjoyable for hackers.
+                  </p>
+                </a>
+              </div>
+
+              <br><br>
+
+              <div id="portfolioCell">
+                <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
+                  <img class="image" src="images/climbingConverter.png" width="100%" />
+                </a>
+                <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
+                  <p class="text">
+                    <u style="color:black;"><b><br>Climbing Grade Converter iOS app</u></b><br>
+                    <span style="color:black;">
+                      Convert climbing grades between different systems used world wide.
+                    </span>
                     <br><br>
-
-                    <div id="portfolioCell" >
-                      <a target="_blank	" href="https://github.com/EstiT/squareGame"><img class="image" src="images/square.png" width="100%" /></a>
-                      <a target="_blank	" href="https://github.com/EstiT/squareGame">
-                        <p class="text" class="square" style="color:black;">
-                          <u style="color:black;" ><b>Square Game</u></b><br><span style="color:black;">While the red square moves, press the space bar to stop it inside the bounds.
-                          </span><br><br>
-                          <button type="button"> <a  class="square" href="squareIndex.html">Play here!</a></button>
-                        </p>
-                      </a>
-                    </div>
+                    <button type="button"> <a class="square" target="_blank	"
+                        href="https://apps.apple.com/us/app/gradeconverter/id1451156203">
+                        Download from the App
+                        Store
+                      </a></button>
+                  </p>
+                </a>
+              </div>
+              <br><br>
+              <div id="portfolioCell">
+                <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS"> <img class="image"
+                    src="images/emojiDash.jpeg" width="100%" /></a>
+                <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS">
+                  <p class="text">
+                    <u style="color:black;"><b>Emoji-Dash</b></u> <br><span style="color:black;">iOS game for my honours
+                      project. Uses SpriteKit.</span>
                     <br><br>
-                    <div id="portfolioCell">
-                      <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS"> <img class="image" src="images/emojiDash.jpeg" width="100%"/></a>
-                      <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS">
-                        <p class="text">
-                          <u style="color:black;"><b>Emoji-Dash</b></u> <br><span style="color:black;">iOS game for my honours project. Uses SpriteKit.</span>
-                          <br><br>
-                          <button type="button"> <a  class="square" target="_blank	" href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">Download from the App Store</a></button>
-                        </p>
-                      </a>
-                    </div>
-                    <br><br>
-                    <div id="portfolioCell">
-                      <a  app store link href="https://github.com/EstiT/PieChartMaker"> <img class="image" src="images/PieChart.png" width="100%"/></a>
-                      <a target="_blank	" href="https://github.com/EstiT/PieChartMaker">
-                        <p class="text">
-                          <u><b>Pie Chart Maker</b></u> <br>This program asks you a series of questions (title, number of sections, legend vs. labels etc.) to make a pie chart with the data that you enter.
-                        </p>
-                      </a>
-                    </div>
-
-                  </th>
-
-                  <th width= "25%" class="top">
-                    <div id="portfolioCell">
-                      <a target="_blank	" href="https://github.com/EstiT/Number-Base-Converter-IOS"> <img class="image" src="images/IMG_283.png" width="100%"/></a>
-                      <a target="_blank	" href="https://github.com/EstiT/Number-Base-Converter-IOS">
-                        <p class="text">
-                          <u><b>Number Base Converter App</u></b><br>Enter the first letter of the initial base ("b" for binary, "o" for octal etc.), followed by a colon and then the number to be converted.
-                        </p>
-                      </a>
-                    </div>
-
-                      <br><br>
-
-                      <div id="portfolioCell">
-                        <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker"><img class="image" src="images/asciiPresent.png" width="100%" id="ascii"/></a>
-                        <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker">
-                          <p class="text">
-                            <u><b>Image to Ascii Art</u></b><br>You upload an image, choose what the background colour is and what to save the text file as. The program converts each pixel in the image to a symbol. Small images work best.
-                          </p>
-                        </a>
-                      </div>
-
-                  </th>
-
-                  <th width= "25%" class="top">
-                    <div id="portfolioCell">
-                      <a target="_blank	" href="https://github.com/EstiT/TicTacToe"><img class="image" src="images/tictactoe.png" width="100%" /></a>
-                      <a target="_blank	" href="https://github.com/EstiT/TicTacToe">
-                        <p class="text">
-                          <u><b>Tic Tac Toe</u></b><br>Play Tic Tac Toe against a computer.
-                        </p>
-                      </a>
-                    </div>
-
-                    <br><br>
-
-                    <div id="portfolioCell">
-                      <a target="_blank" href="https://github.com/cuhacking/CUHackingApp"><img class="image" src="images/cuhacking.png" width="100%" /></a>
-                      <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
-                        <p class="text">
-                          <u><b>CUhacking Android App</u></b><br>Group project for school. Created an app to make the hackathon more enjoyable for hackers.
-                        </p>
-                      </a>
-                    </div>
-
-                    <br><br>
-
-                    <div id="portfolioCell">
-                      <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
-                        <img class="image" src="images/climbingConverter.jpeg" width="100%" />
-                      </a>
-                      <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
-                        <p class="text">
-                          <u><b><br>Climbing Grade Converter iOS app</u></b><br>
-                          Convert climbing grades between different systems used world wide.
-                        </p>
-                      </a>
-                    </div>
-
-                  </th>
-              </tr>
-          </table>
+                    <button type="button"> <a class="square" target="_blank	"
+                        href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">Download from the App
+                        Store</a></button>
+                  </p>
+                </a>
+              </div>
+            </th>
+          </tr>
+        </table>
 
 
 
-          <table id= "mobilePortfolioTable" style="width: 80%;" align="center" cellspacing="20" >
-              <tr>
-                <td>
-                  <div>
-                    <a  class="square" target="_blank	" href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">
-                      <img class="image" src="images/emojiDash.jpeg" width="100%"/>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <div>
-                      <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
-                        <img class="image" src="images/mario.png" width="100%" />
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div>
-                      <a target="_blank	" href="squareIndex.html">
-                        <img class="image" src="images/square.png" width="100%" />
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div>
-                      <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
-                        <img class="image" src="images/cuhacking.png" width="100%" />
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" >
-                    <div>
-                      <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker">
-                        <img class="image" src="images/asciiPresent.png" width="100%" id="ascii"/>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-          </table>
+        <table id="mobilePortfolioTable" style="width: 95%;" align="center" cellspacing="20">
+          <tr>
+            <td>
+              <div>
+                <a class="square" target="_blank	"
+                  href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">
+                  <img class="image" src="images/emojiDash.jpeg" width="100%" />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
+                  <img class="image" src="images/mario.png" width="100%" />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <a target="_blank	" href="squareIndex.html">
+                  <img class="image" src="images/square.png" width="100%" />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
+                  <img class="image" src="images/cuhacking.png" width="100%" />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
+                  <img class="image" src="images/climbingConverter.png" width="100%" />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div>
+                <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker">
+                  <img class="image" src="images/asciiPresent.png" width="100%" id="ascii" />
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
 
-          <hr style="margin-top:30px; margin-bottom:0px;">
+        <hr style="margin-top:30px; margin-bottom:0px;">
       </div>
 
 
       <div id="contactMe">
         <br><br>
         <h2 id="contactMeText" class="dark" style="padding-left: 35px;">Contact Me 📞</h2>
-        <table border=0 width= "100%">
+        <table border=0 width="100%">
           <tr>
             <th height="100">
               <a href="mailto:estictweg@hotmail.com?Subject=" class="typcn typcn-mail icon"></a>
@@ -387,31 +488,33 @@
               <a href="mailto:estictweg@hotmail.com?Subject=" target="_top" class="contactText">Email</a>
             </th>
             <th>
-              <a target="_blank" href="https://ca.linkedin.com/in/esti-tweg-803389120" class="typcn typcn-social-linkedin-circular icon"></a>
+              <a target="_blank" href="https://ca.linkedin.com/in/esti-tweg-803389120"
+                class="typcn typcn-social-linkedin-circular icon"></a>
               <br>
               <a target="_blank" href="https://ca.linkedin.com/in/esti-tweg-803389120" class="contactText">LinkedIn
               </a>
             </th>
             <th>
-              <a target="_blank" href="https://github.com/EstiT" class="typcn typcn-social-github-circular icon" ></a>
+              <a target="_blank" href="https://github.com/EstiT" class="typcn typcn-social-github-circular icon"></a>
 
               <br>
               <a target="_blank" href="https://github.com/EstiT" class="contactText">GitHub</a>
             </th>
             <th>
-              <a  href="EstiTwegResume.pdf" download class="typcn typcn-download-outline icon"></a>
+              <a href="EstiTwegResume.pdf" download class="typcn typcn-download-outline icon"></a>
               <br>
               <a target="_blank" href="EstiTwegResume.pdf" download class="contactText">Resume</a>
             </th>
           </tr>
         </table>
-        <div  id="footer"><a href="footer.html">Esti Tweg 2016-2020</a></div>
-    </div>
+        <div id="footer"><a href="footer.html">Esti Tweg 2016-2020</a></div>
+      </div>
 
 
-</main>
+    </main>
 
-<a href="#" class="back-to-top">Back to Top</a>
+    <a href="#" class="back-to-top">Back to Top</a>
 
-</body>
+  </body>
+
 </html>
