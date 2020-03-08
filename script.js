@@ -3,7 +3,9 @@ var darkPurpleTransparent = "rgba(59,65,86,0.95)";
 var purple1 = "#584c7d";
 var darkPurple = "#383d61";
 
-
+$(document).ready(function () {
+  new WOW().init();
+});
 
 window.addEventListener('load', function () {
   //show mobile view if needed
@@ -99,6 +101,11 @@ $(window).scroll(function () {
   }
 
   setMenuUnderline();
+  if ($(window).scrollTop() <= 50) {
+    $('.wow').removeClass('animated');
+    $('.wow').removeAttr('style');
+    new WOW().init();
+  }
 })
 
 function setMenuUnderline() {

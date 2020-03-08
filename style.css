@@ -249,18 +249,31 @@ a.back-to-top {
 #skills{
   width: auto;
   resize: both;
-  min-height: 220px;
+  min-height: 400px;
+  padding-bottom: 8em;
 }
 
 #skills span {
   color: var(--darkBlush);
 }
 
+.skillContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5em;
+}
+
+.skillsImg {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */  
+}
+
 #education{
   width: 100%;
   resize: both;
   overflow: auto;
-  min-height: 525px;
+  min-height: 550px;
 }
 
 #portfolio {
@@ -286,17 +299,17 @@ a.back-to-top {
 .top {
   vertical-align: top;
 }
-#portfolioCell {
+.portfolioCell {
   position:relative;
 }
-#portfolioCell.image{
+.portfolioCell.image{
   width: auto;
   height: auto;
 }
-#portfolioCell.image,#portfolioCell .text {
+.portfolioCell.image,.portfolioCell .text {
   transition: opacity 0.4s ease-in-out;
 }
-#portfolioCell .text {
+.portfolioCell .text {
   position:absolute;
   opacity:0;
   color: black;
@@ -309,12 +322,12 @@ a.back-to-top {
   right: 8%;
   font-family: "Avenir", Avenir;
 }
-#portfolioCell:hover .image {
+.portfolioCell:hover .image {
   position:relative;
   opacity:0.18;
   z-index: 0;
 }
-#portfolioCell:hover .text {
+.portfolioCell:hover .text {
   opacity:1;
   font-weight: lighter;
   text-align: center;
@@ -334,7 +347,8 @@ a.back-to-top {
   padding: 2% 4% 4% 4%;
 }
 .ac-container label{
-	padding: 2px 5px;
+  padding: 5px 5px;
+  margin-top: 6px;
 	position: relative;
 	display: block;
 	height: 30px;
@@ -396,17 +410,6 @@ a.back-to-top {
 	padding: 8px;
   font-family: "Avenir", Avenir;
   font-size: 1.1em;
-}
-
-
-#footer{
-  text-align: right;
-  margin: -5px 0px 0px 0px;
-  padding: 25px 20px 15px 15px;
-  height: 20px;
-  line-height: 24px;
-  color: var(--darkBlush);
-  text-decoration: none;
 }
 
 .light {
@@ -478,7 +481,7 @@ a.back-to-top {
       padding-left: 40px;
   }
 }
-  a, #footer, #climbingLink, #australiaLink, #worldsLink{
+  a, #climbingLink, #australiaLink, #worldsLink{
       color: var(--darkBlush);
       text-decoration: none;
   }
