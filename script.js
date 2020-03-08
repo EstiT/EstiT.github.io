@@ -12,8 +12,6 @@ window.addEventListener('load', function () {
     showMobile();
   }
 
-  setMenuUnderline();
-
   $('a.back-to-top').click(function () {
     $('html, body').animate({
       scrollTop: 0
@@ -105,61 +103,11 @@ $(window).scroll(function () {
     $("#menu").css('background-color', darkPurpleTransparent);
   }
 
-  setMenuUnderline();
   if ($(window).scrollTop() <= 50) {
     $('.wow').removeClass('animated');
     new WOW().init();
   }
 })
-
-function setMenuUnderline() {
-  if (isInView($('#home'))) {
-    clearUnderline();
-    $("#homeM").css({ "border-bottom": "4px solid " + salmonPink });
-  }
-  else if (isInView($('#aboutMe'))) {
-    clearUnderline();
-    $("#aboutM").css({ "border-bottom": "4px solid " + salmonPink });
-  }
-  else if (isInView($('#skills'))) {
-    clearUnderline();
-    $("#homeM").css({ "border-bottom": "4px solid transparent" });
-  }
-  else if (isInView($('#education'))) {
-    clearUnderline();
-    $("#eduM").css({ "border-bottom": "4px solid " + salmonPink });
-  }
-  else if (isInView($('#experience'))) {
-    clearUnderline();
-    $("#expM").css({ "border-bottom": "4px solid " + salmonPink });
-  }
-  else if (isInView($('#portfolioCell'))) {
-    clearUnderline();
-    $("#portfolioM").css({ "border-bottom": "4px solid " + salmonPink });
-  }
-  else if (isInView($('#contactMe'))) {
-    clearUnderline();
-    $("#contactM").css({ "border-bottom": "4px solid " + salmonPink });
-  }
-}
-
-function clearUnderline() {
-  $("#homeM").css({ "border-bottom": "none" });
-  $("#aboutM").css({ "border-bottom": "none" });
-  $("#eduM").css({ "border-bottom": "none" });
-  $("#expM").css({ "border-bottom": "none" });
-  $("#portfolioM").css({ "border-bottom": "none" });
-  $("#contactM").css({ "border-bottom": "none" });
-}
-
-
-function isInView(elem) {
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
-  var elemTop = $(elem).offset().top;
-  var elemBottom = elemTop + $(elem).height();
-  return ((elemBottom <= docViewBottom + 10) && (elemTop >= docViewTop));
-}
 
 function animateMenuIcon(menu) {
   if ($("#mobileMenu").is(':visible')) {
