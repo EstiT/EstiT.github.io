@@ -103,7 +103,6 @@ $(window).scroll(function () {
   setMenuUnderline();
   if ($(window).scrollTop() <= 50) {
     $('.wow').removeClass('animated');
-    $('.wow').removeAttr('style');
     new WOW().init();
   }
 })
