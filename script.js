@@ -8,43 +8,11 @@ $(document).ready(function () {
 });
 
 window.addEventListener('load', function () {
-  //show mobile view if needed
   if (mobileCheck()) {
-    $("#mobilePortfolioTable").show();
-    $("#portfolioTable").hide();
-
-    //decrease font size for name
-    $("#name").css({
-      "font-size": "1.6em",
-      "padding-top": "20px"
-    });
-    $("#subhead").css({ "font-size": "1.1em", "padding-left": "20px" });
-    $("#home").css({ "height": "50vw", "background-size": "100% 50vw" })
-    $(".bg-1").css({ "background-size": "100% 50vw", "background": "var(--darkPurple)" });
-
-    //fix home
-    $("#meImg").css({ "margin-left": "10px", "border": "3px solid var(--lightPink)", "width": "60%", "margin-top": "35px" });
-    $("#homeCell").css({ "padding-top": "10px", "padding-left": "20px" });
-    $('table td').width("50%");
+    showMobile();
   }
 
   setMenuUnderline();
-
-  $("#ausLink").mouseover(function () {
-    $("#aus").fadeIn(175);
-  });
-
-  $("#greeceLink").mouseover(function () {
-    $("#greece").fadeIn(175);
-  });
-
-  $("#sfLink").mouseover(function () {
-    $("#sf").fadeIn(175);
-  });
-
-  $("#worldsLink").mouseover(function () {
-    $("#worlds").fadeIn(175);
-  });
 
   $('a.back-to-top').click(function () {
     $('html, body').animate({
@@ -59,7 +27,6 @@ window.addEventListener('load', function () {
 
 });
 
-
 function smoothScroll(target) {
   document.getElementById(target).scrollIntoView({
     behavior: 'smooth', block: "start", inline: "nearest"
@@ -67,6 +34,44 @@ function smoothScroll(target) {
   history.pushState(null, null, "#" + target);
   if ($("#mobileMenu").is(':visible')) {
     animateMenuIcon(document.getElementsByClassName("menuContainer")[0]);
+  }
+}
+
+function showMobile() {
+  $("#mobilePortfolioTable").show();
+  $("#portfolioTable").hide();
+
+  //decrease font size for name
+  $("#name").css({
+    "font-size": "1.6em",
+    "padding-top": "20px"
+  });
+  $("#subhead").css({ "font-size": "1.1em", "padding-left": "20px" });
+  $("#home").css({ "height": "50vw", "background-size": "100% 50vw" })
+  $(".bg-1").css({ "background-size": "100% 50vw", "background": "var(--darkPurple)" });
+
+  //fix home
+  $("#meImg").css({ "margin-left": "10px", "border": "3px solid var(--lightPink)", "width": "60%", "margin-top": "35px" });
+  $("#homeCell").css({ "padding-top": "10px", "padding-left": "20px" });
+  $('table td').width("50%");
+
+  resizeSkillsIconsHeight();
+  $('#skills').css({ 'padding-bottom': '45px' });
+}
+
+function resizeSkillsIconsHeight() {
+  let containers = $(".skillContainer");
+  let height = 60;
+  for (let div = 0; div < containers.length; div++) {
+    if (div !== 0) {
+      containers[div].style.marginTop = '40px';
+    }
+    else {
+      containers[div].style.marginTop = '15px';
+
+    }
+    containers[div].style.height = height + 'px';
+    height -= 8;
   }
 }
 
