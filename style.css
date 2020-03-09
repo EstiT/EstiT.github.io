@@ -291,7 +291,7 @@ a.back-to-top {
 
 #contactMe{
   width: auto;
-  height: 287px;
+  height: 45vh;
 }
 
 
@@ -517,4 +517,8 @@ a.back-to-top {
     font-weight: bolder;
     padding-left: 0px;
     margin-left: -5px;
+  }
+
+  .height {
+    min-height: 15vh;
   }

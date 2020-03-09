@@ -55,6 +55,7 @@ function showMobile() {
 
   resizeSkillsIconsHeight();
   $('#skills').css({ 'padding-bottom': '45px' });
+  $('.height').css({ 'min-height': '5vh' });
 }
 
 function resizeSkillsIconsHeight() {
