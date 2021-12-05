@@ -28,7 +28,6 @@
   </div>
 
   <div id="mobileMenu">
-    <hr>
     <ul>
       <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
       <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
@@ -60,64 +59,60 @@
   <body>
     <main class="container">
       <div id="home" class="bg-1">
-        <table width="100%" height="100%">
-          <td id="homeCell">
+          <div id="homeCell">
             <h1 class="light" id="name">Esti Tweg</h1>
             <h2 class="light" style="padding-left: 55px;" id="subhead">Mobile App Developer</h2>
-          </td>
-          <td><img id="meImg" src="images/me2.jpg" title="photo by Waqar Muhammad"></img></td>
-        </table>
+          </div>
+          <img id="meImg" src="images/me.jpg"></img>
       </div>
 
       <div id="aboutMe">
         <br><br>
         <h2 class="dark" style="padding-left: 35px;">About Me 👩🏻‍💻 🧗🏻‍♀️ ✈️</h2>
-        <table>
-          <p align="center" id="aboutMeText">
+          <p class="centerText">
             Welcome to my website! My name is Esti Tweg and I am a Computer Science graduate from Carleton
             University in Ottawa.
             I specialized in Mobile Application Development and minored in Business. When I’m not coding, you can find me rock climbing or travelling(pre-pandemic).
           </p>
-        </table>
         <hr style="margin-top:30px; margin-bottom:0px;">
       </div>
 
 
       <div id="skills" class="background">
         <h2 class="dark" style="margin-top:0px; padding-top:40px; padding-left:35px">Technical Skills 🤓</h2>
-        <p align="center">I've worked with a variety of different technologies while focusing on app dev and front end
-          work</p>
-        <div align=center class="wow fadeInUp skillContainer" style="height: 150px;">
+        <p class="centerText">I've worked with a variety of different technologies while focusing on app dev and front end
+          work.</p>
+        <div class="wow fadeInUp skillContainer" style="height: 150px;">
           <img src="images/java.png" class="skillsImg" />
           <img src="images/swift.png" class="skillsImg" />
         </div>
-        <div align=center class="wow fadeInUp skillContainer" style="height: 100px;">
-          <img src="images/htmlCssJs2.png" class="skillsImg" />
+        <div class="wow fadeInUp skillContainer" style="height: 100px;">
+          <img src="images/vuejs.png" class="skillsImg" />
           <img src="images/react.png" class="skillsImg" />
         </div>
-        <div align=center class="wow fadeInUp skillContainer" style="height: 75px;">
+        <!-- <div class="wow fadeInUp skillContainer" style="height: 75px;">
           <img src="images/cpp.png" class="skillsImg" />
           <img src="images/cSharp.png" class="skillsImg" />
           <img src="images/c.png" class="skillsImg" />
         </div>
-        <div align=center class="wow fadeInUp skillContainer" style="height: 50px;">
+        <div class="wow fadeInUp skillContainer" style="height: 50px;">
           <img src="images/python.svg" class="skillsImg" />
           <img src="images/Scala.png" class="skillsImg" />
           <img src="images/Kotlin.png" class="skillsImg" />
 
         </div>
-        <div align=center class="wow fadeInUp skillContainer" style="height: 45px;">
+        <div class="wow fadeInUp skillContainer" style="height: 45px;">
           <img src="images/SQLite.png" class="skillsImg" />
           <img src="images/db2.png" class="skillsImg" />
           <img src="images/mongoDB.png" class="skillsImg" />
-        </div>
+        </div> -->
       </div>
       </table>
       </div>
 
 
       <div id="education" class="background">
-        <hr style="margin-top: 0;margin-bottom: 0;">
+        <hr style="margin: 0 auto">
 
         <h2 class="dark" style="padding-left: 35px;">Education 📚</h2>
         <section class="ac-container ">
@@ -224,7 +219,7 @@
               </article>
             </div>
         </section>
-        <hr style="margin-top:30px; margin-bottom:0px;">
+        <hr style="margin:30px auto 0 auto">
       </div>
 
 
@@ -242,7 +237,7 @@
           </div>
           <div>
             <input id="ac-13" name="accordion-1" type="checkbox" />
-            <label for="ac-14">Associate Front End Developer - Morgan Stanley</label>
+            <label for="ac-13">Associate Front End Developer - Morgan Stanley</label>
             <article class="ac-medium">
               <p>
                 August 2019 - Dec 2020. Started with the 15 week Technology Analyst Program (TAP) in New York where various coding skills and Morgan related technologies were taught. Then joined the Access Management Self Service team developing an Angular website that simplified entitlement management.
@@ -307,7 +302,6 @@
         <table id="portfolioTable" style="width: 97%" align="center" cellspacing="17">
           <tr>
             <th width="25%" class="top">
-
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/CluelessClothes-iOS">
                   <img class="image" src="images/cluelessClothes.png" width="100%" />
@@ -319,10 +313,10 @@
                       Add photos of your clothes and match them to create outfits.
                     </span>
                     <br><br>
-                    <button type="button"> <a class="square" target="_blank	"
+                    <!-- <button type="button"> <a class="square" target="_blank	"
                         href="https://apps.apple.com/ca/app/cluelessclothes/id1527894150">
                         Available in the App Store
-                      </a></button>
+                      </a></button> -->
                   </p>
                 </a>
               </div>
@@ -365,9 +359,9 @@
                     <u style="color:black;"><b>Emoji-Dash</b></u> <br><span style="color:black;">iOS game for my honours
                       project. Uses SpriteKit.</span>
                     <br><br>
-                    <button type="button"> <a class="square" target="_blank	"
+                    <!-- <button type="button"> <a class="square" target="_blank	"
                         href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">Available in the App
-                        Store</a></button>
+                        Store</a></button> -->
                   </p>
                 </a>
               </div>
@@ -385,21 +379,22 @@
                       Convert climbing grades between different systems used world wide.
                     </span>
                     <br><br>
-                    <button type="button"> <a class="square" target="_blank	"
+                    <!-- <button type="button"> <a class="square" target="_blank	"
                         href="https://apps.apple.com/us/app/gradeconverter/id1451156203">
                         Available in the App Store
-                      </a></button>
+                      </a></button> -->
                   </p>
                 </a>
               </div>
 
+              <br><br>
+
               <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/Number-Base-Converter-IOS"> <img class="image"
-                    src="images/IMG_283.png" width="100%" /></a>
-                <a target="_blank	" href="https://github.com/EstiT/Number-Base-Converter-IOS">
+                <a target="_blank	" href="https://github.com/EstiT/logIt-SwiftUI"> <img class="image"
+                    src="images/logit.png" width="100%" /></a>
+                <a target="_blank	" href="https://github.com/EstiT/logIt-SwiftUI">
                   <p class="text">
-                    <u><b>Number Base Converter App</u></b><br>Enter the first letter of the initial base ("b" for
-                    binary, "o" for octal etc.), followed by a colon and then the number to be converted.
+                    <u><b>Climbing training tracker app</u></b><br>iOS app developed with SwiftUI to track climbing progress in an analytical and visual manner.
                   </p>
                 </a>
               </div>
@@ -449,7 +444,7 @@
           <tr>
             <td>
               <div>
-                <a class="square" target="_blank	"
+                <a class="square" target="_blank"
                   href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">
                   <img class="image wow fadeInUp" src="images/emojiDash.jpeg" width="100%" />
                 </a>
@@ -459,7 +454,7 @@
           <tr>
             <td>
               <div>
-                <a target="_blank	" href="https://apps.apple.com/ca/app/cluelessclothes/id1527894150">
+                <a target="_blank" href="https://apps.apple.com/ca/app/cluelessclothes/id1527894150">
                   <img class="image wow fadeInUp" src="images/cluelessClothes.png" width="100%" />
                 </a>
               </div>
@@ -477,8 +472,8 @@
           <tr>
             <td>
               <div>
-                <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
-                  <img class="image wow fadeInUp" src="images/cuhacking.png" width="100%" />
+                <a target="_blank" href="https://github.com/EstiT/logIt-SwiftUI">
+                  <img class="image wow fadeInUp" src="images/logit.png" width="100%" />
                 </a>
               </div>
             </td>
@@ -501,33 +496,31 @@
       <div id="contactMe" class="background">
         <br><br>
         <h2 id="contactMeText" class="dark" style="padding-left: 35px;">Contact Me 📞</h2>
-        <table border=0 width="100%">
-          <tr>
-            <th height="100">
+        <div style="display:flex; justify-content: space-evenly;">
+            <div>
               <a href="mailto:estictweg@hotmail.com?Subject=" class="typcn typcn-mail icon"></a>
               <br>
               <a href="mailto:estictweg@hotmail.com?Subject=" target="_top" class="contactText">Email</a>
-            </th>
-            <th>
+            </div>
+            <div>
               <a target="_blank" href="https://ca.linkedin.com/in/esti-tweg-803389120"
                 class="typcn typcn-social-linkedin-circular icon"></a>
               <br>
               <a target="_blank" href="https://ca.linkedin.com/in/esti-tweg-803389120" class="contactText">LinkedIn
               </a>
-            </th>
-            <th>
+            </div>
+            <div>
               <a target="_blank" href="https://github.com/EstiT" class="typcn typcn-social-github-circular icon"></a>
 
               <br>
               <a target="_blank" href="https://github.com/EstiT" class="contactText">GitHub</a>
-            </th>
-            <th>
+            </div>
+            <div>
               <a href="EstiTwegResume.pdf" download class="typcn typcn-download-outline icon"></a>
               <br>
               <a target="_blank" href="EstiTwegResume.pdf" download class="contactText">Resume</a>
-            </th>
-          </tr>
-        </table>
+            </div>
+        </div>
       </div>
       <div class="bg-1 height"></div>
 

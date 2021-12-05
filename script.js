@@ -49,7 +49,7 @@ function showMobile() {
   $(".bg-1").css({ "background-size": "100% 50vw", "background": "var(--darkPurple)" });
 
   //fix home
-  $("#meImg").css({ "margin-left": "10px", "border": "3px solid var(--lightPink)", "width": "60%", "margin-top": "35px" });
+  $("#meImg").css({ "margin-left": "2rem", "border": "3px solid var(--lightPink)", "margin-top": "35px" });
   $("#homeCell").css({ "padding-top": "10px", "padding-left": "20px" });
   $('table td').width("50%");
 
@@ -101,7 +101,7 @@ $(window).scroll(function () {
     $("#menu").css('background-color', '');
   }
   else {
-    $("#menu").css('background-color', darkPurpleTransparent);
+    $("#menu").css('background-color', darkPurple);
   }
 
   if ($(window).scrollTop() <= 50) {
