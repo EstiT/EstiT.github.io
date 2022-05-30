@@ -1,22 +1,22 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted } from 'vue';
 
 onMounted(() => {
-document.addEventListener('scroll', scrollListener)
-})
+	document.addEventListener('scroll', scrollListener);
+});
 
-  function backToTop() {
-    window.scrollTo(0,0);
-  }
+function backToTop() {
+	window.scrollTo(0,0);
+}
 
-    function scrollListener(e) {
+function scrollListener(e) {
 
-     if (window.scrollTop < document.getElementById("home").offsetTop + 60) {
-       document.getElementById('menu').style.backgroundColor = '';
-  } else {
-    document.getElementById('menu').style.backgroundColor = '#383d61';
-  }
-  }
+	if (window.scrollTop < document.getElementById('home').offsetTop + 60) {
+		document.getElementById('menu').style.backgroundColor = '';
+	} else {
+		document.getElementById('menu').style.backgroundColor = '#383d61';
+	}
+}
 
 </script>
 
