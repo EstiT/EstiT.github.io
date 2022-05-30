@@ -39,6 +39,7 @@ function showMobile() {
   $("#mobilePortfolioTable").show();
   $("#portfolioTable").hide();
 
+  // TODO move to css
   //decrease font size for name
   $("#name").css({
     "font-size": "1.6em",
