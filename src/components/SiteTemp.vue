@@ -1,29 +1,28 @@
-<!DOCTYPE html>
-<html>
+<script setup>
+import { onMounted } from 'vue'
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166018571-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+onMounted(() => {
+document.addEventListener('scroll', scrollListener)
+})
 
-    gtag('config', 'UA-166018571-1');
-  </script>
-  <title>Esti Tweg</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel='shortcut icon' href='favicon1.png' type='image/x-icon' />
-  <link rel='stylesheet' href='typicons.font-2.0.7/typicons.min.css' />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-</head>
+  function backToTop() {
+    window.scrollTo(0,0);
+  }
 
-<header>
+    function scrollListener(e) {
+
+     if (window.scrollTop < document.getElementById("home").offsetTop + 60) {
+       document.getElementById('menu').style.backgroundColor = '';
+  } else {
+    document.getElementById('menu').style.backgroundColor = '#383d61';
+  }
+  }
+
+</script>
+
+<template>
+  <div>
+  <div>
   <div id="header">
   </div>
 
@@ -38,6 +37,7 @@
       <li><a id="contactM" onclick="smoothScroll('contactMe')">Contact Me</a></li>
     </ul>
   </div>
+  <div>
   <ul id="menu">
     <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
     <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
@@ -54,16 +54,13 @@
     <div class="bar3"></div>
   </div>
   </div>
-  </heder>
-
-  <body>
     <main class="container">
       <div id="home" class="bg-1">
           <div id="homeCell">
             <h1 class="light" id="name">Esti Tweg</h1>
             <h2 class="light" style="padding-left: 55px;" id="subhead">Mobile App Developer</h2>
           </div>
-          <img id="meImg" src="images/me.jpg"></img>
+          <img id="meImg" src="images/me.jpg"/>
       </div>
 
       <div id="aboutMe">
@@ -90,24 +87,6 @@
           <img src="images/vuejs.png" class="skillsImg" />
           <img src="images/react.png" class="skillsImg" />
         </div>
-        <!-- <div class="wow fadeInUp skillContainer" style="height: 75px;">
-          <img src="images/cpp.png" class="skillsImg" />
-          <img src="images/cSharp.png" class="skillsImg" />
-          <img src="images/c.png" class="skillsImg" />
-        </div>
-        <div class="wow fadeInUp skillContainer" style="height: 50px;">
-          <img src="images/python.svg" class="skillsImg" />
-          <img src="images/Scala.png" class="skillsImg" />
-          <img src="images/Kotlin.png" class="skillsImg" />
-
-        </div>
-        <div class="wow fadeInUp skillContainer" style="height: 45px;">
-          <img src="images/SQLite.png" class="skillsImg" />
-          <img src="images/db2.png" class="skillsImg" />
-          <img src="images/mongoDB.png" class="skillsImg" />
-        </div> -->
-      </div>
-      </table>
       </div>
 
 
@@ -156,7 +135,7 @@
                 over would change into a cat pic rendered using an online generator.</p>
             </article>
           </div>
-          <div>
+         
             <div>
               <input id="ac-5" name="accordion-1" type="checkbox" />
               <label for="ac-5">UX Design Workshop - Bitmaker Labs</label>
@@ -308,15 +287,11 @@
                 </a>
                 <a target="_blank	" href="https://github.com/EstiT/CluelessClothes-iOS">
                   <p class="text">
-                    <u style="color:black;"><b><br>Clueless Clothes iOS app</u></b><br>
+                    <u style="color:black;"><b><br/>Clueless Clothes iOS app</b></u><br>
                     <span style="color:black;">
                       Add photos of your clothes and match them to create outfits.
                     </span>
                     <br><br>
-                    <!-- <button type="button"> <a class="square" target="_blank	"
-                        href="https://apps.apple.com/ca/app/cluelessclothes/id1527894150">
-                        Available in the App Store
-                      </a></button> -->
                   </p>
                 </a>
               </div>
@@ -327,8 +302,8 @@
                 <a target="_blank	" href="https://github.com/EstiT/squareGame"><img class="image"
                     src="images/square.png" width="100%" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/squareGame">
-                  <p class="text" class="square" style="color:black;">
-                    <u style="color:black;"><b>Square Game</u></b><br><span style="color:black;">While the red square
+                  <p class="text square" style="color:black;">
+                    <u style="color:black;"><b>Square Game</b></u><br><span style="color:black;">While the red square
                       moves, press the space bar to stop it inside the bounds.
                     </span><br><br>
                     <button type="button"> <a class="square" href="squareIndex.html">Play here!</a></button>
@@ -342,7 +317,7 @@
                 </a>
                 <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
                   <p class="text">
-                    <u><b>Image Overlay</u></b><br>You specify two images, one to be the background and the other to be
+                    <u><b>Image Overlay</b></u><br>You specify two images, one to be the background and the other to be
                     placed transparently on top. In this example, there is a Mario character floating in a level.
                   </p>
                 </a>
@@ -359,9 +334,6 @@
                     <u style="color:black;"><b>Emoji-Dash</b></u> <br><span style="color:black;">iOS game for my honours
                       project. Uses SpriteKit.</span>
                     <br><br>
-                    <!-- <button type="button"> <a class="square" target="_blank	"
-                        href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">Available in the App
-                        Store</a></button> -->
                   </p>
                 </a>
               </div>
@@ -374,15 +346,11 @@
                 </a>
                 <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
                   <p class="text">
-                    <u style="color:black;"><b><br>Climbing Grade Converter iOS app</u></b><br>
+                    <u style="color:black;"><b><br>Climbing Grade Converter iOS app</b></u><br>
                     <span style="color:black;">
                       Convert climbing grades between different systems used world wide.
                     </span>
                     <br><br>
-                    <!-- <button type="button"> <a class="square" target="_blank	"
-                        href="https://apps.apple.com/us/app/gradeconverter/id1451156203">
-                        Available in the App Store
-                      </a></button> -->
                   </p>
                 </a>
               </div>
@@ -394,7 +362,7 @@
                     src="images/logit.png" width="100%" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/logIt-SwiftUI">
                   <p class="text">
-                    <u><b>Climbing training tracker app</u></b><br>iOS app developed with SwiftUI to track climbing progress in an analytical and visual manner.
+                    <u><b>Climbing training tracker app</b></u><br>iOS app developed with SwiftUI to track climbing progress in an analytical and visual manner.
                   </p>
                 </a>
               </div>
@@ -405,7 +373,7 @@
                     src="images/cuhacking.png" width="100%" /></a>
                 <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
                   <p class="text">
-                    <u><b>CUhacking Android App</u></b><br>Group project for school. Created an app to make the
+                    <u><b>CUhacking Android App</b></u><br>Group project for school. Created an app to make the
                     hackathon more enjoyable for hackers.
                   </p>
                 </a>
@@ -418,7 +386,7 @@
                     src="images/tictactoe.png" width="100%" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/TicTacToe">
                   <p class="text">
-                    <u><b>Tic Tac Toe</u></b><br>Play Tic Tac Toe against a computer.
+                    <u><b>Tic Tac Toe</b></u><br>Play Tic Tac Toe against a computer.
                   </p>
                 </a>
               </div>
@@ -428,7 +396,7 @@
                     src="images/asciiPresent.png" width="100%" id="ascii" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker">
                   <p class="text">
-                    <u><b>Image to Ascii Art</u></b><br>You upload an image, choose what the background colour is and
+                    <u><b>Image to Ascii Art</b></u><br>You upload an image, choose what the background colour is and
                     what to save the text file as. The program converts each pixel in the image to a symbol. Small
                     images work best.
                   </p>
@@ -526,8 +494,582 @@
 
     </main>
 
-    <a href="#" class="back-to-top">Back to Top</a>
+    <a href="#" class="back-to-top" @click="backToTop">Back to Top</a>
+    </div>
+</template>
+<style>
+:root {
+  --background1: rgba(227,225,236,1);
+  /*#e2e0ea;*/
+  --background2: rgba(244,244,247,1);
+  /*#d4d1e0;*/
+  --lightPink: #fee8de;
+  --purple1: #584c7d;
+  --purple2: #4f58ca;
+  --salmonPink: #e1949f;
+  --darkGrey: #ada7ad;
+  --grey: #d2cbd2;
+  --darkPurple: #383d61;
+  --darkBlush: #9a6068;
+}
+</style>
+<style scoped>
 
-  </body>
 
-</html>
+
+@font-face {
+  font-family: 'typicons';
+  src: url("typicons.font-2.0.7/typicons.eot");
+  src: url("typicons.font-2.0.7/typicons.eot?#iefix") format('embedded-opentype'),
+       url("typicons.font-2.0.7/typicons.woff") format('woff'),
+       url("typicons.font-2.0.7/typicons.ttf") format('truetype'),
+       url("typicons.font-2.0.7/typicons.svg#typicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  margin: 0px;
+  padding-top: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+th, td {
+  /* padding: 8px; */
+  padding-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid var(--darkGrey);
+  width: 60%;
+  display: block;
+}
+
+/*Scroll to top button*/
+a.back-to-top {
+	display: none;
+	width: 15%;
+	height: 15%;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 1px;
+	bottom: 20px;
+	background: url("images/up-arrow.png") no-repeat center 43%;
+}
+
+/*STYLING FOR TOP MENU*/
+#menu {
+  transition: all .4s ease-in;
+  position: fixed;
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  width: 100vw;
+  z-index: 10000;
+}
+
+#menu li {
+  float: left;
+  font-size: 1.08em;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  padding-top: 0px;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+#menu a {
+  font-size: 20px;
+  color: var(--lightPink);
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 1.2rem;
+  text-decoration: none;
+  z-index: 10000;
+}
+#menu a:hover {
+  color: white;
+  z-index: 10000;
+}
+
+#header {
+  transition: all .4s ease-in;
+  height:43px;
+  width: 100%;
+  background-color: var(--darkPurple);
+  position:fixed;
+  z-index:7;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* Menu icon styling */
+.menuContainer {
+  display: none;
+  cursor: pointer;
+  margin-right: 15px !important;
+  padding-right: 7px;
+  padding-left: 7px;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index:8;
+}
+
+#mobileMenu {
+  display: none;
+  padding: 40px 25px;
+  text-align: right;
+  right:0;
+  position: fixed;
+  background-color: var(--darkPurple);
+  width: 100%;
+  position: fixed;
+  z-index:8;
+}
+
+#mobileMenu ul{
+  list-style: none;
+  margin: 0 0 0 0;
+}
+
+#mobileMenu li{
+  padding-top:4px;
+  padding-bottom:4px;
+  font-size: 18px;
+}
+
+#mobileMenu a{
+  color: var(--lightPink);
+  text-decoration: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 27px;
+    height: 3px;
+    background-color: var(--lightPink);
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .bar2 { opacity: 0; }
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.centerText {
+  text-align: center;
+}
+
+
+/*STYLING FOR EACH PAGE*/
+#home {
+  width: 100%;
+  height: 45vw;
+  padding-top: 6rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+}
+
+#homeCell {
+  padding-left: 120px;
+  padding-top: 25px;
+}
+
+.bg-1 {
+    background: linear-gradient(45deg, transparent 200px, var(--darkPurple) 50px);
+    background-size:100% 45vw;
+}
+
+#meImg {
+  width: 25vw;
+  height: 25vw;
+  object-fit: contain;
+  margin: 15px;
+  margin-left:120px;
+  border: 10px solid var(--lightPink);
+  text-align: center;
+  border-radius: 50%;
+}
+
+#aboutMe {
+  width: auto;
+  min-height: 370px;
+  background: var(--background2);
+}
+
+#aboutMe p, #skills p{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 30px;
+  line-height: 1.9;
+  margin-bottom: 0px;
+}
+
+#skills h3{
+  padding-left: 10%;
+  font-size: 1.4em;
+  line-height: 1.9;
+}
+
+#australia, #worlds, #climbing{
+  display: none;
+}
+
+#skills{
+  width: auto;
+  resize: both;
+  min-height: 400px;
+  padding-bottom: 8em;
+}
+
+#skills span {
+  color: var(--darkBlush);
+}
+
+.skillContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5em;
+}
+
+.skillsImg {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */  
+}
+
+#education{
+  width: 100%;
+  resize: both;
+  overflow: auto;
+  min-height: 550px;
+}
+
+#portfolio {
+  width: auto;
+  display:block;
+  overflow:auto;
+}
+
+#experience{
+  width: auto;
+  resize: both;
+  overflow: auto;
+  min-height: 300px;
+}
+
+#contactMe{
+  width: auto;
+  height: 45vh;
+}
+
+
+/*STYLING FOR PORTFOLIO TABLE*/
+.top {
+  vertical-align: top;
+}
+.portfolioCell {
+  position:relative;
+}
+.portfolioCell.image{
+  width: auto;
+  height: auto;
+}
+.portfolioCell.image,.portfolioCell .text {
+  transition: opacity 0.4s ease-in-out;
+}
+.portfolioCell .text {
+  position:absolute;
+  opacity:0;
+  color: black;
+  font-weight: lighter;
+  color: black;
+  line-height: 1.8vw;
+  font-size: 1.2vw;
+  top: 10%;
+  left: 7%;
+  right: 8%;
+  font-family: "Avenir", Avenir;
+}
+.portfolioCell:hover .image {
+  position:relative;
+  opacity:0.18;
+  z-index: 0;
+}
+.portfolioCell:hover .text {
+  opacity:1;
+  font-weight: lighter;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  line-height: 1.8vw;
+  font-size: 1.2vw;
+  top: 10%;
+    left: 7%;
+    right: 8%;
+}
+
+/*STYLING FOR EDUCATION DROP DOWN*/
+.ac-container{
+	margin: 25px 25px 50px 50px;
+  float: inherit;
+  padding: 2% 4% 4% 4%;
+}
+.ac-container label{
+  padding: 1rem;
+  margin-top: 6px;
+	position: relative;
+	display: block;
+	min-height: 30px;
+	cursor: pointer;
+	color: black;
+	line-height: 33px;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+.ac-container label:hover{
+	background: var(--background1);
+  color: var(--darkPurple);
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: var(--background1);
+	color: var(--darkPurple);
+	box-shadow:
+		0px 0px 0px 1px rgba(155,155,155,0.3),
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+	content: '';
+	position: absolute;
+	width: 65px;
+	height: 24px;
+	right: 13px;
+	top: 1.1rem;
+	background: transparent url(images/arrow_down.png) no-repeat center;
+  background-size: 1.2rem;
+}
+.ac-container input:checked + label:hover:after{
+	background-image: url(images/arrow_up.png);
+}
+.ac-container input{
+	display: none;
+}
+.ac-container article{
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	transition:
+		height 0.3s ease-in-out,
+		box-shadow 0.6s linear;
+}
+.ac-container input:checked ~ article{
+	transition:
+		height 0.5s ease-in-out,
+		box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.ac-container article p{
+	line-height: 23px;
+	/* padding: 8px; */
+  font-family: "Avenir", Avenir;
+  font-size: 1.1em;
+}
+
+.light {
+  color: var(--lightPink);
+}
+
+.dark{
+  color: var(--darkPurple);
+}
+
+.background {
+  background-color: var(--background2);
+}
+
+  h1, h2, h3 {
+    color: var(--darkPurple);
+  }
+
+@media screen and (min-width: 750px){
+
+    #portfolioTable {
+      display: block;
+    }
+    #mobilePortfolioTable {
+      display:none;
+    }
+
+  p {
+      display: block;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      font-size: 1.3em;
+  }
+
+  h1 {
+    display: block;
+    font-size: 3em;
+    margin-left: 0.0px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bolder;
+  }
+
+
+  h2 {
+    font-weight: bolder;
+    display: block;
+    font-size: 2em;
+    margin-left: 0.0px;
+    margin-right: 0.0px;
+    padding-top: 15px;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding-left: 10px;
+  }
+
+  ul, menu, dir {
+      display: block;
+      list-style-type: disc;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 40px;
+  }
+}
+  a {
+      color: var(--darkBlush);
+      text-decoration: none;
+  }
+
+  .square {
+    color: black;
+    text-decoration: none;
+  }
+
+  /*contact me icon and text*/
+  .icon {
+    font-size: 70px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    display:block;
+    color: var(--purple1) !important;
+  }
+
+  .icon:hover {
+    color: var(--darkPurple) !important;
+  }
+
+  .contactText {
+    color: var(--purple1)!important;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .contactText:hover {
+    color: var(--darkPurple)!important;
+    font-size: 20px;
+  }
+
+  #ACsubheader{
+    font-weight: bolder;
+    padding-left: 0px;
+    margin-left: -5px;
+  }
+
+  .height {
+    min-height: 15vh;
+  }
+
+  /*  show/hide menu/ portfolio based on page width */
+@media (max-width: 775px) {
+  #menu     { display: none; }
+  .menuContainer, #header { display: inline-block; }
+  .menuContainer { top: 0.5rem; }
+  #mobilePortfolioTable { display: block; }
+  #portfolioTable{ display: none; }
+  #home { padding-top: 2rem; }
+  #aboutMe p { padding: 1.5rem; }
+  .ac-container { margin: 1rem; }
+  .ac-container label{ padding: 0.5rem; }
+  .icon { font-size: 50px; }
+  .contactText { display: none }
+  #contactMe { height: 35vh; }
+  #header { padding: 0.5rem; }
+}
+
+canvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+
+a, p {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+p{
+    display: block;
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+a:link, a:visited {
+    color: var(--salmonPink);
+}
+
+
+</style>
