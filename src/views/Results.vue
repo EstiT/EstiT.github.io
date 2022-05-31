@@ -29,7 +29,7 @@
 <style scoped lang="scss">
 .results {
   height: 100%;
-  background: var(--lightPurple);
+  background: var(--background2);
   color: var(--darkPurple);
   padding: 2rem;
 }
