@@ -1,6 +1,7 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
+const isResume = ref(false);
 
 onMounted(() => {
 	document.addEventListener('scroll', scrollListener);
@@ -19,6 +20,15 @@ function scrollListener(e) {
 	}
 }
 
+function smoothScroll(target) {
+  isResume.value = false;
+  setTimeout(() => {  
+    document.getElementById(target).scrollIntoView({
+    behavior: 'smooth', block: "start", inline: "nearest"
+  });
+  history.pushState(null, null, "#" + target);}, 100);
+}
+
 </script>
 
 <template>
@@ -29,33 +39,33 @@ function scrollListener(e) {
 
   <div id="mobileMenu">
     <ul>
-      <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
-      <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
-      <li><a id="eduM" onclick="smoothScroll('education')">Education</a></li>
-      <li><a id="expM" onclick="smoothScroll('experience')">Experience</a></li>
-      <li><a id="portfolioM" onclick="smoothScroll('portfolio')">Portfolio</a></li>
-      <li><a id="resumeM" href="resume.html">Resume</a></li>
-      <li><a id="contactM" onclick="smoothScroll('contactMe')">Contact Me</a></li>
+      <li><a id="homeM" @click="smoothScroll('home')">Home</a></li>
+      <li><a id="aboutM" @click="smoothScroll('aboutMe')">About Me</a></li>
+      <li><a id="eduM" @click="smoothScroll('education')">Education</a></li>
+      <li><a id="expM" @click="smoothScroll('experience')">Experience</a></li>
+      <li><a id="portfolioM" @click="smoothScroll('portfolio')">Portfolio</a></li>
+      <li><a id="resumeM" @click="isResume=true">Resume</a></li>
+      <li><a id="contactM" @click="smoothScroll('contactMe')">Contact Me</a></li>
     </ul>
   </div>
   <div>
   <ul id="menu">
-    <li><a id="homeM" onclick="smoothScroll('home')">Home</a></li>
-    <li><a id="aboutM" onclick="smoothScroll('aboutMe')">About Me</a></li>
-    <li><a id="eduM" onclick="smoothScroll('education')">Education</a></li>
-    <li><a id="expM" onclick="smoothScroll('experience')">Experience</a></li>
-    <li><a id="portfolioM" onclick="smoothScroll('portfolio')">Portfolio</a></li>
-    <li><a id="resumeM" href="resume.html">Resume</a></li>
-    <li><a id="contactM" onclick="smoothScroll('contactMe')">Contact Me</a></li>
+    <li><a id="homeM" @click="smoothScroll('home')">Home</a></li>
+    <li><a id="aboutM" @click="smoothScroll('aboutMe')">About Me</a></li>
+    <li><a id="eduM" @click="smoothScroll('education')">Education</a></li>
+    <li><a id="expM" @click="smoothScroll('experience')">Experience</a></li>
+    <li><a id="portfolioM" @click="smoothScroll('portfolio')">Portfolio</a></li>
+    <li><a id="resumeM" @click="isResume=true">Resume</a></li>
+    <li><a id="contactM" @click="smoothScroll('contactMe')">Contact Me</a></li>
   </ul>
   </div>
-  <div class="menuContainer" onclick="animateMenuIcon(this)">
+  <div class="menuContainer" @click="animateMenuIcon(this)">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
   </div>
   </div>
-    <main class="container">
+    <main class="container" v-if="!isResume">
       <div id="home" class="bg-1">
           <div id="homeCell">
             <h1 class="light" id="name">Esti Tweg</h1>
@@ -465,28 +475,28 @@ function scrollListener(e) {
       <div id="contactMe" class="background">
         <br><br>
         <h2 id="contactMeText" class="dark" style="padding-left: 35px;">Contact Me 📞</h2>
-        <div style="display:flex; justify-content: space-evenly;">
+        <div style="display:flex; justify-content: space-evenly; padding-bottom: 2rem">
             <div>
               <a href="mailto:estictweg@hotmail.com?Subject=" class="typcn typcn-mail icon"></a>
-              <br>
+         
               <a href="mailto:estictweg@hotmail.com?Subject=" target="_top" class="contactText">Email</a>
             </div>
             <div>
               <a target="_blank" href="https://ca.linkedin.com/in/esti-tweg-803389120"
                 class="typcn typcn-social-linkedin-circular icon"></a>
-              <br>
+        
               <a target="_blank" href="https://ca.linkedin.com/in/esti-tweg-803389120" class="contactText">LinkedIn
               </a>
             </div>
             <div>
               <a target="_blank" href="https://github.com/EstiT" class="typcn typcn-social-github-circular icon"></a>
 
-              <br>
+      
               <a target="_blank" href="https://github.com/EstiT" class="contactText">GitHub</a>
             </div>
             <div>
               <a href="EstiTwegResume.pdf" download class="typcn typcn-download-outline icon"></a>
-              <br>
+      
               <a target="_blank" href="EstiTwegResume.pdf" download class="contactText">Resume</a>
             </div>
         </div>
@@ -494,7 +504,9 @@ function scrollListener(e) {
       <div class="bg-1 height"></div>
 
     </main>
-
+ <object v-else style="width: 100vw; height: 50vw;" data="EstiTwegResume.pdf" type="application/pdf">
+           <embed src="EstiTwegResume.pdf" type="application/pdf" />
+       </object>
     <a href="#" class="back-to-top" @click="backToTop">Back to Top</a>
     </div>
 </template>
@@ -516,7 +528,7 @@ function scrollListener(e) {
 </style>
 <style scoped>
 
-
+@import '../../typicons.font-2.0.7/typicons.min.css';
 
 @font-face {
   font-family: 'typicons';
@@ -787,7 +799,7 @@ a.back-to-top {
 
 #contactMe{
   width: auto;
-  height: 45vh;
+  min-height: 45vh;
 }
 
 
@@ -1022,7 +1034,7 @@ a.back-to-top {
   }
 
   .height {
-    min-height: 15vh;
+    min-height: 8vh;
   }
 
   /*  show/hide menu/ portfolio based on page width */
@@ -1050,7 +1062,7 @@ canvas {
 }
 
 
-a, p {
+p {
   margin-left: 10px;
   margin-top: 10px;
 }
