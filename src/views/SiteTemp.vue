@@ -71,7 +71,7 @@ function smoothScroll(target) {
             <h1 class="light" id="name">Esti Tweg</h1>
             <h2 class="light" style="padding-left: 55px;" id="subhead">Mobile App Developer</h2>
           </div>
-          <img id="meImg" src="images/me.jpg"/>
+          <img id="meImg" src="/images/me.jpg"/>
       </div>
 
       <div id="aboutMe">
@@ -91,12 +91,12 @@ function smoothScroll(target) {
         <p class="centerText">I've worked with a variety of different technologies while focusing on app dev and front end
           work.</p>
         <div class="wow fadeInUp skillContainer" style="height: 150px;">
-          <img src="images/java.png" class="skillsImg" />
-          <img src="images/swift.png" class="skillsImg" />
+          <img src="/images/java.png" class="skillsImg" />
+          <img src="/images/swift.png" class="skillsImg" />
         </div>
         <div class="wow fadeInUp skillContainer" style="height: 100px;">
-          <img src="images/vuejs.png" class="skillsImg" />
-          <img src="images/react.png" class="skillsImg" />
+          <img src="/images/vuejs.png" class="skillsImg" />
+          <img src="/images/react.png" class="skillsImg" />
         </div>
       </div>
 
@@ -294,7 +294,7 @@ function smoothScroll(target) {
             <th width="25%" class="top">
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/CluelessClothes-iOS">
-                  <img class="image" src="images/cluelessClothes.png" width="100%" />
+                  <img class="image" src="/images/cluelessClothes.png" width="100%" />
                 </a>
                 <a target="_blank	" href="https://github.com/EstiT/CluelessClothes-iOS">
                   <p class="text">
@@ -311,7 +311,7 @@ function smoothScroll(target) {
 
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/squareGame"><img class="image"
-                    src="images/square.png" width="100%" /></a>
+                    src="/images/square.png" width="100%" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/squareGame">
                   <p class="text square" style="color:black;">
                     <u style="color:black;"><b>Square Game</b></u><br><span style="color:black;">While the red square
@@ -324,7 +324,7 @@ function smoothScroll(target) {
               <br><br>
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
-                  <img class="image" src="images/mario.png" width="100%" />
+                  <img class="image" src="/images/mario.png" width="100%" />
                 </a>
                 <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
                   <p class="text">
@@ -339,7 +339,7 @@ function smoothScroll(target) {
             <th width="25%" class="top">
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS"> <img class="image"
-                    src="images/emojiDash.jpeg" width="100%" /></a>
+                    src="/images/emojiDash.jpeg" width="100%" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS">
                   <p class="text">
                     <u style="color:black;"><b>Emoji-Dash</b></u> <br><span style="color:black;">iOS game for my honours
@@ -353,7 +353,7 @@ function smoothScroll(target) {
 
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
-                  <img class="image" src="images/climbingConverter.png" width="100%" />
+                  <img class="image" src="/images/climbingConverter.png" width="100%" />
                 </a>
                 <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
                   <p class="text">
@@ -370,7 +370,7 @@ function smoothScroll(target) {
 
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/logIt-SwiftUI"> <img class="image"
-                    src="images/logit.png" width="100%" /></a>
+                    src="/images/logit.png" width="100%" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/logIt-SwiftUI">
                   <p class="text">
                     <u><b>Climbing training tracker app</b></u><br>iOS app developed with SwiftUI to track climbing progress in an analytical and visual manner.
@@ -381,7 +381,7 @@ function smoothScroll(target) {
             <th width="25%" class="top">
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank" href="https://github.com/cuhacking/CUHackingApp"><img class="image"
-                    src="images/cuhacking.png" width="100%" /></a>
+                    src="/images/cuhacking.png" width="100%" /></a>
                 <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
                   <p class="text">
                     <u><b>CUhacking Android App</b></u><br>Group project for school. Created an app to make the
@@ -394,7 +394,7 @@ function smoothScroll(target) {
 
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/TicTacToe"><img class="image"
-                    src="images/tictactoe.png" width="100%" /></a>
+                    src="/images/tictactoe.png" width="100%" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/TicTacToe">
                   <p class="text">
                     <u><b>Tic Tac Toe</b></u><br>Play Tic Tac Toe against a computer.
@@ -404,7 +404,7 @@ function smoothScroll(target) {
               <br><br>
               <div class="wow fadeInUp portfolioCell">
                 <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker"><img class="image"
-                    src="images/asciiPresent.png" width="100%" id="ascii" /></a>
+                    src="/images/asciiPresent.png" width="100%" id="ascii" /></a>
                 <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker">
                   <p class="text">
                     <u><b>Image to Ascii Art</b></u><br>You upload an image, choose what the background colour is and
@@ -425,7 +425,7 @@ function smoothScroll(target) {
               <div>
                 <a class="square" target="_blank"
                   href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">
-                  <img class="image wow fadeInUp" src="images/emojiDash.jpeg" width="100%" />
+                  <img class="image wow fadeInUp" src="/images/emojiDash.jpeg" width="100%" />
                 </a>
               </div>
             </td>
@@ -434,7 +434,7 @@ function smoothScroll(target) {
             <td>
               <div>
                 <a target="_blank" href="https://apps.apple.com/ca/app/cluelessclothes/id1527894150">
-                  <img class="image wow fadeInUp" src="images/cluelessClothes.png" width="100%" />
+                  <img class="image wow fadeInUp" src="/images/cluelessClothes.png" width="100%" />
                 </a>
               </div>
             </td>
@@ -443,7 +443,7 @@ function smoothScroll(target) {
             <td>
               <div>
                 <a target="_blank	" href="squareIndex.html">
-                  <img class="image wow fadeInUp" src="images/square.png" width="100%" />
+                  <img class="image wow fadeInUp" src="/images/square.png" width="100%" />
                 </a>
               </div>
             </td>
@@ -452,7 +452,7 @@ function smoothScroll(target) {
             <td>
               <div>
                 <a target="_blank" href="https://github.com/EstiT/logIt-SwiftUI">
-                  <img class="image wow fadeInUp" src="images/logit.png" width="100%" />
+                  <img class="image wow fadeInUp" src="/images/logit.png" width="100%" />
                 </a>
               </div>
             </td>
@@ -461,7 +461,7 @@ function smoothScroll(target) {
             <td>
               <div>
                 <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
-                  <img class="image wow fadeInUp" src="images/climbingConverter.png" width="100%" />
+                  <img class="image wow fadeInUp" src="/images/climbingConverter.png" width="100%" />
                 </a>
               </div>
             </td>
@@ -577,7 +577,7 @@ a.back-to-top {
 	z-index: 999;
 	right: 1px;
 	bottom: 20px;
-	background: url("images/up-arrow.png") no-repeat center 43%;
+	background: url("/images/up-arrow.png") no-repeat center 43%;
 }
 
 /*STYLING FOR TOP MENU*/
@@ -886,11 +886,11 @@ a.back-to-top {
 	height: 24px;
 	right: 13px;
 	top: 1.1rem;
-	background: transparent url(images/arrow_down.png) no-repeat center;
+	background: transparent url(/images/arrow_down.png) no-repeat center;
   background-size: 1.2rem;
 }
 .ac-container input:checked + label:hover:after{
-	background-image: url(images/arrow_up.png);
+	background-image: url(/images/arrow_up.png);
 }
 .ac-container input{
 	display: none;
