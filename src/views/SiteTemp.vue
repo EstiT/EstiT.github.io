@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted } from 'vue';
 
+
 onMounted(() => {
 	document.addEventListener('scroll', scrollListener);
 });
