@@ -4,7 +4,7 @@ import SiteTemp from './views/SiteTemp.vue';
 import Results from './views/Results.vue';
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory('/'),
 	routes: [
 		{
 			path: '/',

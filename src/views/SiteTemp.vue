@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref } from '../../node_modules/vue';
 
 const isResume = ref(false);
 
@@ -13,7 +13,7 @@ function backToTop() {
 
 function scrollListener(e) {
 
-	if (window.scrollTop < document.getElementById('home').offsetTop + 60) {
+	if (window.scrollTop < document.getElementById('home')?.offsetTop + 60) {
 		document.getElementById('menu').style.backgroundColor = '';
 	} else {
 		document.getElementById('menu').style.backgroundColor = '#383d61';
@@ -495,17 +495,17 @@ function smoothScroll(target) {
               <a target="_blank" href="https://github.com/EstiT" class="contactText">GitHub</a>
             </div>
             <div>
-              <a href="EstiTwegResume.pdf" download class="typcn typcn-download-outline icon"></a>
+              <a href="/EstiTwegResume.pdf" download class="typcn typcn-download-outline icon"></a>
       
-              <a target="_blank" href="EstiTwegResume.pdf" download class="contactText">Resume</a>
+              <a target="_blank" href="/EstiTwegResume.pdf" download class="contactText">Resume</a>
             </div>
         </div>
       </div>
       <div class="bg-1 height"></div>
 
     </main>
- <object v-else style="width: 100vw; height: 50vw;" data="EstiTwegResume.pdf" type="application/pdf">
-           <embed src="EstiTwegResume.pdf" type="application/pdf" />
+    <object v-else style="width: 100vw; height: 50vw;" data="/EstiTwegResume.pdf" type="application/pdf">
+           <embed src="/EstiTwegResume.pdf" type="application/pdf" />
        </object>
     <a href="#" class="back-to-top" @click="backToTop">Back to Top</a>
     </div>
