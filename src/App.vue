@@ -10,6 +10,9 @@ import { computed } from '@vue/runtime-core';
 
 const isResults = computed(() => window?.location?.pathname?.includes('results'));
 
+console.log(window.location.href)
+console.log(isResults.value)
+if (isResults.value) window.history.pushState("", "", "/" + window.location.href.substring(window.location.href.lastIndexOf('/') + 1).split("?")[0]);
 </script>
 
 <style>
