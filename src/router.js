@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import SiteTemp from './views/SiteTemp.vue';
 import Results from './views/Results.vue';
+import PathNotFound from './views/PathNotFound.vue';
 
 const router = createRouter({
 	history: createWebHistory('/'),
@@ -11,14 +12,14 @@ const router = createRouter({
 			component: SiteTemp,
 			name: 'SiteTemp',
 		},
-        	{
-			path: '/results',
-			component: Results,
-			name: 'results',
-		},
+        // 	{
+		// 	path: '/results',
+		// 	component: Results,
+		// 	name: 'results',
+		// },
 		{
 			path: '/:pathMatch(.*)*',
-			redirect: '/',
+			component: PathNotFound 
 		},
 	],
 });
