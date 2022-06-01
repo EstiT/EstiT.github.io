@@ -1,27 +1,25 @@
+<template>
+	<Results v-if="isResults" />
+	<SiteTemp v-else />
+</template>
+
 <script setup>
 import SiteTemp from './views/SiteTemp.vue'
-import { useRoute, useRouter } from 'vue-router';
+import Results from './views/Results.vue';
+import { computed } from '@vue/runtime-core';
+
+const isResults = computed(() => window?.location?.pathname?.includes('results'));
 
 </script>
 
-<template>
-  <div class="router-wrapper">
-		<router-view v-slot="{ Component }">
-			<transition mode="out-in">
-				<component :is="Component" class="router-component" />
-			</transition>
-		</router-view>
-	</div>
-</template>
-
 <style>
-
 body {
-  margin: 0;
+	margin: 0;
 }
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 </style>

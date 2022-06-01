@@ -20,15 +20,15 @@
     </div>
     <div>
       <h3 style="margin-top: 2.5rem">International 🌎</h3>
-      <a class="link" target="_blank" href="https://www.ifsc-climbing.org/index.php/world-competition/calendar/?task=resultathletes&event=910&result=27">44th IFSC Youth World Championships @ Arco, Italy - 06/09/2015</a>
       <a class="link" target="_blank" href="https://www.ifsc-climbing.org/index.php/world-competition/calendar/?task=resultathletes&event=898&result=7">58th IFSC Worldcup @ Toronto, CA - 31/05/2015</a>
+      <a class="link" target="_blank" href="https://www.ifsc-climbing.org/index.php/world-competition/calendar/?task=resultathletes&event=910&result=27">44th IFSC Youth World Championships @ Arco, Italy - 06/09/2015</a>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .results {
-  height: 100%;
+  min-height: 100vh;
   background: var(--background2);
   color: var(--darkPurple);
   padding: 2rem;
@@ -40,6 +40,7 @@
   cursor: pointer;
   text-decoration: none;
   margin: 0.5rem;
+
   &:hover {
     text-decoration: underline;
   }
