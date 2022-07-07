@@ -14,8 +14,9 @@
 <script>
 
 window.addEventListener('error', function (e) {
+  const isResults = window?.location?.pathname?.includes('results');
 	console.log(e, window.location.href, isResults);
-	if (window?.location?.pathname?.includes('results')) window.history.pushState("", "", "/" + window.location.href.substring(window.location.href.lastIndexOf('/') + 1).split("?")[0]);
+	if (isResults) window.history.pushState("", "", "/" + window.location.href.substring(window.location.href.lastIndexOf('/') + 1).split("?")[0]);
 
 }, true);
 </script>
