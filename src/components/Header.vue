@@ -1,16 +1,16 @@
 <script setup>
 import { onMounted, ref } from '../../node_modules/vue';
 import { mobile, desktop } from '../utils/Breakpoints';
-
-const isResume = ref(false);
+const emit = defineEmits(['resumeClicked']);
 const showMobMenu = ref(false);
+const isResume = ref(false);
 
 onMounted(() => {
   document.addEventListener('scroll', scrollListener);
-
 });
 
 function smoothScroll(target) {
+  emit('resumeClicked', false);
   isResume.value = false;
   setTimeout(() => {
     document.getElementById(target).scrollIntoView({
@@ -18,10 +18,7 @@ function smoothScroll(target) {
     });
     history.pushState(null, null, "#" + target);
   }, 100);
-  if (mobile.value) {
-    showMobMenu.value = !showMobMenu.value;
-    document.querySelector('.menuContainer').classList.toggle("change");
-  }
+  closeMobMenu();
 }
 
 function scrollListener(e) {
@@ -38,10 +35,17 @@ function animateMenuIcon($event) {
   showMobMenu.value = !showMobMenu.value;
   document.querySelector('.menuContainer').classList.toggle("change");
 }
+
+function closeMobMenu() {
+  if (mobile.value) {
+    showMobMenu.value = !showMobMenu.value;
+    document.querySelector('.menuContainer').classList.toggle("change");
+  }
+}
 </script>
 
 <template>
-  <div>
+  <div :class="{ 'purple-bg': isResume }">
     <div>
       <div id="header">
       </div>
@@ -53,7 +57,7 @@ function animateMenuIcon($event) {
             <li><a id="eduM" @click="smoothScroll('education')">Education</a></li>
             <li><a id="expM" @click="smoothScroll('experience')">Experience</a></li>
             <li><a id="portfolioM" @click="smoothScroll('portfolio')">Portfolio</a></li>
-            <li><a id="resumeM" @click="isResume = true">Resume</a></li>
+            <li><a id="resumeM" @click="emit('resumeClicked', true); closeMobMenu(); isResume.value = true;">Resume</a></li>
             <li><a id="contactM" @click="smoothScroll('contactMe')">Contact Me</a></li>
           </ul>
         </div>
@@ -65,7 +69,7 @@ function animateMenuIcon($event) {
           <li><a id="eduM" @click="smoothScroll('education')">Education</a></li>
           <li><a id="expM" @click="smoothScroll('experience')">Experience</a></li>
           <li><a id="portfolioM" @click="smoothScroll('portfolio')">Portfolio</a></li>
-          <li><a id="resumeM" @click="isResume = true">Resume</a></li>
+          <li><a id="resumeM" @click="emit('resumeClicked', true); isResume.value = true;">Resume</a></li>
           <li><a id="contactM" @click="smoothScroll('contactMe')">Contact Me</a></li>
         </ul>
       </div>
@@ -79,6 +83,10 @@ function animateMenuIcon($event) {
 </template>
 
 <style scoped>
+.purple-bg {
+  background-color: var(--darkPurple);
+}
+
 #menu {
   transition: all .4s ease-in;
   position: fixed;
@@ -119,7 +127,7 @@ function animateMenuIcon($event) {
 
 #header {
   transition: all .4s ease-in;
-  height: 43px;
+  height: 3rem;
   width: 100%;
   background-color: var(--darkPurple);
   position: fixed;

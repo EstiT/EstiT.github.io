@@ -12,13 +12,15 @@ function backToTop() {
   window.scrollTo(0, 0);
 }
 
-
+function resumeClicked(val) {
+  isResume.value = val;
+}
 
 </script>
 
 <template>
   <div>
-    <Header />
+    <Header @resumeClicked="resumeClicked" />
     <main class="container" v-if="!isResume">
       <div id="home" class="bg-1">
         <div id="homeCell">
@@ -30,7 +32,7 @@ function backToTop() {
       <div id="aboutMe">
         <br><br>
         <h2 class="dark" style="padding-left: 35px;">About Me 👩🏻‍💻 🧗🏻‍♀️ ✈️</h2>
-        <p class="centerText"> Welcome to my website! My name is Esti Tweg and I am a Computer Science graduate from Carleton University in Ottawa. I specialized in Mobile Application Development and minored in Business. When I’m not coding, you can find me rock climbing or travelling(pre-pandemic). </p>
+        <p class="centerText"> Welcome to my website! My name is Esti Tweg and I am a Computer Science graduate from Carleton University in Ottawa. I specialized in Mobile Application Development and minored in Business. When I’m not coding, you can find me rock climbing or traveling. </p>
         <hr style="margin-top:30px; margin-bottom:0px;">
       </div>
       <div id="skills" class="background">
@@ -357,7 +359,7 @@ function backToTop() {
       </div>
       <div class="bg-1 height"></div>
     </main>
-    <object v-else style="width: 100vw; height: 50vw;" data="/EstiTwegResume.pdf" type="application/pdf">
+    <object v-else style="width: 100vw; height: calc(100vh - 4rem);margin-top: 4rem" data="/EstiTwegResume.pdf" type="application/pdf">
       <embed src="/EstiTwegResume.pdf" type="application/pdf" />
     </object>
     <a href="#" class="back-to-top" @click="backToTop">Back to Top</a>
