@@ -2,6 +2,7 @@
 import { onMounted, ref } from '../../node_modules/vue';
 import { mobile, desktop } from '../utils/Breakpoints';
 import Header from '../components/Header.vue';
+import Portfolio from '../components/Portfolio.vue';
 
 const isResume = ref(false);
 
@@ -182,159 +183,7 @@ function resumeClicked(val) {
         </section>
         <hr style="margin-top:30px; margin-bottom:0px;">
       </div>
-      <div id="portfolio" class="background">
-        <a style="text-decoration:none;" target="_blank" href="https://github.com/EstiT">
-          <h2 class="dark" style="padding-top: 55px; padding-left: 35px;">Portfolio 🎨</h2>
-        </a>
-        <table id="portfolioTable" style="width: 97%" align="center" cellspacing="17">
-          <tr>
-            <th width="25%" class="top">
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/CluelessClothes-iOS">
-                  <img class="image" src="/images/cluelessClothes.png" width="100%" />
-                </a>
-                <a target="_blank	" href="https://github.com/EstiT/CluelessClothes-iOS">
-                  <p class="text">
-                    <u style="color:black;"><b><br />Clueless Clothes iOS app</b></u><br>
-                    <span style="color:black;"> Add photos of your clothes and match them to create outfits. </span>
-                    <br><br>
-                  </p>
-                </a>
-              </div>
-              <br><br>
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/squareGame"><img class="image" src="/images/square.png" width="100%" /></a>
-                <a target="_blank	" href="https://github.com/EstiT/squareGame">
-                  <p class="text square" style="color:black;">
-                    <u style="color:black;"><b>Square Game</b></u><br><span style="color:black;">While the red square moves, press the space bar to stop it inside the bounds. </span><br><br>
-                    <button type="button"> <a class="square" href="squareIndex.html">Play here!</a></button>
-                  </p>
-                </a>
-              </div>
-              <br><br>
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
-                  <img class="image" src="/images/mario.png" width="100%" />
-                </a>
-                <a target="_blank	" href="https://github.com/EstiT/ImageOverlay">
-                  <p class="text">
-                    <u><b>Image Overlay</b></u><br>You specify two images, one to be the background and the other to be placed transparently on top. In this example, there is a Mario character floating in a level.
-                  </p>
-                </a>
-              </div>
-            </th>
-            <th width="25%" class="top">
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS"> <img class="image" src="/images/emojiDash.jpeg" width="100%" /></a>
-                <a target="_blank	" href="https://github.com/EstiT/Emoji-Dash-iOS">
-                  <p class="text">
-                    <u style="color:black;"><b>Emoji-Dash</b></u> <br><span style="color:black;">iOS game for my honours project. Uses SpriteKit.</span>
-                    <br><br>
-                  </p>
-                </a>
-              </div>
-              <br><br>
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
-                  <img class="image" src="/images/climbingConverter.png" width="100%" />
-                </a>
-                <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
-                  <p class="text">
-                    <u style="color:black;"><b><br>Climbing Grade Converter iOS app</b></u><br>
-                    <span style="color:black;"> Convert climbing grades between different systems used world wide. </span>
-                    <br><br>
-                  </p>
-                </a>
-              </div>
-              <br><br>
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/logIt-SwiftUI"> <img class="image" src="/images/logit.png" width="100%" /></a>
-                <a target="_blank	" href="https://github.com/EstiT/logIt-SwiftUI">
-                  <p class="text">
-                    <u><b>Climbing training tracker app</b></u><br>iOS app developed with SwiftUI to track climbing progress in an analytical and visual manner.
-                  </p>
-                </a>
-              </div>
-            </th>
-            <th width="25%" class="top">
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank" href="https://github.com/cuhacking/CUHackingApp"><img class="image" src="/images/cuhacking.png" width="100%" /></a>
-                <a target="_blank" href="https://github.com/cuhacking/CUHackingApp">
-                  <p class="text">
-                    <u><b>CUhacking Android App</b></u><br>Group project for school. Created an app to make the hackathon more enjoyable for hackers.
-                  </p>
-                </a>
-              </div>
-              <br><br>
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/TicTacToe"><img class="image" src="/images/tictactoe.png" width="100%" /></a>
-                <a target="_blank	" href="https://github.com/EstiT/TicTacToe">
-                  <p class="text">
-                    <u><b>Tic Tac Toe</b></u><br>Play Tic Tac Toe against a computer.
-                  </p>
-                </a>
-              </div>
-              <br><br>
-              <div class="wow fadeInUp portfolioCell">
-                <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker"><img class="image" src="/images/asciiPresent.png" width="100%" id="ascii" /></a>
-                <a target="_blank	" href="https://github.com/EstiT/AsciiArtMaker">
-                  <p class="text">
-                    <u><b>Image to Ascii Art</b></u><br>You upload an image, choose what the background colour is and what to save the text file as. The program converts each pixel in the image to a symbol. Small images work best.
-                  </p>
-                </a>
-              </div>
-            </th>
-          </tr>
-        </table>
-        <table id="mobilePortfolioTable" style="width: 95%;" align="center" cellspacing="20" class="background">
-          <tr>
-            <td>
-              <div>
-                <a class="square" target="_blank" href="https://itunes.apple.com/us/app/emoji-dash/id1457248567?ls=1&mt=8">
-                  <img class="image wow fadeInUp" src="/images/emojiDash.jpeg" width="100%" />
-                </a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div>
-                <a target="_blank" href="https://apps.apple.com/ca/app/cluelessclothes/id1527894150">
-                  <img class="image wow fadeInUp" src="/images/cluelessClothes.png" width="100%" />
-                </a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div>
-                <a target="_blank	" href="squareIndex.html">
-                  <img class="image wow fadeInUp" src="/images/square.png" width="100%" />
-                </a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div>
-                <a target="_blank" href="https://github.com/EstiT/logIt-SwiftUI">
-                  <img class="image wow fadeInUp" src="/images/logit.png" width="100%" />
-                </a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div>
-                <a target="_blank	" href="https://github.com/EstiT/ClimbingGradeConverter">
-                  <img class="image wow fadeInUp" src="/images/climbingConverter.png" width="100%" />
-                </a>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <hr style="margin-top:30px; margin-bottom:0px;">
-      </div>
+      <Portfolio />
       <div id="contactMe" class="background">
         <br><br>
         <h2 id="contactMeText" class="dark" style="padding-left: 35px;">Contact Me 📞</h2>
@@ -530,12 +379,6 @@ a.back-to-top {
   min-height: 550px;
 }
 
-#portfolio {
-  width: auto;
-  display: block;
-  overflow: auto;
-}
-
 #experience {
   width: auto;
   resize: both;
@@ -549,57 +392,6 @@ a.back-to-top {
 }
 
 
-/*STYLING FOR PORTFOLIO TABLE*/
-.top {
-  vertical-align: top;
-}
-
-.portfolioCell {
-  position: relative;
-}
-
-.portfolioCell.image {
-  width: auto;
-  height: auto;
-}
-
-.portfolioCell.image,
-.portfolioCell .text {
-  transition: opacity 0.4s ease-in-out;
-}
-
-.portfolioCell .text {
-  position: absolute;
-  opacity: 0;
-  color: black;
-  font-weight: lighter;
-  color: black;
-  line-height: 1.8vw;
-  font-size: 1.2vw;
-  top: 10%;
-  left: 7%;
-  right: 8%;
-  font-family: "Avenir", Avenir;
-}
-
-.portfolioCell:hover .image {
-  position: relative;
-  opacity: 0.18;
-  z-index: 0;
-}
-
-.portfolioCell:hover .text {
-  opacity: 1;
-  font-weight: lighter;
-  text-align: center;
-  vertical-align: middle;
-  color: black;
-  line-height: 1.8vw;
-  font-size: 1.2vw;
-  top: 10%;
-  left: 7%;
-  right: 8%;
-}
 
 /*STYLING FOR EDUCATION DROP DOWN*/
 .ac-container {
@@ -702,14 +494,6 @@ h3 {
 }
 
 @media screen and (min-width: 750px) {
-
-  #portfolioTable {
-    display: block;
-  }
-
-  #mobilePortfolioTable {
-    display: none;
-  }
 
   p {
     display: block;
@@ -818,14 +602,6 @@ a {
 
   .menuContainer {
     top: 0.5rem;
-  }
-
-  #mobilePortfolioTable {
-    display: block;
-  }
-
-  #portfolioTable {
-    display: none;
   }
 
   #home {
