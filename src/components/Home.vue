@@ -7,7 +7,7 @@ import { mobile, desktop } from '../utils/Breakpoints';
   <div id="home" class="bg-1">
     <div id="homeCell">
       <h1 class="light" id="name">Esti Tweg</h1>
-      <h2 class="light" id="subhead">Mobile App Developer</h2>
+      <h2 class="light" id="subhead">Frontend Developer</h2>
     </div>
     <img id="meImg" src="/images/me.jpg" />
   </div>
@@ -36,7 +36,8 @@ import { mobile, desktop } from '../utils/Breakpoints';
 }
 
 h2 {
-  padding-left: 55px;
+  padding-left: 1.5rem;
+  font-weight: 500;
 }
 
 #meImg {
@@ -68,7 +69,6 @@ h2 {
 
   h2 {
     padding-left: 1rem;
-    font-weight: 500;
   }
 }
 </style>
