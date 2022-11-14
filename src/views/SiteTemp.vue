@@ -3,6 +3,7 @@ import { onMounted, ref } from '../../node_modules/vue';
 import { mobile, desktop } from '../utils/Breakpoints';
 import Header from '../components/Header.vue';
 import Portfolio from '../components/Portfolio.vue';
+import Home from '../components/Home.vue';
 
 const isResume = ref(false);
 
@@ -23,13 +24,7 @@ function resumeClicked(val) {
   <div>
     <Header @resumeClicked="resumeClicked" />
     <main class="container" v-if="!isResume">
-      <div id="home" class="bg-1">
-        <div id="homeCell">
-          <h1 class="light" id="name">Esti Tweg</h1>
-          <h2 class="light" style="padding-left: 55px;" id="subhead">Mobile App Developer</h2>
-        </div>
-        <img id="meImg" src="/images/me.jpg" />
-      </div>
+      <Home />
       <div id="aboutMe">
         <br><br>
         <h2 class="dark" style="padding-left: 35px;">About Me 👩🏻‍💻 🧗🏻‍♀️ ✈️</h2>
@@ -290,35 +285,10 @@ a.back-to-top {
 
 
 /*STYLING FOR EACH PAGE*/
-#home {
-  width: 100%;
-  height: 45vw;
-  padding-top: 6rem;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-}
-
-#homeCell {
-  padding-left: 120px;
-  padding-top: 25px;
-}
 
 .bg-1 {
   background: linear-gradient(45deg, transparent 200px, var(--darkPurple) 50px);
   background-size: 100% 45vw;
-}
-
-#meImg {
-  width: 25vw;
-  height: 25vw;
-  object-fit: contain;
-  margin: 15px;
-  margin-left: 120px;
-  border: 10px solid var(--lightPink);
-  text-align: center;
-  border-radius: 50%;
 }
 
 #aboutMe {
@@ -604,10 +574,6 @@ a {
     top: 0.5rem;
   }
 
-  #home {
-    padding-top: 2rem;
-  }
-
   #aboutMe p {
     padding: 1.5rem;
   }
@@ -634,6 +600,11 @@ a {
 
   #header {
     padding: 0.5rem;
+  }
+
+  .skillsImg {
+    object-fit: contain;
+    width: 30%;
   }
 }
 

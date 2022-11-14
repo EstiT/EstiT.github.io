@@ -90,7 +90,7 @@ const mobileProjects = [projects[3], projects[0], projects[5], projects[4]]
   width: auto;
   display: block;
   overflow: auto;
-  padding-left: 35px;
+  padding: 0 35px;
 }
 
 img {
@@ -161,6 +161,10 @@ img {
 @media (max-width: 775px) {
   #portfolioTable {
     grid-template-columns: auto;
+  }
+
+  #portfolio {
+    padding: 0 25px;
   }
 }
 </style>
