@@ -1,0 +1,17 @@
+@import "./fonts.scss";
+
+:root {
+	--purple-color: #2F3B69;
+	--white-color: #FAFAFF;
+	--blue-color: #3E829A;
+	--beige-color: #E3DDDC;
+}
+
+body {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+}
+
+h1 {
+	font-family: "Eastman", Helvetica, Arial, sans-serif;
+}
