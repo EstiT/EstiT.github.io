@@ -5,4 +5,6 @@ import { mobile, desktop } from '../utils/Breakpoints';
 
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "../styles/mixins.scss";
+</style>

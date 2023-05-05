@@ -8,5 +8,5 @@ import Main from './views/Main.vue'
 </script>
 
 <style lang="scss">
-@import "./styles.scss";
+@import "./styles/styles.scss";
 </style>
