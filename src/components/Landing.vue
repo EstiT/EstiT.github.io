@@ -2,7 +2,7 @@
     <section>
         <div>
             <h1>Esti <br />Tweg</h1>
-            <h2>Frontend Developer</h2>
+            <h3>Frontend Developer</h3>
             <hr v-if="desktop" />
             <button class="button">Reach Out</button>
         </div>
@@ -26,7 +26,7 @@ section {
     padding-right: 0;
     padding-bottom: 0;
     display: flex;
-    max-height: 80vh;
+    max-height: 90vh;
 
     div:first-child {
         width: 48%;
@@ -48,6 +48,7 @@ section {
 
     @include mobile {
         flex-direction: column;
+        max-height: unset;
     }
 }
 
@@ -85,7 +86,7 @@ hr {
 @include mobile {
 
     h1,
-    h2 {
+    h3 {
         margin-bottom: 1.5rem;
     }
 }
