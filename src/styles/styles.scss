@@ -7,7 +7,7 @@
 	--blue-color: #3E829A;
 	--beige-color: #E3DDDC;
 	--section-sides: 5rem;
-	--section-top: 2rem;
+	--section-top: 3rem;
 
 	@include mobile {
 		--section-sides: 2.5rem;
@@ -51,4 +51,11 @@ p {
 	padding: 0.7rem 3rem;
 	font-size: 1rem;
 	font-weight: 800;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--blue-color);
+		background-color: var(--white-color);
+		transition: 0.3s color, background-color ease-in;
+	}
 }
