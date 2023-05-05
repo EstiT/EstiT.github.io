@@ -6,6 +6,7 @@
 	--white-color: #FAFAFF;
 	--blue-color: #3E829A;
 	--beige-color: #E3DDDC;
+	--brown-color: #5C4E4E;
 	--section-sides: 5rem;
 	--section-top: 3rem;
 
@@ -58,4 +59,11 @@ p {
 		background-color: var(--white-color);
 		transition: 0.3s color, background-color ease-in;
 	}
+}
+
+.box {
+	border-radius: 0.5rem;
+    background-color: var(--white-color);
+    padding: 2rem;
+    color: var(--purple-color);
 }

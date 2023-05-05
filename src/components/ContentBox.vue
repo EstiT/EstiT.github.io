@@ -27,11 +27,6 @@ const props = defineProps({
 @import "../styles/mixins.scss";
 
 .box {
-    border-radius: 0.5rem;
-    background-color: var(--white-color);
-    padding: 2rem;
-    color: var(--purple-color);
-
     div {
         display: flex;
         gap: 1.5rem;
