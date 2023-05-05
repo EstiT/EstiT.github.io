@@ -6,6 +6,10 @@
             <p>{{ award.date }}<span>{{ award.year }}</span></p>
             <p>{{ award.description }}</p>
         </swiper-slide>
+        <swiper-slide>
+            <h5>full competition results <a target="_blank" href="https://comp-results.netlify.app/">here</a></h5>
+            <p><span>2012 - Present</span></p>
+        </swiper-slide>
     </swiper>
 </template>
 
@@ -54,7 +58,8 @@ span {
 }
 
 p,
-span {
+span,
+a {
     color: var(--beige-color);
 }
 </style>

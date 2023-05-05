@@ -5,6 +5,10 @@
             <p>{{ award.date }}<span>{{ award.year }}</span></p>
             <p>{{ award.description }}</p>
         </div>
+        <div>
+            <h5>full competition results <a target="_blank" href="https://comp-results.netlify.app/">here</a></h5>
+            <p><span>2012 - Present</span></p>
+        </div>
     </section>
 </template>
 
@@ -39,7 +43,8 @@ span {
 }
 
 p,
-span {
+span,
+a {
     color: var(--beige-color);
 }
 </style>
