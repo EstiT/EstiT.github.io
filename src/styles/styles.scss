@@ -6,13 +6,39 @@
 	--white-color: #FAFAFF;
 	--blue-color: #3E829A;
 	--beige-color: #E3DDDC;
+	--section-sides: 5rem;
+	--section-top: 2rem;
+
+	@include mobile {
+		--section-sides: 2.5rem;
+	}
 }
 
 body {
     background-color: var(--purple-color);
     color: var(--white-color);
+	font-family: "Eastman", Helvetica, Arial, sans-serif;
+	margin: 0;
 }
 
 h1 {
+	font-weight: 800;
+	font-size: 3.4rem;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+.button {
 	font-family: "Eastman", Helvetica, Arial, sans-serif;
+	background-color: var(--blue-color);
+	color: var(--white-color);
+	border: none;
+	border-radius: 0.4rem;
+	padding: 0.7rem 3rem;
+	font-size: 1rem;
+	font-weight: 800;
 }

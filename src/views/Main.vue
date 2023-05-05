@@ -1,8 +1,9 @@
 <template>
-  <h1>hello</h1>
+  <Landing />
 </template>
 
 <script setup>
+import Landing from '../components/Landing.vue';
 import { mobile, desktop } from '../utils/Breakpoints';
 
 </script>
