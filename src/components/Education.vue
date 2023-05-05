@@ -18,13 +18,35 @@
 
             </div>
         </div>
+        <Awards v-if="desktop" :awards="awards" />
+        <AwardsSwiper v-else :awards="awards" />
     </section>
 </template>
 
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
-import ContentBox from './ContentBox.vue';
+import Awards from './Awards.vue';
+import AwardsSwiper from './AwardsSwiper.vue';
 
+const awards = [
+    {
+        title: "SA State Lead Climbing Champion",
+        date: "May ",
+        year: "2022",
+        description: "Held at Vertical Reality Climbing Gym. After two rounds, I topped all the routes and won the competition. "
+    },
+    {
+        title: "UniSA Immerse Festival Hackathon Winner ",
+        date: "Dec. ",
+        year: "2021",
+        description: "Participated in a workshop at University of South Australia where we learned how to make Snapchat filters. I created a filter for each season that would add the appropriate accessories and change the weather. My submission was picked as the Hackathon winner."
+    },
+    {
+        title: "Honour Roll/Ontario Scholar/Dean’s Honour List ",
+        year: "2011 - 2019",
+        description: "Throughout my education, a high level of academic success was consistently achieved."
+    },
+];
 </script>
 
 <style scoped lang="scss">
