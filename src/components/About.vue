@@ -3,7 +3,7 @@
         <div>
             <h6>Who i am</h6>
             <hr v-if="desktop" />
-            <h2>About Me </h2>
+            <h2>About Me</h2>
             <h4>(she/her)</h4>
             <p>
                 I am a frontend developer on the Brand Identity team at Canva in Australia.
@@ -52,6 +52,7 @@ section {
     @include mobile {
         flex-direction: column;
         padding-top: var(--section-top);
+        max-height: unset;
     }
 }
 

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.9.0",
+    "swiper": "^9.2.4",
     "vue": "^3.2.25",
     "vue-router": "^4.0.15"
   },
