@@ -15,9 +15,10 @@
 
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
-
+import { event } from 'vue-gtag'
 
 function reachOutClicked() {
+    event('reach_out_clicked');
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
 </script>
