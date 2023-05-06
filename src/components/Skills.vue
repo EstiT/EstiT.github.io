@@ -52,6 +52,7 @@ section {
 
 h2 {
     text-align: center;
+    margin-bottom: 3rem;
 
     @include mobile {
         text-align: left;
@@ -68,7 +69,6 @@ h2 {
     h5 {
         font-size: 0.95rem;
         margin-bottom: 0;
-
     }
 
     p {

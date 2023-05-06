@@ -4,10 +4,12 @@
   <Experience />
   <Education />
   <Skills />
+  <Connect />
 </template>
 
 <script setup>
 import About from '../components/About.vue';
+import Connect from '../components/Connect.vue';
 import Education from '../components/Education.vue';
 import Experience from '../components/Experience.vue';
 import Landing from '../components/Landing.vue';

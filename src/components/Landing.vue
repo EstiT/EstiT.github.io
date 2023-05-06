@@ -4,7 +4,7 @@
             <h1>Esti <br />Tweg</h1>
             <h3>Frontend Developer</h3>
             <hr v-if="desktop" />
-            <button class="button">Reach Out</button>
+            <button class="button" @click="reachOutClicked">Reach Out</button>
         </div>
         <div>
             <img class="headshot" src="/src/assets/me.jpg" />
@@ -16,6 +16,10 @@
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
 
+
+function reachOutClicked() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
 </script>
 
 <style scoped lang="scss">
