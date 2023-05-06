@@ -22,7 +22,7 @@ const experiences = [
         year: "2023",
         title: "Software Engineer",
         company: "Canva",
-        description: "Brand Identity team TODO brought designs to life by developing Vue microsites as part of Spotify advertising campaigns for international clients. Microsites include bespoke playlist generation (php) and animations (js/css). In Addition to Spotify, we worked with NSW Health to develop a React video calling app to enable patients to easily contact family during the pandemic."
+        description: "I am on the Brand Identity team at Canva. The teams main responsibility is the Brand Kit - a pro feature that empowers users to create consistent designs across their brand. I work on the canva code base to improve existing features, fix bugs and add new features related to Brand Kit and Brand Hub."
     },
     {
         year: "2020",

@@ -12,13 +12,16 @@
             <hr v-if="desktop" />
 
             <div class="bottom">
-                <h5>Find my <br v-if="mobile" />resume <a class="here">here</a></h5>
+                <h5>Find my <br v-if="mobile" />resume <a class="here" target="_blank"
+                        href="https://docs.google.com/document/d/1dnnIfy9HjDpPdOCgKDvWM5q0GvYWU9uFWVD9mZUnc9g/edit?usp=sharing">here</a>
+                </h5>
                 <div class="socials">
                     <h6 v-if="desktop">Let's get social</h6>
                     <a target="_blank" href="https://www.instagram.com/estionawall/"><img class="icon"
                             src="/src/assets/ig.svg" /></a>
                     <a target="_blank" href="https://www.facebook.com/estionawall"><img class="icon"
                             src="/src/assets/fb.svg" /></a>
+                    <a target="_blank" href="https://github.com/EstiT"><img class="icon" src="/src/assets/gh.svg" /></a>
                     <a target="_blank" href="https://www.linkedin.com/in/esti-tweg/"><img class="icon"
                             src="/src/assets/linkedin.svg" /></a>
                 </div>
@@ -119,6 +122,7 @@ hr {
 .here {
     text-decoration: underline;
     display: inline-block;
+    color: var(--purple-color);
 }
 
 a {
