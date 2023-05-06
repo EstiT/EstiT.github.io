@@ -5,14 +5,38 @@
             delay: 3000,
         }" :initial-slide="5" loop :space-between="mobile ? 40 : 100" centered-slides :modules="[Autoplay, Pagination
     , Navigation]" @swiper="onSwiper" @slideChange="onSlideChange">
-            <swiper-slide v-for="(proj, i) in projects" :key="i + '1'">
-                <img :src="proj.image" />
+            <swiper-slide>
+                <img src="/src/assets/climbingConverter.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/cluelessClothes.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/alfa.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/canada.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/lulu.png" />
             </swiper-slide>
             <swiper-slide class="emoji-slide">
                 <img src="/src/assets/emojiDash.jpeg" />
             </swiper-slide>
-            <swiper-slide v-for="(proj, i) in projects" :key="i">
-                <img :src="proj.image" />
+            <swiper-slide>
+                <img src="/src/assets/climbingConverter.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/cluelessClothes.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/alfa.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/canada.png" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="/src/assets/lulu.png" />
             </swiper-slide>
             <swiper-slide class="emoji-slide">
                 <img src="/src/assets/emojiDash.jpeg" />
