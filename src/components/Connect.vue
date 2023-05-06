@@ -5,8 +5,8 @@
         <div class="box">
             <h4>Esti Tweg</h4>
             <div class="links">
-                <a>estictweg@gmail.com</a>
-                <a>estit.github.io</a>
+                <a href="mailto:estictweg@gmail.com">estictweg@gmail.com</a>
+                <a href="https://estit.github.io/">estit.github.io</a>
                 <a target="_blank" href="https://linktr.ee/estionawall">linktr.ee/estionawall</a>
             </div>
             <hr v-if="desktop" />

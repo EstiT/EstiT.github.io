@@ -1,5 +1,5 @@
 <template>
-    <swiper slides-per-view="auto" :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange" :modules="[Pagination
+    <swiper slides-per-view="auto" :space-between="20" :modules="[Pagination
         , Navigation]">
         <swiper-slide v-for="(exp, i) in experiences" :key="i">
             <ContentBox :year="exp.year" :company="exp.company" :description="exp.description" :title="exp.title" />
@@ -11,7 +11,6 @@
 import { mobile, desktop } from '../utils/Breakpoints';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination } from 'swiper';
-
 import ContentBox from './ContentBox.vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,11 +18,6 @@ import 'swiper/css/pagination';
 const props = defineProps({
     experiences: Array
 });
-
-const onSwiper = (swiper) => {
-};
-const onSlideChange = () => {
-};
 </script>
 
 <style scoped lang="scss">

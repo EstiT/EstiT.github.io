@@ -81,6 +81,8 @@ section {
 .box {
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     background-color: var(--white-color);
     padding: 2rem;
     margin-top: 0;
