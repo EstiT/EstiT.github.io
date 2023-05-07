@@ -15,7 +15,7 @@
 
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
-import { event } from 'vue-gtag'
+import { event } from 'vue-gtag';
 
 function reachOutClicked() {
     event('reach_out_clicked');

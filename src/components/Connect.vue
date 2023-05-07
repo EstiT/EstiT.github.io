@@ -5,25 +5,27 @@
         <div class="box">
             <h4>Esti Tweg</h4>
             <div class="links">
-                <a href="mailto:estictweg@gmail.com">estictweg@gmail.com</a>
-                <a href="https://estit.github.io/">estit.github.io</a>
-                <a target="_blank" href="https://linktr.ee/estionawall">linktr.ee/estionawall</a>
+                <a href="mailto:estictweg@gmail.com" @click="event('email_clicked');">estictweg@gmail.com</a>
+                <a href="https://estit.github.io/" @click="event('website_clicked');">estit.github.io</a>
+                <a target="_blank" href="https://linktr.ee/estionawall"
+                    @click="event('linktree_clicked');">linktr.ee/estionawall</a>
             </div>
             <hr v-if="desktop" />
 
             <div class="bottom">
-                <h5>Find my <br v-if="mobile" />resume <a class="here" target="_blank"
+                <h5>Find my <br v-if="mobile" />resume <a class="here" target="_blank" @click="event('resume_clicked');"
                         href="https://docs.google.com/document/d/1dnnIfy9HjDpPdOCgKDvWM5q0GvYWU9uFWVD9mZUnc9g/edit?usp=sharing">here</a>
                 </h5>
                 <div class="socials">
                     <h6 v-if="desktop">Let's get social</h6>
-                    <a target="_blank" href="https://www.instagram.com/estionawall/"><img class="icon"
-                            src="/src/assets/ig.svg" /></a>
-                    <a target="_blank" href="https://www.facebook.com/estionawall"><img class="icon"
-                            src="/src/assets/fb.svg" /></a>
-                    <a target="_blank" href="https://github.com/EstiT"><img class="icon" src="/src/assets/gh.svg" /></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/esti-tweg/"><img class="icon"
-                            src="/src/assets/linkedin.svg" /></a>
+                    <a target="_blank" href="https://www.instagram.com/estionawall/" @click="event('ig_clicked');"><img
+                            class="icon" src="/src/assets/ig.svg" /></a>
+                    <a target="_blank" href="https://www.facebook.com/estionawall" @click="event('fb_clicked');"><img
+                            class="icon" src="/src/assets/fb.svg" /></a>
+                    <a target="_blank" href="https://github.com/EstiT" @click="event('github_clicked');"><img class="icon"
+                            src="/src/assets/gh.svg" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/esti-tweg/"
+                        @click="event('linkedin_clicked');"><img class="icon" src="/src/assets/linkedin.svg" /></a>
                 </div>
 
             </div>
@@ -34,6 +36,8 @@
 
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
+import { event } from 'vue-gtag';
+
 </script>
 
 <style scoped lang="scss">
