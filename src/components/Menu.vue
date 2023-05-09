@@ -70,7 +70,7 @@ function optionClicked(option) {
     height: 3px;
     width: 2rem;
     transition: width, transform 0.2s ease-in-out;
-    will-change: height, transform, opacity;
+    will-change: width, transform, opacity;
     opacity: 1;
 }
 
