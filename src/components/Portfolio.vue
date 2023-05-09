@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="portfolio">
         <h2>Portfolio</h2>
         <swiper :slides-per-view="'auto'" :autoplay="{
             delay: 3000,

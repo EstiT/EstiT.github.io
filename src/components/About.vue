@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="about">
         <div>
             <h6>Who i am</h6>
             <hr v-if="desktop" />

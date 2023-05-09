@@ -1,6 +1,6 @@
 <template>
     <section>
-        <img class="hero" src="/src/assets/islandCrown.jpg" />
+        <img class="hero" id="edu" src="/src/assets/islandCrown.jpg" />
         <div class="box">
             <div>
                 <h3>Education,

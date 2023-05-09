@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="connect">
         <h2>Connect<br v-if="mobile" /> with me</h2>
 
         <div class="box">
@@ -67,6 +67,7 @@ h2 {
 
         @include mobile {
             font-size: 1.2rem;
+            margin: 0 0 1.5rem;
         }
     }
 

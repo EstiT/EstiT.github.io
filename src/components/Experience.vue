@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="exp">
         <h2>Experience</h2>
         <div v-if="desktop">
             <ContentBox v-for="(exp, i) in experiences" :key="i" :year="exp.year" :company="exp.company"

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="skills">
         <h2>Skills &<br v-if="mobile" /> Proficiencies</h2>
         <div>
             <div class="box">

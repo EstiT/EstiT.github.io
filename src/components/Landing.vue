@@ -33,6 +33,10 @@ section {
     display: flex;
     max-height: 90vh;
 
+    @include mobile {
+        padding-top: 0;
+    }
+
     div:first-child {
         width: 48%;
         padding-right: 3rem;
