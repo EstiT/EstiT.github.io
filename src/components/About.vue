@@ -20,7 +20,41 @@
 
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
+import anime from 'animejs';
+import { onMounted } from 'vue';
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            fadeIn();
+        }
+    })
+}, { root: null, threshold: 0.3 });
+
+
+onMounted(() => {
+    if (!mobile.value) {
+        anime({
+            targets: '#about .climbing',
+            translateX: [400, 0],
+            delay: 50,
+            easing: 'easeInOutQuad'
+        });
+    }
+
+    if (desktop.value) observer.observe(document.querySelector('#about'));
+});
+
+function fadeIn() {
+    observer.unobserve(document.querySelector('#about'));
+    anime({
+        targets: '#about h6, #about hr, #about h2, #about h4, #about p',
+        opacity: [0, 1],
+        delay: anime.stagger(300),
+        duration: 900,
+        easing: 'easeInOutQuad'
+    });
+}
 </script>
 
 <style scoped lang="scss">
@@ -63,13 +97,16 @@ h6 {
     margin-top: 3rem;
     margin-bottom: 0.75rem;
     letter-spacing: 0.2em;
+    opacity: 0;
 
     @include mobile {
         margin-top: 0rem;
+        opacity: 1;
     }
 }
 
 hr {
+    opacity: 0;
     width: 55%;
     display: block;
     margin-right: auto;
@@ -80,29 +117,35 @@ hr {
 h2 {
     margin-top: 8rem;
     margin-bottom: 0.4rem;
+    opacity: 0;
 
     @include mobile {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+        opacity: 1;
     }
 }
 
 h4 {
     margin-top: 0;
     font-size: 1.1rem;
+    opacity: 0;
 
     @include mobile {
         font-size: 0.9rem;
+        opacity: 1;
     }
 }
 
 p {
     max-width: 18ch;
+    opacity: 0;
 
     @include mobile {
         font-size: 0.9rem;
         padding-right: var(--section-sides);
         margin-top: 2rem;
+        opacity: 1;
     }
 }
 

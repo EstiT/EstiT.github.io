@@ -26,8 +26,32 @@
 
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
-import ContentBox from './ContentBox.vue';
+import anime from 'animejs';
+import { onMounted } from 'vue';
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            fadeIn();
+        }
+    })
+}, { root: null, threshold: 0.3 });
+
+
+onMounted(() => {
+    if (desktop.value) observer.observe(document.querySelector('#skills'));
+});
+
+function fadeIn() {
+    observer.unobserve(document.querySelector('#skills'));
+    anime({
+        targets: '#skills h2, #skills .box',
+        opacity: [0, 1],
+        delay: anime.stagger(300),
+        duration: 900,
+        easing: 'easeInOutQuad'
+    });
+}
 </script>
 
 <style scoped lang="scss">
@@ -53,14 +77,17 @@ section {
 h2 {
     text-align: center;
     margin-bottom: 3rem;
+    opacity: 0;
 
     @include mobile {
+        opacity: 1;
         text-align: left;
     }
 }
 
 .box {
     border-radius: 2rem;
+    opacity: 0;
 
     h4 {
         text-transform: uppercase;
@@ -78,6 +105,7 @@ h2 {
     }
 
     @include mobile {
+        opacity: 1;
         padding: 0.5rem 1.5rem 1rem;
         border-radius: 0.5rem;
 

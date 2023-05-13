@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="edu">
         <img class="hero" id="edu" src="/src/assets/islandCrown.jpg" />
         <div class="box">
             <div>
@@ -27,6 +27,8 @@
 import { mobile, desktop } from '../utils/Breakpoints';
 import Awards from './Awards.vue';
 import AwardsSwiper from './AwardsSwiper.vue';
+import anime from 'animejs';
+import { onMounted } from 'vue';
 
 const awards = [
     {
@@ -47,6 +49,30 @@ const awards = [
         description: "Throughout my education, a high level of academic success was consistently achieved."
     },
 ];
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            fadeIn();
+        }
+    })
+}, { root: null, threshold: 0.3 });
+
+
+onMounted(() => {
+    if (desktop.value) observer.observe(document.querySelector('#edu'));
+});
+
+function fadeIn() {
+    observer.unobserve(document.querySelector('#edu'));
+    anime({
+        targets: '#edu, .edu.box, .edu h3, .edu .description, #awards .award',
+        opacity: [0, 1],
+        delay: anime.stagger(300),
+        duration: 900,
+        easing: 'easeInOutQuad'
+    });
+}
 </script>
 
 <style scoped lang="scss">
@@ -69,8 +95,10 @@ section {
     max-height: 45vh;
     object-fit: cover;
     margin-bottom: 0;
+    opacity: 0;
 
     @include mobile {
+        opacity: 1;
         max-height: unset;
         border-top-left-radius: 0;
         border-bottom-right-radius: 2rem;

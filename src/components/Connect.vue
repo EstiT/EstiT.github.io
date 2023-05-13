@@ -37,7 +37,32 @@
 <script setup>
 import { mobile, desktop } from '../utils/Breakpoints';
 import { event } from 'vue-gtag';
+import anime from 'animejs';
+import { onMounted } from 'vue';
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            fadeIn();
+        }
+    })
+}, { root: null, threshold: 0.3 });
+
+
+onMounted(() => {
+    if (desktop.value) observer.observe(document.querySelector('#connect'));
+});
+
+function fadeIn() {
+    observer.unobserve(document.querySelector('#connect'));
+    anime({
+        targets: '#connect h2, #connect .box',
+        opacity: [0, 1],
+        delay: anime.stagger(300),
+        duration: 900,
+        easing: 'easeInOutQuad'
+    });
+}
 </script>
 
 <style scoped lang="scss">
@@ -50,8 +75,10 @@ section {
 
 h2 {
     margin-bottom: 3rem;
+    opacity: 0;
 
     @include mobile {
+        opacity: 1;
         text-align: left;
         margin-bottom: 2rem;
     }
@@ -60,6 +87,7 @@ h2 {
 .box {
     border-radius: 2rem;
     padding: 3rem;
+    opacity: 0;
 
     h4 {
         font-size: 2rem;
@@ -76,8 +104,6 @@ h2 {
         margin: 0;
 
     }
-
-
 
     .links {
         display: flex;
@@ -97,8 +123,6 @@ h2 {
             }
         }
 
-
-
         @include mobile {
             flex-direction: column;
             width: 100%;
@@ -108,6 +132,7 @@ h2 {
     @include mobile {
         padding: 2rem 2rem 1.5rem 2rem;
         border-radius: 0.5rem;
+        opacity: 1;
 
         h5 {
             margin-top: 0.5rem;

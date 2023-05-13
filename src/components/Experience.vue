@@ -3,7 +3,7 @@
         <h2>Experience</h2>
         <div v-if="desktop">
             <ContentBox v-for="(exp, i) in experiences" :key="i" :year="exp.year" :company="exp.company"
-                :description="exp.description" :title="exp.title" />
+                :description="exp.description" :title="exp.title" style="opacity:0" />
         </div>
         <div v-else>
             <ExperienceSwiper :experiences="experiences" />
@@ -15,7 +15,8 @@
 import { mobile, desktop } from '../utils/Breakpoints';
 import ContentBox from './ContentBox.vue';
 import ExperienceSwiper from './ExperienceSwiper.vue';
-
+import anime from 'animejs';
+import { onMounted } from 'vue';
 
 const experiences = [
     {
@@ -43,6 +44,31 @@ const experiences = [
         description: "On the myMobility team at RBC, I enhanced the iOS and Android apps that the employees used to make business tasks more accessible and convenient. I implemented Google Analytics and Touch ID in the apps. Additionally, I created a UI dashboard to test a REST API and maintain a database."
     }
 ];
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            fadeIn();
+        }
+    })
+}, { root: null, threshold: 0.2 });
+
+
+onMounted(() => {
+    observer.observe(document.querySelector('#exp'));
+});
+
+function fadeIn() {
+    observer.unobserve(document.querySelector('#exp'));
+    anime({
+        targets: '#exp h2, #exp .swiper-slide, #exp .box',
+        opacity: 1,
+        delay: anime.stagger(300, { start: 200 }),
+        duration: 900,
+        easing: 'easeInOutQuad'
+    });
+}
 </script>
 
 <style scoped lang="scss">
@@ -50,6 +76,14 @@ const experiences = [
 
 section {
     padding: var(--section-top) var(--section-sides);
+
+    h2 {
+        opacity: 0;
+
+        @include mobile {
+            opacity: 1;
+        }
+    }
 
     >div {
         display: grid;
