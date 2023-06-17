@@ -7,7 +7,7 @@
             <h4>(she/her)</h4>
             <p>
                 I am a frontend developer on the Brand Identity team at Canva in Australia.
-                I studied Computer Science at Carleton University Ottawa, Canada. When I'm not coding,
+                I studied Computer Science at Carleton University in Ottawa, Canada. When I'm not coding,
                 you can find me on the wall at the climbing gym training for competitions.
             </p>
         </div>
