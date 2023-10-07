@@ -7,6 +7,7 @@
             <div class="links">
                 <a href="mailto:estictweg@gmail.com" @click="event('email_clicked');">estictweg@gmail.com</a>
                 <a href="https://estit.github.io/" @click="event('website_clicked');">estit.github.io</a>
+                <a href="https://comp-results.netlify.app/" @click="event('results_clicked');">comp results</a>
                 <a target="_blank" href="https://linktr.ee/estionawall"
                     @click="event('linktree_clicked');">linktr.ee/estionawall</a>
             </div>

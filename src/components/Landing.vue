@@ -7,7 +7,7 @@
             <button class="button" @click="reachOutClicked">Reach Out</button>
         </div>
         <div class="right">
-            <img class="headshot" src="/src/assets/me.jpg" />
+            <img class="headshot" src="/src/assets/me.jpeg" />
         </div>
 
     </section>
